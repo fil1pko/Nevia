@@ -32,5 +32,11 @@
     </nav>
 </template>
 
-<style>
+<style lang="scss">
+    @import '../assets/style/base.scss';
+    @import '../assets/style/colors.scss';
+
+    nav{
+        font-family: $barlowR;
+    }
 </style>

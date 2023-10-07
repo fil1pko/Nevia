@@ -16,5 +16,6 @@
     #home{
         min-height: 100vh;
         background-color: $bg;
+        font-family: 'Barlow-Regular', sans-serif;
     }
 </style>

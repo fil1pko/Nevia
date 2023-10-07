@@ -24,3 +24,18 @@ body {
     width: 100%;  
   }
 }
+
+
+// all font faces
+@font-face {
+    font-family: Barlow-Regular;
+    src: url('/public/fonts/Barlow-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+$barlowR: 'Barlow-Regular', sans-serif;
+
+
+
