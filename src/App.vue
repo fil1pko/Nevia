@@ -1,16 +1,20 @@
 <script setup>
 import navbar from './components/navbar.vue'
+
+import home from './components/sections/home.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-    <p>cleared version</p>
+    <navbar/>
   </header>
 
   <main>
-    <navbar />
+    <home />
   </main>
+
+  <footer>
+  </footer>
 </template>
 
 <style scoped>
