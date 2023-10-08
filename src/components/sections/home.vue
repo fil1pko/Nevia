@@ -4,7 +4,7 @@
     <section id="home">
         <div class="home-wraper">
             <img class="symbol" src="../../assets/pictures/symbolHome.svg" alt="" width="200">
-            <img class="handHome" src="../../assets/pictures/handHome.jpg" alt="">
+            <img class="handHome" src="../../assets/pictures/kys.jpeg" alt="">
         </div>
     </section>    
 </template>
@@ -15,7 +15,7 @@
 
     #home{
         min-height: 100vh;
-        background-color: #04080f;
+        background-color: #000000;
         .home-wraper{
             min-height: 100vh;
             position: relative;
@@ -23,7 +23,7 @@
                 position: absolute;
                 right: 0;
                 bottom: 0;
-                width: 1015px;
+                width: 1215px;
             }
         }
         // .symbol{
