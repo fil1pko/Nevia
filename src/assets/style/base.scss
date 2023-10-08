@@ -26,16 +26,33 @@ body {
 }
 
 
-// all font faces
+// ALL FONT FACES 
+
+
+// barlow - regular
 @font-face {
     font-family: Barlow-Regular;
     src: url('/public/fonts/Barlow-Regular.ttf');
     font-weight: 400;
     font-style: normal;
 }
-
-
+// barlow - medium
+@font-face {
+    font-family: 'Barlow-Medium';
+    src: url('/public/fonts/Barlow-Medium.ttf');
+    font-weight: 500; 
+    font-style: normal;
+}
+// balow - light
+@font-face {
+    font-family: 'Barlow-Light';
+    src: url('/public/fonts/Barlow-Light.ttf');
+    font-weight: 300; 
+    font-style: normal;
+}
+// variables for font barlow
 $barlowR: 'Barlow-Regular', sans-serif;
-
+$barlowM: 'Barlow-Medium', sans-serif;
+$barlowL: 'Barlow-Light', sans-serif;
 
 

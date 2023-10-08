@@ -17,6 +17,6 @@ import home from './components/sections/home.vue'
   </footer>
 </template>
 
-<style scoped>
-
+<style lang="scss">
+  @import '../src/assets/style/header.scss';
 </style>

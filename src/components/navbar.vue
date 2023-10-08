@@ -10,7 +10,6 @@
 
 <template>
     <!-- <p>{{  $t('test')  }}</p> -->
-
     <nav>
         <!-- logo / left side -->
         <img src="../assets/pictures/logo.svg" alt="logo">
@@ -26,11 +25,14 @@
 
         <!-- wraper for language buttons -->
         <div class="language-wraper">
-            <button @click="switchLanguage('en')">EN</button>
-            <button @click="switchLanguage('sk')"><img src="../assets/pictures/SK.svg" alt="Slovak language"></button>
+            <!-- <button @click="switchLanguage('en')">EN</button> -->
+            <!-- <button @click="switchLanguage('sk')"></button> -->
+            <img @click="switchLanguage('sk')" src="../assets/pictures/SK.svg" alt="Slovak language">
         </div>
     </nav>
 </template>
+
+
 
 <style lang="scss">
     @import '../assets/style/base.scss';
@@ -38,5 +40,32 @@
 
     nav{
         font-family: $barlowR;
+        display: flex;
+        gap: 415px;
+        align-items: center;
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 26px;
+            li{
+                a{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: $lightBlueHome;
+                }
+            }
+        }
+
+        img{
+            width: 60px;
+            height: auto;
+        }
+
+        .language-wraper{
+            img{
+                width: 40px;
+                height: auto;
+            }
+        }
     }
 </style>
