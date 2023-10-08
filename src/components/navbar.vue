@@ -43,6 +43,7 @@
         display: flex;
         gap: 415px;
         align-items: center;
+        padding-top: 40px;
         ul{
             display: flex;
             list-style: none;

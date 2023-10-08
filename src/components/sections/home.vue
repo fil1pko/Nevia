@@ -3,8 +3,8 @@
 <template>
     <section id="home">
         <div class="home-wraper">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img class="symbol" src="../../assets/pictures/symbolHome.svg" alt="" width="200">
+            <img class="handHome" src="../../assets/pictures/handHome.jpg" alt="">
         </div>
     </section>    
 </template>
@@ -15,7 +15,25 @@
 
     #home{
         min-height: 100vh;
-        background-color: $bg;
-        font-family: 'Barlow-Regular', sans-serif;
+        background-color: #04080f;
+        .home-wraper{
+            min-height: 100vh;
+            position: relative;
+            .handHome{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 1015px;
+            }
+        }
+        // .symbol{
+        //     z-index: 1;
+        // }
+        // .handHome{
+        //     // z-index: 2;
+        //     // position: absolute;
+        //     // right: 0;
+        //     // bottom: 0;
+        // }
     }
 </style>
