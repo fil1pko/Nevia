@@ -27,7 +27,6 @@
         .about-wraper{
             text-align: center;
             h1{
-                font-family: $brandonB;
                 @include topics;
                 padding-top: 20px;
                 margin-bottom: 20px;

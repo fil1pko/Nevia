@@ -13,17 +13,57 @@
 
                     <button>Kontaktujte nás</button>
                 </div>
-                <div class="right-side"></div>
+                <ul>
+                    <li>Mojš 139, 010 01 Mojš</li>
+                    <li><a href="tel:+421 940 395 009">+421 940 395 009</a></li>
+                    <li><a href="mailto:info@nevia.eu? subject=subject text">info@nevia.eu</a></li>
+                </ul>
             </div>
         </div>
     </section>
 </template>
 
 <style lang="scss">
+    @import '../../assets/style/base.scss';
+    @import '../../assets/style/colors.scss';
+
     #contact{
         min-height: 100vh;  
         display: flex;
         justify-content: center;
         align-items: center;
+        .contact-wraper{
+            text-align: center;
+            max-width: 790px;
+            h1{
+                @include topics;
+            }
+            p{
+                @include text-light;
+                text-align: start;
+            }
+            .form-wraper{
+                display: flex;
+                .left-side{
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        background-color: $greyBG;
+                        border: none;
+                        outline: none;
+                    }
+                    textarea{
+                        background-color: $greyBG;
+                        border: none;
+                        outline: none;
+                        resize: none;
+                    }
+                }
+                ul{
+                    text-align: start;
+                    list-style: none;
+                }
+            }
+        }
     }
 </style>

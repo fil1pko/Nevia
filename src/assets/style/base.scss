@@ -73,14 +73,17 @@ $brandonB: 'BrandonGrotesque', sans-serif;
 // ALL MIXINS
 
 @mixin text-light{
+  color: $bg;
   font-size: 18px;
   font-family: $barlowL;
 }
 @mixin text-regular{
+  color: $bg;
   font-size: 21px;
   font-family: $barlowR;
 }
 @mixin topics {
+  color: $bg;
   font-family: $brandonB;
   font-size: 105px;
   text-transform: uppercase;
