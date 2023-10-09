@@ -1,12 +1,12 @@
 <script setup>
 // importing parts
-import navbar from './components/navbar.vue'
+  import navbar from './components/navbar.vue'
 
 // importing sections
-import home from './components/sections/home.vue'
-import about from './components/sections/about.vue'
-import certificates from './components/sections/certificates.vue'
-import contact from './components/sections/contact.vue'
+  import home from './components/sections/home.vue'
+  import about from './components/sections/about.vue'
+  import certificates from './components/sections/certificates.vue'
+  import contact from './components/sections/contact.vue'
 </script>
 
 <template>

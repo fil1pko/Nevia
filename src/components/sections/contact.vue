@@ -45,6 +45,7 @@
             }
             .form-wraper{
                 display: flex;
+                align-items: center;
                 gap: 90px;
                 margin-top: 120px;
                 .left-side{
@@ -95,7 +96,7 @@
                         @include text-regular;
                         display: flex;
                         gap: 40px;
-                        margin-bottom: 40px;
+                        margin-bottom: 45px;
                         img{
                             width: 35px;
                         }

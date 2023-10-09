@@ -9,24 +9,22 @@
 </script>
 
 <template>
-    <!-- <p>{{  $t('test')  }}</p> -->
+    <!-- {{  $t('test')  }} -->
     <nav>
         <!-- logo / left side -->
-        <img src="../assets/pictures/logo.svg" alt="logo">
+        <a href="#home"><img src="../assets/pictures/logo.svg" alt="logo"></a>
 
         <!-- site navigation -->
         <ul>
-            <li><a href="">O nás</a></li>
-            <li><a href="">Referencie</a></li>
-            <li><a href="">Portfólio</a></li>
-            <li><a href="">Anonymný formulár</a></li>
-            <li><a href="">Kontakt</a></li>
+            <li><a href="#about">O nás</a></li>
+            <li><a href="#carousel">Referencie</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contact">Anonymný formulár</a></li>
+            <li><a href="#contact">Kontakt</a></li>
         </ul> 
 
         <!-- wraper for language buttons -->
         <div class="language-wraper">
-            <!-- <button @click="switchLanguage('en')">EN</button> -->
-            <!-- <button @click="switchLanguage('sk')"></button> -->
             <img @click="switchLanguage('sk')" src="../assets/pictures/SK.svg" alt="Slovak language">
         </div>
     </nav>
