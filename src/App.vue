@@ -2,6 +2,7 @@
 import navbar from './components/navbar.vue'
 
 import home from './components/sections/home.vue'
+import about from './components/sections/about.vue'
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import home from './components/sections/home.vue'
 
   <main>
     <home />
+    <about />
   </main>
 
   <footer>

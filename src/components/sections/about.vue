@@ -15,4 +15,34 @@
     </section>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+    @import '../../assets/style/base.scss';
+    @import '../../assets/style/colors.scss';
+
+    #about{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .about-wraper{
+            text-align: center;
+            h1{
+                font-family: $brandonB;
+                font-size: 105px;
+                text-transform: uppercase;
+                padding-top: 20px;
+                margin-bottom: 20px;
+            }
+            img{
+                width: 80px;
+            }
+
+            p{
+                @include text-light;
+                max-width: 700px;
+                padding-top: 25px;
+                text-align: start;
+            }
+        }
+    }
+</style>

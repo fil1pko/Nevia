@@ -55,4 +55,30 @@ $barlowR: 'Barlow-Regular', sans-serif;
 $barlowM: 'Barlow-Medium', sans-serif;
 $barlowL: 'Barlow-Light', sans-serif;
 
+//  brandon - grotesqu
+@font-face {
+    font-family: 'BrandonGrotesque';
+    src: url('/public/fonts/BrandonGrotesque-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+// variables for font brandon
+$brandonB: 'BrandonGrotesque', sans-serif;
+
+
+
+
+
+
+// ALL MIXINS
+
+@mixin text-light{
+  font-size: 18px;
+  font-family: $barlowL;
+}
+@mixin text-regular{
+  font-size: 21px;
+  font-family: $barlowR;
+}
+
 
