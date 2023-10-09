@@ -37,8 +37,12 @@
                 @include topics;
             }
             a{
-                width: 300px;
-                text-transform: capitalize;
+                padding: 10px 50px;
+                text-decoration: none;
+                @include buttons;
+                font-family: $brandonB;
+                text-transform: uppercase;
+                font-size: 17px;
             }
         }
     }

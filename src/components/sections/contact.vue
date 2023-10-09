@@ -11,12 +11,12 @@
                     <input type="email" name="Email" placeholder="Váš e-mail" required>
                     <textarea name="Text" placeholder="Text správy" required></textarea>
 
-                    <button>Kontaktujte nás</button>
+                    <button>Kontaktujte nás !</button>
                 </div>
                 <ul>
-                    <li>Mojš 139, 010 01 Mojš</li>
-                    <li><a href="tel:+421 940 395 009">+421 940 395 009</a></li>
-                    <li><a href="mailto:info@nevia.eu? subject=subject text">info@nevia.eu</a></li>
+                    <li><img src="../../assets/pictures/location.svg" alt="Location icon"> Mojš 139, 010 01 Mojš</li>
+                    <li><img src="../../assets/pictures/phone.svg" alt="Phone icon"> <a class="no-underline" href="tel:+421 940 395 009">+421 940 395 009</a></li>
+                    <li><img src="../../assets/pictures/mail.svg" alt="Email icon"> <a href="mailto:info@nevia.eu? subject=subject text">info@nevia.eu</a></li>
                 </ul>
             </div>
         </div>
@@ -41,27 +41,71 @@
             p{
                 @include text-light;
                 text-align: start;
+                margin-top: 30px;
             }
             .form-wraper{
                 display: flex;
+                gap: 90px;
+                margin-top: 120px;
                 .left-side{
                     display: flex;
                     flex-direction: column;
+                    gap: 10px;
                     input{
                         background-color: $greyBG;
                         border: none;
                         outline: none;
+                        font-family: $barlowR;
+                        font-size: 17px;
+                        height: 50px;
+                        width: 300px;
+                        padding: 10px;
+                        color: $lighter;
+                        &::placeholder{
+                            color: $inputGrey;
+                        }
                     }
                     textarea{
                         background-color: $greyBG;
                         border: none;
                         outline: none;
                         resize: none;
+                        font-family: $barlowR;
+                        font-size: 17px;
+                        height: 100px;
+                        padding: 10px;
+                        color: $lighter;
+                        &::placeholder{
+                            color: $inputGrey;
+                        }
+                    }                    
+                    button{
+                        @include buttons;
+                        width: 190px;
+                        height: 40px;
+                        font-size: 17px;
+                        margin: 0 auto;
+                        cursor: pointer;
                     }
                 }
                 ul{
                     text-align: start;
                     list-style: none;
+                    li{
+                        @include text-regular;
+                        display: flex;
+                        gap: 40px;
+                        margin-bottom: 40px;
+                        img{
+                            width: 35px;
+                        }
+                        .no-underline{
+                            text-decoration: none;
+                        }
+                        a{
+                            color: $lighter;
+                        }   
+                    }
                 }
             }
         }

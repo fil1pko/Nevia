@@ -66,11 +66,8 @@ $barlowL: 'Barlow-Light', sans-serif;
 $brandonB: 'BrandonGrotesque', sans-serif;
 
 
-
-
-
-
 // ALL MIXINS
+
 
 @mixin text-light{
   color: $bg;
@@ -87,4 +84,9 @@ $brandonB: 'BrandonGrotesque', sans-serif;
   font-family: $brandonB;
   font-size: 105px;
   text-transform: uppercase;
+}
+@mixin buttons{
+  border: none;
+  background-color: $blueBG;
+  color: $white;
 }
