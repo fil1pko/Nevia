@@ -28,8 +28,7 @@
             text-align: center;
             h1{
                 font-family: $brandonB;
-                font-size: 105px;
-                text-transform: uppercase;
+                @include topics;
                 padding-top: 20px;
                 margin-bottom: 20px;
             }

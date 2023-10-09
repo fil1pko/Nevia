@@ -3,6 +3,8 @@ import navbar from './components/navbar.vue'
 
 import home from './components/sections/home.vue'
 import about from './components/sections/about.vue'
+import certificates from './components/sections/certificates.vue'
+import contact from './components/sections/contact.vue'
 </script>
 
 <template>
@@ -13,6 +15,8 @@ import about from './components/sections/about.vue'
   <main>
     <home />
     <about />
+    <certificates />
+    <contact />
   </main>
 
   <footer>

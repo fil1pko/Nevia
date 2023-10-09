@@ -80,5 +80,8 @@ $brandonB: 'BrandonGrotesque', sans-serif;
   font-size: 21px;
   font-family: $barlowR;
 }
-
-
+@mixin topics {
+  font-family: $brandonB;
+  font-size: 105px;
+  text-transform: uppercase;
+}
