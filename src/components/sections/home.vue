@@ -15,7 +15,7 @@
 
     #home{
         min-height: 100vh;
-        background-color: #000000;
+        background-color: $bg;
         .home-wraper{
             min-height: 100vh;
             position: relative;
