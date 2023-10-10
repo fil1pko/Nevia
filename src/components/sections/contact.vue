@@ -47,7 +47,7 @@
                 display: flex;
                 align-items: center;
                 gap: 90px;
-                margin-top: 120px;
+                margin-top: 110px;
                 .left-side{
                     display: flex;
                     flex-direction: column;

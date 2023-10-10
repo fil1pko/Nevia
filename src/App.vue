@@ -7,6 +7,7 @@
   import about from './components/sections/about.vue'
   import certificates from './components/sections/certificates.vue'
   import contact from './components/sections/contact.vue'
+  import portfolio from './components/sections/portfolio.vue'
 </script>
 
 <template>
@@ -17,6 +18,7 @@
   <main>
     <home />
     <about />
+    <portfolio />
     <certificates />
     <contact />
   </main>
