@@ -45,9 +45,9 @@
             }
             .form-wraper{
                 display: flex;
-                align-items: center;
                 gap: 90px;
-                margin-top: 110px;
+                margin-top: 80px;
+                // align-items: center;
                 .left-side{
                     display: flex;
                     flex-direction: column;
@@ -85,11 +85,12 @@
                         width: 190px;
                         height: 40px;
                         font-size: 17px;
-                        margin: 0 auto;
+                        margin: 10px auto;
                         cursor: pointer;
                     }
                 }
                 ul{
+                    margin-top: 10px;
                     text-align: start;
                     list-style: none;
                     li{

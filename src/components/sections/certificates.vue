@@ -32,7 +32,7 @@
                 margin-bottom: 50px;
                 margin-top: 60px;
                 img{
-                    max-width: 305px;
+                    max-width: 300px;
                 }
             }
             h1{
