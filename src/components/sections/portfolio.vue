@@ -22,10 +22,12 @@
             </article>
         </div>
 
-        <a href="">
-            <h2>máte podozrenie</h2>
-            <h2>z korupcie?</h2>
-        </a>
+        <div class="button-wraper">
+            <a href="">
+                <h2>máte podozrenie</h2>
+                <h2> z korupcie?</h2>
+            </a>
+        </div>
     </section>
 </template>
 
@@ -39,10 +41,11 @@
         background-position: center;
         background-size: 100vw 3067px;
         background-color: $bg;
+        padding-bottom: 340px;
         .portfolio-wraper{
             display: flex;
             align-items: center;
-            padding-top: 120px;
+            padding-top: 100px;
             article{
                 h1{
                     @include topics;
@@ -55,7 +58,6 @@
                     max-width: 650px;
                 }
             }
-
             img{
                 max-width: 400px;
             }
@@ -73,13 +75,25 @@
             gap: 150px;
             padding-top: 100px;
         }
-
-        a{
+        .button-wraper{
+            width: 450px;
+            height: 130px;
+            border: 3px solid $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 170px auto 0 auto;
+            a{
             color: $white;
             text-decoration: none;
+            width: 100%;
             h2{
                 text-transform: uppercase;
+                font-family: $brandonB;
+                text-align: center;
+                font-size: 35px;
             }
+        }
         }
     }
 </style>

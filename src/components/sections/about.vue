@@ -34,7 +34,6 @@
             img{
                 width: 80px;
             }
-
             p{
                 @include text-light;
                 max-width: 700px;
