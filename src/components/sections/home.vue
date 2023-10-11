@@ -3,7 +3,7 @@
 <template>
     <section id="home">
         <div class="home-wraper">
-            <img class="symbol" src="../../assets/pictures/symbolHome.svg" alt="" width="200">
+            <!-- <img class="symbol" src="../../assets/pictures/symbolHome.svg" alt="" width="200"> -->
             <img class="handHome" src="../../assets/pictures/kys.jpeg" alt="">
         </div>
     </section>    

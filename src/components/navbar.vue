@@ -1,5 +1,9 @@
 <script>
+    import dropdown from './dropdown.vue'
     export default{
+        components:{
+            dropdown
+        },
         methods: {
             switchLanguage(locale) {
                 this.$i18n.locale = locale;
@@ -23,10 +27,15 @@
             <li><a href="#contact">Kontakt</a></li>
         </ul> 
 
+        <dropdown />
         <!-- wraper for language buttons -->
-        <div class="language-wraper">
-            <img @click="switchLanguage('sk')" src="../assets/pictures/SK.svg" alt="Slovak language">
-        </div>
+        <!-- <select class="language-wraper"> -->
+            <!-- <option id="option-sk" @click="switchLanguage('sk')"> -->
+                <!-- <img src="../assets/pictures/SK.svg" alt="Slovak"> -->
+
+            <!-- </option> -->
+            <!-- <option id="option-en" @click="switchLanguage('en')"></option> -->
+        <!-- </select> -->
     </nav>
 </template>
 
@@ -60,11 +69,12 @@
             height: auto;
         }
 
-        .language-wraper{
-            img{
-                width: 40px;
-                height: auto;
-            }
-        }
+        // .language-wraper{
+        //     #option-sk{
+        //         background-image: url('../assets/pictures/SK.svg');
+        //         background-repeat: no-repeat;
+        //         background-position: center;
+        //     }
+        // }
     }
 </style>
