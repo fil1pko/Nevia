@@ -4,16 +4,11 @@
         components:{
             dropdown
         },
-        methods: {
-            switchLanguage(locale) {
-                this.$i18n.locale = locale;
-            }
-        }
     };
 </script>
 
 <template>
-    <!-- {{  $t('test')  }} -->
+    <!-- <p style="color: aliceblue;">{{  $t('test')  }}</p> -->
     <nav>
         <!-- logo / left side -->
         <a href="#home"><img src="../assets/pictures/logo.svg" alt="logo"></a>
@@ -28,14 +23,6 @@
         </ul> 
 
         <dropdown />
-        <!-- wraper for language buttons -->
-        <!-- <select class="language-wraper"> -->
-            <!-- <option id="option-sk" @click="switchLanguage('sk')"> -->
-                <!-- <img src="../assets/pictures/SK.svg" alt="Slovak"> -->
-
-            <!-- </option> -->
-            <!-- <option id="option-en" @click="switchLanguage('en')"></option> -->
-        <!-- </select> -->
     </nav>
 </template>
 
