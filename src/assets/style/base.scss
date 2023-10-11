@@ -77,6 +77,8 @@ $brandonB: 'BrandonGrotesque', sans-serif;
   color: $bg;
   font-size: 18px;
   font-family: $barlowL;
+  text-align: justify;
+  text-align: inter-word;
 }
 @mixin text-regular{
   color: $bg;

@@ -30,11 +30,11 @@
       </div>
 
       <div class="choose" v-show="isDropdownOpen">
-            <img @click="selectOption('slovak'), switchLanguage('sk')" src="../assets/pictures/SK.svg"/>
+            <img @click="selectOption('slovak'), switchLanguage('sk')" src="../assets/pictures/SK.svg" alt="Slovak"/>
             
-            <img @click="selectOption('english'), switchLanguage('en')" src="../assets/pictures/logo.svg"/>
+            <img @click="selectOption('english'), switchLanguage('en')" src="../assets/pictures/logo.svg" alt="English"/>
       </div>
     </div>
-  </template>
+</template>
   
   

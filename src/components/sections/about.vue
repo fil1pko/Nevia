@@ -38,7 +38,6 @@
                 @include text-light;
                 max-width: 700px;
                 padding-top: 25px;
-                text-align: start;
             }
         }
     }

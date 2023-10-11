@@ -22,6 +22,7 @@
             <li><a href="#contact">Kontakt</a></li>
         </ul> 
 
+        <!-- switching language dropdown -->
         <dropdown />
     </nav>
 </template>
@@ -55,13 +56,5 @@
             width: 60px;
             height: auto;
         }
-
-        // .language-wraper{
-        //     #option-sk{
-        //         background-image: url('../assets/pictures/SK.svg');
-        //         background-repeat: no-repeat;
-        //         background-position: center;
-        //     }
-        // }
     }
 </style>
