@@ -1,5 +1,3 @@
-<script></script>
-
 <template>
     <section id="about">
             <div class="about-wraper">

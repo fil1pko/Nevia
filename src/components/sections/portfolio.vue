@@ -1,11 +1,9 @@
-<script></script>
-
 <template>
     <section id="portfolio">
         <div class="portfolio-wraper first">
             <article>
                 <div class="heading">
-                    <h1><img src="../../assets/pictures/line.svg" alt="line"> flexi</h1>
+                    <h1><img src="../../assets/pictures/line.svg" alt="line">flexi</h1>
                     <h1 style="position: relative; right: 110px;">media</h1>
                 </div>
                 <p>Náš tím odborníkov s nadšením  pomáha firmám firmám, ako je tá vaša, prispôsobovať ich posolstvo a rozširovať svoju značku prostrednictvom rôznych digitálnych a tradičných médií. viac</p>
@@ -18,7 +16,7 @@
             <img src="../../assets/pictures/hologram.png" alt="Hologram">
             <article>
                 <div class="heading">
-                    <h1><img src="../../assets/pictures/line.svg" alt="line"> flexi</h1>
+                    <h1><img src="../../assets/pictures/line.svg" alt="line">flexi</h1>
                     <h1>hospital</h1>
                 </div>
                 <p>Naša značka prináša revolučné riešenia a služby, ktoré transformujú starostlivosťv o pacientov.</p>
@@ -66,7 +64,10 @@
                         position: relative; 
                         right: 20px;
                     }
-    
+                    :nth-child(1){
+                        position: relative;
+                        right: 27px;
+                    }
                 }
                 p{
                     @include text-light;
@@ -80,11 +81,15 @@
             }
             .hand{
                 max-width: 1200px;
+                position: relative;
+                z-index: 10;
             }
         }
         .first{
             width: 100%;
             justify-content: flex-end;
+            position: relative;
+            z-index: 20;
         }
         .second{
             width: 100%;

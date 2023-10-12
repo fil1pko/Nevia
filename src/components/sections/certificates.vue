@@ -1,5 +1,3 @@
-<script></script>
-
 <template>
     <section id="certificates">
         <div class="certificates-wraper1">

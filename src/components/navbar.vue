@@ -16,7 +16,7 @@
         <!-- site navigation -->
         <ul>
             <li><a href="#about">O nás</a></li>
-            <li><a href="#carousel">Referencie</a></li>
+            <li><a href="#references">Referencie</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
             <li><a href="#contact">Anonymný formulár</a></li>
             <li><a href="#contact">Kontakt</a></li>

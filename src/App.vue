@@ -8,6 +8,7 @@
   import certificates from './components/sections/certificates.vue'
   import contact from './components/sections/contact.vue'
   import portfolio from './components/sections/portfolio.vue'
+  import references from './components/sections/references.vue'
 </script>
 
 <template>
@@ -18,6 +19,7 @@
   <main>
     <home />
     <about />
+    <references />
     <portfolio />
     <certificates />
     <contact />

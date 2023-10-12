@@ -1,5 +1,3 @@
-<script></script>
-
 <template>
     <section id="home">
         <div class="home-wraper">

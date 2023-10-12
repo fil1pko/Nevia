@@ -1,5 +1,3 @@
-<script></script>
-
 <template>
     <section id="contact">
         <div class="contact-wraper">
