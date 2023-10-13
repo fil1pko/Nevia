@@ -1,6 +1,6 @@
 <template>
     <swiper-container
-      :slides-per-view="3"
+      :slides-per-view="1"
       :space-between="spaceBetween"
       :centered-slides="true"
       :pagination="{
@@ -8,7 +8,7 @@
       }"
       :breakpoints="{
         768: {
-          slidesPerView: 3,
+          slidesPerView: 1,
         },
       }"
       @progress="onProgress"
@@ -20,7 +20,7 @@
     </swiper-container>
   </template>
   
-  <script>
+<script>
   import { register } from 'swiper/element/bundle';
   
   register();
@@ -44,4 +44,8 @@
       };
     },
   };
-  </script>
+</script>
+  
+<style lang="scss">
+
+</style>

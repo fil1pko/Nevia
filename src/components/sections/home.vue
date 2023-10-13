@@ -1,8 +1,13 @@
+<script> 
+    import blob from '../blob.vue'
+</script>
+
 <template>
     <section id="home">
         <div class="home-wraper">
-            <img class="symbol" src="../../assets/pictures/symbolHome.svg" alt="" width="200">
-            <img class="handHome" src="../../assets/pictures/kys.jpeg" alt="">
+            <blob />
+            <!-- <img class="symbol" src="../../assets/pictures/symbolHome.svg" alt="" width="200"> -->
+            <!-- <img class="handHome" src="../../assets/pictures/kys.jpeg" alt=""> -->
         </div>
     </section>    
 </template>

@@ -1,5 +1,5 @@
 <script>
-    import swiper from './swiper.vue'
+    import swiper from '../swiper.vue'
     export default{
         components:{
             swiper
