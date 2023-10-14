@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gsap": "^3.12.2",
+    "gsap-trial": "^3.12.2",
     "swiper": "^10.3.1",
     "vue": "^3.3.4",
     "vue-i18n": "^9.4.1"

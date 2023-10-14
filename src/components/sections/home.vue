@@ -1,13 +1,11 @@
 <script> 
-    import blob from '../blob.vue'
+    // import blob from '../blob.vue'
 </script>
 
 <template>
     <section id="home">
         <div class="home-wraper">
-            <blob />
-            <!-- <img class="symbol" src="../../assets/pictures/symbolHome.svg" alt="" width="200"> -->
-            <!-- <img class="handHome" src="../../assets/pictures/kys.jpeg" alt=""> -->
+            <!-- <blob /> -->
         </div>
     </section>    
 </template>
