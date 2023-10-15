@@ -44,6 +44,8 @@
         background-size: 100vw 3067px;
         background-color: $bg;
         padding-bottom: 340px;
+        min-height: 220vh; 
+        scroll-snap-align: start; 
         .portfolio-wraper{
             display: flex;
             align-items: center;

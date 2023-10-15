@@ -1,15 +1,15 @@
 <script>
-    import swiper from '../swiper.vue'
+    import swiperr from '../swiperr.vue'
     export default{
         components:{
-            swiper
+            swiperr
         },
     };
 </script>
 
 <template>
     <section id="references">
-        <swiper />
+        <swiperr />
     </section>
 </template>
 

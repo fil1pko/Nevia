@@ -1,13 +1,21 @@
 <template>
     <section id="certificates">
         <div class="certificates-wraper1">
-            <h1>certifikáty</h1>
+            <!-- <h1>certifikáty</h1> -->
             <div class="certificates-wraper">
-                <img src="../../assets/pictures/certificate1.png" alt="certificate">
-                <img src="../../assets/pictures/certificate2.png" alt="certificate">
-                <img src="../../assets/pictures/certificate3.png" alt="certificate">
+                <div class="certificate-wraper">
+                    <div class="overlay"></div>
+                    <img src="../../assets/pictures/certificate1.png" alt="certificate">
+                </div>
+                <div class="certificate-wraper">
+                    <div class="overlay"></div>
+                    <img src="../../assets/pictures/certificate2.png" alt="certificate">
+                </div>
+                <div class="certificate-wraper">
+                    <div class="overlay"></div>
+                    <img src="../../assets/pictures/certificate3.png" alt="certificate">
+                </div>
             </div>
-            <a href="">viac</a>
         </div>
     </section>
 </template>
@@ -26,23 +34,12 @@
             text-align: center;
             .certificates-wraper{
                 display: flex;
-                gap: 20px;
-                margin-bottom: 50px;
-                margin-top: 60px;
                 img{
-                    max-width: 300px;
-                }
+                    max-width: 593px;
+                }   
             }
             h1{
                 @include topics;
-            }
-            a{
-                padding: 10px 50px;
-                text-decoration: none;
-                @include buttons;
-                font-family: $brandonB;
-                text-transform: uppercase;
-                font-size: 17px;
             }
         }
     }

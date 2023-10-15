@@ -16,12 +16,24 @@
   </header>
 
   <main>
-    <home />
-    <about />
-    <references />
-    <portfolio />
-    <certificates />
-    <contact />
+    <div class="section">
+      <home />
+    </div>
+    <div class="section">
+      <about />
+    </div>
+    <div class="section">
+      <references />
+    </div>
+    <div>
+      <portfolio />
+    </div>
+    <div class="section">
+      <certificates />
+    </div>
+    <div class="section">
+      <contact />
+    </div>
   </main>
 
   <footer>
@@ -30,4 +42,5 @@
 
 <style lang="scss">
   @import '../src/assets/style/header.scss';
+  @import '../src/assets/style/base.scss';
 </style>

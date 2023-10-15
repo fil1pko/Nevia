@@ -23,7 +23,17 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  section{
+}
+
+main{
+  scroll-snap-type: y mandatory;  
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 100vh;
+  .section{
+    scroll-snap-align: center;
     min-height: 100vh;
     width: 100%;  
   }
