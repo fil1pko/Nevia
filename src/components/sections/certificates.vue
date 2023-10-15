@@ -29,11 +29,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         .certificates-wraper1{
             text-align: center;
             .certificates-wraper{
                 display: flex;
+                gap: 28px;
                 img{
                     max-width: 593px;
                 }   
