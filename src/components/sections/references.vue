@@ -1,7 +1,5 @@
 <script>
     import swiper from '../swiper.vue'
-    import { register } from 'swiper/element/bundle'
-    register()
     export default{
         components:{
             swiper

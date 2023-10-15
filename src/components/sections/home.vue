@@ -1,5 +1,10 @@
 <script> 
     // import blob from '../blob.vue'
+    // export default{
+    //     components:{
+    //         blob
+    //     }
+    // }
 </script>
 
 <template>
