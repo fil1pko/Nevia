@@ -1,27 +1,3 @@
-<template>
-  <swiper-container
-    :slides-per-view="3"
-    :pagination="false"
-    :centered-slides="true"
-    @progress="onProgress"
-    @slidechange="onSlideChange"
-  >
-    <swiper-slide> 
-      <h1>2020</h1>  
-      <div class="swiper-wraper">
-        <div class="swiper-icon">
-          <img src="" alt="" class="ico">
-          <h4></h4>
-        </div>
-        <p>Vstúp do sveta neobmedzených možností s naším inovatívnym podnikaním. Pomáhame budovať úspešnú budúcnosť.</p>
-      </div>
-    </swiper-slide>
-    <swiper-slide> <h1>2021</h1>  </swiper-slide>
-    <swiper-slide> <h1>2022</h1>  </swiper-slide>
-    <swiper-slide> <h1>2023</h1>  </swiper-slide>
-  </swiper-container>
-</template>
-
 <script>
   import { register } from 'swiper/element/bundle';
 
@@ -48,20 +24,138 @@
   }
 </script>
 
+<template>
+  <swiper-container
+    :slides-per-view="3"
+    :pagination="false"
+    :centered-slides="true"
+    @progress="onProgress"
+    @slidechange="onSlideChange"
+  >
+
+    <!-- first slide -->
+      <swiper-slide> 
+        <h1 class="heading">2020</h1>
+        <div class="swiper-wraper">  
+          <div class="swiper-icon">
+            <img src="../assets/pictures/vznik.svg" alt="done" class="ico">
+            <h4>Vznik <br> značky</h4>
+          </div>
+          <p>Vstúp do sveta neobmedzených možností s naším inovatívnym podnikaním. Pomáhame budovať úspešnú budúcnosť.</p>
+        </div>
+      </swiper-slide>
+    <!-- second slide -->
+      <swiper-slide> 
+        <h1>2021</h1>
+        <div class="swiper-wraper">
+          <div class="swiper-icon">
+            <img src="../assets/pictures/wifi4eu.svg" alt="people" class="ico">
+            <h4>Wifi4EU <br> projekty</h4>
+          </div>
+          <p>Spolupráca na eurofondovom projekte pre vtrvorenie free wifi pre obce a mestá</p>
+        </div>  
+      </swiper-slide>
+    <!-- third slide -->
+      <swiper-slide>
+        <h1>2022</h1>  
+        <div class="swiper-wraper">
+          <div class="swiper-icon">
+            <img src="../assets/pictures/wifi4eu.svg" alt="people" class="ico">
+            <h4>Agel <br> spolupráca</h4>
+          </div>
+          <p>Spolupráca so spoločnosťou agel vybudovanie reklamnej site (Slovensko)</p>
+        </div>
+        <!--  -->
+        <div class="swiper-wraper">
+          <div class="swiper-icon">
+            <img src="../assets/pictures/wifi4eu.svg" alt="people" class="ico">
+            <h4>Antik Košice <br> Spolupráca</h4>
+          </div>
+          <p>Spolupráca s domom sociálnych služieb Antik košice</p>
+        </div>
+        <!--  -->
+        <div class="swiper-wraper">
+          <div class="swiper-icon">
+            <img src="../assets/pictures/dpdapp.svg" alt="pc icon" class="ico">
+            <h4>DPD <br> Projekt</h4>
+          </div>
+          <p>Projekt DPD Trnava</p>
+        </div>
+        <!--  -->
+        <div class="swiper-wraper">
+          <div class="swiper-icon">
+            <img src="../assets/pictures/smartCity.svg" alt="eye icon" class="ico">
+            <h4>Dunajska <br> Streda</h4>
+          </div>
+          <p>Inteligentné hospodárstvo pre mesto Dunajská Streda</p>
+        </div>
+        <!--  -->
+        <div class="swiper-wraper">
+          <div class="swiper-icon">
+            <img src="../assets/pictures/dpdapp.svg" alt="pc icon" class="ico">
+            <h4>DPD <br> Aplikácia</h4>
+          </div>
+          <p>Rozšírenie Aplikácie pre spoločnosť DPD</p>
+        </div>
+      </swiper-slide>
+    <!-- fourth slide -->
+      <swiper-slide> 
+        <h1>2023</h1>  
+        <div class="swiper-wraper">
+          <div class="swiper-icon">
+            <img src="../assets/pictures/dpdapp.svg" alt="pc icon" class="ico">
+            <h4>Agel <br> spolupráca</h4>
+          </div>
+          <p>Rozšírenie spolupráce reklamnej site agel do Čiech</p>
+        </div>
+        <!--  -->
+        <div class="swiper-wraper">
+          <div class="swiper-icon">
+            <img src="../assets/pictures/smartCity.svg" alt="eye" class="ico">
+            <h4>SMART CITY <br> Holič</h4>
+          </div>
+          <p>Budovanie projektu Smart City Holič </p>
+        </div>
+        <!--  -->
+        <div class="swiper-wraper">
+          <div class="swiper-icon">
+            <img src="../assets/pictures/dpdapp.svg" alt="pc icon" class="ico">
+            <h4>Dunajska <br> streda</h4>
+          </div>
+          <p>Rozšírenie aplikácie pre Inteligentné odpadové hospodárstvo pre mesto Dunajská Streda</p>
+        </div>
+      </swiper-slide>
+
+
+  </swiper-container>
+</template>
 
 <style lang="scss">
-  swiper-slide{
-    background-color: red;
+  @import '../assets/style/base.scss';
+  @import '../assets/style/colors.scss';
+
+  // min-height: 100vh;
+  .swiper-container{
+    .swiper-slide{
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
-      max-width: 400px;
+    .swiper-wraper{
+      p{
+        @include text-regular;
+      }
     }
   }
+  }
+  .swiper-slide-prev{
+    color: red;
+  }
   .swiper-slide-active{
-   background-color: green;
-    
+    background-color: green;
+    color: #000;
+  }
+  h1{
+    @include topics;
   }
 </style>
 

@@ -76,8 +76,14 @@ $barlowL: 'Barlow-Light', sans-serif;
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+  font-family: 'BrandonGrotesqueBlack';
+  src: url('/public/fonts/brandon-grotesque-black-58a8a3e824392.otf');
+  font-style: normal;
+}
 // variables for font brandon
 $brandonB: 'BrandonGrotesque', sans-serif;
+$brandonBlack: 'BrandonGrotesqueBlack' sans-serif;
 
 
 // ALL MIXINS
