@@ -16,9 +16,9 @@ html{
 
 body {
   min-height: 100vh;
-  -webkit-transition: color 0.5s, background-color 0.5s;
-  -o-transition: color 0.5s, background-color 0.5s;
-  transition: color 0.5s, background-color 0.5s;
+  // -webkit-transition: color 0.5s, background-color 0.5s;
+  // -o-transition: color 0.5s, background-color 0.5s;
+  // transition: color 0.5s, background-color 0.5s;
   line-height: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -105,4 +105,10 @@ $brandonB: 'BrandonGrotesque', sans-serif;
   border: none;
   background-color: $blueBG;
   color: $white;
+}
+@mixin h3{
+  color: $white;
+  font-size: 24px;
+  font-family: $brandonB;
+  text-transform: uppercase;
 }

@@ -1,40 +1,61 @@
 <script>
-    export default {
-        data() {
-            return {
-            selectedOption: 'slovak',
-            isDropdownOpen: false,
-            };
-        },
-        methods: {      
-            switchLanguage(locale) {
-                this.$i18n.locale = locale;
-            },        
-            toggleDropdown() {
-                this.isDropdownOpen = !this.isDropdownOpen;
-            },
-            selectOption(option) {
-                this.selectedOption = option;
-                this.isDropdownOpen = false;
-            },
-        },
-    };
+  import { ref } from 'vue'
+
+  const docState = ref('saved')
+
+  export default {
+    data() {
+      return{
+        docState: ref('saved'),
+      }
+    },
+    methods:{
+      switchLanguage(locale) {
+        this.$i18n.locale = locale;
+      },  
+    }
+  }
 </script>
 
 <template>
-    <div>
-      <div v-if="!isDropdownOpen" class="toggle" @click="toggleDropdown">
-            <img v-if="selectedOption === 'slovak'" src="../assets/pictures/SK.svg"/>
-        
-            <img v-else src="../assets/pictures/logo.svg"/>
-      </div>
+  <div class="option-wraper">
+    <Transition mode="out-in">
+      <div class="image-wraper">
+        <img
+          @click="switchLanguage('sk')" 
+          src="../assets/pictures/SK.svg" alt="Slovak">
 
-      <div class="choose" v-show="isDropdownOpen">
-            <img @click="selectOption('slovak'), switchLanguage('sk')" src="../assets/pictures/SK.svg" alt="Slovak"/>
-            
-            <img @click="selectOption('english'), switchLanguage('en')" src="../assets/pictures/logo.svg" alt="English"/>
+        <img 
+          @click="switchLanguage('en')" 
+          src="../assets/pictures/EN.svg" alt="English">
       </div>
-    </div>
+    </Transition>
+  </div>
 </template>
-  
-  
+
+<style lang="scss">
+  .option-wraper{
+    display: inline-block;
+    position: relative;
+    height: 1em;
+  }
+
+// button {
+//   position: absolute;
+// }
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.25s ease-out;
+}
+
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+</style>
