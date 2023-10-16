@@ -34,11 +34,11 @@
 </template>
 
 <style lang="scss">
-  .option-wraper{
-    display: inline-block;
-    position: relative;
-    height: 1em;
-  }
+  // .option-wraper{
+  //   display: inline-block;
+  //   position: relative;
+  //   height: 1em;
+  // }
 
 // button {
 //   position: absolute;

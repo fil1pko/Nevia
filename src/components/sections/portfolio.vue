@@ -49,7 +49,7 @@
         .portfolio-wraper{
             display: flex;
             align-items: center;
-            padding-top: 100px;
+            padding-top: 80px;
             article{
                 .heading{
                     h1{

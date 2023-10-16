@@ -18,7 +18,7 @@
             <li><a href="#about">O nás</a></li>
             <li><a href="#references">Referencie</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
-            <li><a href="#contact">Certifikáty</a></li>
+            <li><a href="#certificates">Certifikáty</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul> 
 
@@ -38,7 +38,7 @@
         display: flex;
         gap: 415px;
         align-items: center;
-        padding-top: 40px;
+        padding-top: 20px;
         ul{
             display: flex;
             list-style: none;

@@ -50,7 +50,8 @@
                 gap: 28px;
                 .certificate-wraper{
                     position: relative;
-                    max-width: 593px;
+                    top: 50px;
+                    max-width: 553px;
                     .overlay{
                         position: absolute;
                         width: 100%;
@@ -61,7 +62,7 @@
                         align-items: center;
                         flex-direction: column;
                         gap: 34px;
-                        transition: .5s;
+                        transition: .8s;
                         h3{
                             @include h3;
                             max-width: 416px;
@@ -79,6 +80,7 @@
                         // position: absolute;
                         display: block;
                         width: 100%;
+                        height: 100%;
                     }
                 }
             }

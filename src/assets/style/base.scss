@@ -16,9 +16,9 @@ html{
 
 body {
   min-height: 100vh;
-  // -webkit-transition: color 0.5s, background-color 0.5s;
-  // -o-transition: color 0.5s, background-color 0.5s;
-  // transition: color 0.5s, background-color 0.5s;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s;
   line-height: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -84,26 +84,26 @@ $brandonB: 'BrandonGrotesque', sans-serif;
 
 
 @mixin text-light{
-  color: $bg;
+  color: $white;
   font-size: 18px;
   font-family: $barlowL;
   text-align: justify;
   text-align: inter-word;
 }
 @mixin text-regular{
-  color: $bg;
+  color: $white;
   font-size: 21px;
   font-family: $barlowR;
 }
 @mixin topics {
-  color: $bg;
+  color: $white;
   font-family: $brandonB;
   font-size: 100px;
   text-transform: uppercase;
 }
 @mixin buttons{
-  border: none;
-  background-color: $blueBG;
+  border: 1px solid $blueBG;
+  background-color: transparent;
   color: $white;
 }
 @mixin h3{

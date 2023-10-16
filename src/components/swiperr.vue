@@ -1,22 +1,24 @@
 <template>
   <swiper-container
-    :slides-per-view="1"
-    :space-between="spaceBetween"
+    :slides-per-view="3"
+    :pagination="false"
     :centered-slides="true"
-    :pagination="{
-      hideOnClick: true
-    }"
-    :breakpoints="{
-      768: {
-        slidesPerView: 1,
-      },
-    }"
     @progress="onProgress"
     @slidechange="onSlideChange"
   >
-    <swiper-slide> <img src="../assets/pictures/certificate1.png" alt=""> </swiper-slide>
-    <swiper-slide> <img src="../assets/pictures/certificate2.png" alt=""> </swiper-slide>
-    <swiper-slide> <img src="../assets/pictures/certificate3.png" alt=""> </swiper-slide>
+    <swiper-slide> 
+      <h1>2020</h1>  
+      <div class="swiper-wraper">
+        <div class="swiper-icon">
+          <img src="" alt="" class="ico">
+          <h4></h4>
+        </div>
+        <p>Vstúp do sveta neobmedzených možností s naším inovatívnym podnikaním. Pomáhame budovať úspešnú budúcnosť.</p>
+      </div>
+    </swiper-slide>
+    <swiper-slide> <h1>2021</h1>  </swiper-slide>
+    <swiper-slide> <h1>2022</h1>  </swiper-slide>
+    <swiper-slide> <h1>2023</h1>  </swiper-slide>
   </swiper-container>
 </template>
 
@@ -49,9 +51,17 @@
 
 <style lang="scss">
   swiper-slide{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img{
       max-width: 400px;
     }
+  }
+  .swiper-slide-active{
+   background-color: green;
+    
   }
 </style>
 
