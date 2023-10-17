@@ -26,9 +26,10 @@
 
 <template>
   <swiper-container
-    :slides-per-view="3"
+    :slides-per-view="1.5"
     :pagination="false"
     :centered-slides="true"
+    :loop="true"
     @progress="onProgress"
     @slidechange="onSlideChange"
   >
@@ -125,8 +126,7 @@
           <p>Rozšírenie aplikácie pre Inteligentné odpadové hospodárstvo pre mesto Dunajská Streda</p>
         </div>
       </swiper-slide>
-
-
+      
   </swiper-container>
 </template>
 
@@ -140,22 +140,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .swiper-wraper{
-      p{
-        @include text-regular;
-      }
-    }
+    // .swiper-wraper{
+    //   p{
+    //     @include text-regular;
+    //   }
+    // }
   }
   }
+
+  .swiper-slide-next,
   .swiper-slide-prev{
-    color: red;
+    background-color: red;
+    h1{
+      @include topics;
+    }
+    p{
+      @include text-light;
+    }
   }
   .swiper-slide-active{
     background-color: green;
-    color: #000;
+    h1{
+      color: $lightBlueHome;
+      font-family: $brandonBlack;
+      font-size: 120px;
+    }
+    p{
+      @include text-light;
+      font-size: 21px;
+    }
   }
-  h1{
-    @include topics;
+  // h1{
+  //   @include topics;
+  // }
+  .ico{
+    max-width: 40px;
   }
+  .swiper-button-prev{
+    widows: 40px;
+    height: 40px;
+    background-color: #000;
+  }
+
 </style>
 
