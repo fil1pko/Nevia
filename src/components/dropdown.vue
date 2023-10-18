@@ -49,6 +49,14 @@
   transition: all 0.25s ease-out;
 }
 
+.image-wraper{
+  display: flex;
+  gap: 10px;
+  img{
+    width: 40px;
+  }
+}
+
 .slide-up-enter-from {
   opacity: 0;
   transform: translateY(30px);

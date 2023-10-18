@@ -9,6 +9,7 @@
   import contact from './components/sections/contact.vue'
   import portfolio from './components/sections/portfolio.vue'
   import references from './components/sections/references.vue'
+
 </script>
 
 <template>
@@ -17,24 +18,24 @@
   </header>
 
   <main>
-    <div class="section">
+    <!-- <div class="section"> -->
       <home />
-    </div>
-    <div class="section">
+    <!-- </div> -->
+    <!-- <div class="section"> -->
       <about />
-    </div>
-    <div class="section">
+    <!-- </div> -->
+    <!-- <div class="section"> -->
       <references />
-    </div>
-    <div>
+    <!-- </div> -->
+    <!-- <div> -->
       <portfolio />
-    </div>
-    <div class="section">
+    <!-- </div> -->
+    <!-- <div class="section"> -->
       <certificates />
-    </div>
-    <div class="section">
+    <!-- </div> -->
+    <!-- <div class="section"> -->
       <contact />
-    </div>
+    <!-- </div> -->
   </main>
 
   <footer>
