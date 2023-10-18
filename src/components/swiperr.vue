@@ -25,7 +25,7 @@
 </script>
 
 <template>
-  <swiper-container
+  <swiper-container class="my-swiper"
     :slides-per-view="1.5"
     :pagination="false"
     :centered-slides="true"
@@ -135,44 +135,61 @@
   @import '../assets/style/colors.scss';
 
   // min-height: 100vh;
-  .swiper-container{
-    .swiper-slide{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // .swiper-wraper{
-    //   p{
-    //     @include text-regular;
-    //   }
-    // }
-  }
+  .my-swiper{
+    position: relative;
+    top: 90px;
+    height: 80vh;
   }
 
   .swiper-slide-next,
   .swiper-slide-prev{
-    background-color: red;
-    h1{
-      @include topics;
-    }
-    p{
-      @include text-light;
-    }
+      h1{
+        @include topics;
+        position: relative;
+        top: 25px;
+      }
+      p{
+        @include text-light;
+        opacity: 0;
+      }
+      .swiper-wraper{
+        opacity: 0;
+      }
   }
+  .swiper-slide-prev{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+
   .swiper-slide-active{
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h1{
       color: $lightBlueHome;
       font-family: $brandonBlack;
       font-size: 120px;
     }
-    p{
-      @include text-light;
-      font-size: 21px;
+    .swiper-wraper{
+      position: relative;
+      top: 80px;
+      display: flex;
+      width: 1000px;
+      gap: 100px;
+      // height: 100%;
+      align-items: center;
+      p{
+        @include text-light;
+        font-size: 21px;
+      }
     }
   }
-  // h1{
-  //   @include topics;
-  // }
+  .swiper-container{
+    position: relative;
+    top: 50px;
+  }
   .ico{
     max-width: 40px;
   }
