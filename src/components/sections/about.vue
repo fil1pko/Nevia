@@ -9,6 +9,7 @@
 
             <p>Okrem toho spoločnosť Nevia poskytuje aj inteligentné riešenia pre nemocnice, ktoré pomáhajú zlepšiť <br>
             komunikáciu a koordináciu medzi zdravotníckymi pracovníkmi, zefektívniť procesy v nemocniciach a zlepšiť kvalitu zdravotnej starostlivosti pre pacientov. Tieto riešenia môžu zahŕňať napríklad inteligentné informačné systémy pre pacientov, ktoré im umožňujú sledovať ich zdravotný stav a komunikovať s lekármi online, alebo riešenia pre zlepšenie logistiky a plánovania v nemocniciach.</p>
+            <!-- <p color="white"> {{ $t('test') }} </p> -->
         </div>
     </section>
 </template>
@@ -30,7 +31,7 @@
             h1{
                 @include topics;
                 padding-top: 20px;
-                margin-bottom: 20px;
+                // margin-bottom: 20px;
             }
             img{
                 width: 80px;

@@ -9,7 +9,9 @@
 
 <template>
     <section id="home">
+       
         <div class="home-wraper">
+            
             <!-- <blob /> -->
         </div>
     </section>    

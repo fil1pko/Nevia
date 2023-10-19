@@ -26,7 +26,7 @@ export default {
       }
     },
     handleScroll() {
-      const scrollPosition = window.scrollY + 200; // Adjust for offset
+      const scrollPosition = window.scrollY + 400; 
       this.sections.forEach(section => {
         const element = document.getElementById(section.id);
         if (element && element.offsetTop <= scrollPosition && (element.offsetTop + element.offsetHeight) > scrollPosition) {
@@ -69,8 +69,7 @@ export default {
     @import '../assets/style/colors.scss';
 
     .navigation a.active {
-        font-weight: bold;
-        color: #007bff;
+        text-shadow: 0px 0px 5.849999904632568px #FFF, 0px 0px 8.699999809265137px #FFF, 0px 0px 20.95000076293945px #FFF, 0px 0px 61.9000015258789px#FFF, 0px 0px 100.39999389648438px #FFF, 0px 0px 200.6999969482422px #FFF;
     }
 
     nav{
@@ -83,6 +82,10 @@ export default {
             display: flex;
             list-style: none;
             gap: 26px;
+            padding: 13px 50px;
+            // border-radius: 40px;
+            // background: rgba(0,0,0,0.6);
+            // border: 2px solid $bg;
             li{
                 a{
                     font-size: 20px;
