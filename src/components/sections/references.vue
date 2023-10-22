@@ -20,6 +20,6 @@
     #references{
         max-width: 100vw;
         min-height: 100vh;
-        background: $referencesGradient;
+        background: linear-gradient(181deg, #85E1E1 -264.06%, #000 89.67%);
     }
 </style>

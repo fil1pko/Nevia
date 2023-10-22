@@ -46,7 +46,7 @@ export default {
 
 <template>
     <nav class="navigation">
-        <a><img src="../assets/pictures/logo.svg" alt="logo"></a>
+        <a><img src="../assets/pictures/logo2.png" alt="logo"></a>
         <ul>
             <li v-for="section in sections" :key="section.id">
                 <a 
@@ -88,7 +88,7 @@ export default {
             // border: 2px solid $bg;
             li{
                 a{
-                    font-size: 20px;
+                    font-size: 19px;
                     text-decoration: none;
                     color: $lightBlueHome;
                 }
@@ -96,7 +96,7 @@ export default {
         }
 
         img{
-            width: 60px;
+            width: 50px;
             height: auto;
         }
     }

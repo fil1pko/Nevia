@@ -39,10 +39,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('../../assets/pictures/bg2.svg');
+        background-image: url('../../assets/pictures/bg9.svg');
         background-repeat: no-repeat;
         background-position: center;
-        // background-size: 100vw 1995px;
         .certificates-wraper1{
             text-align: center;
             .certificates-wraper{
@@ -77,7 +76,6 @@
                         }
                     } 
                     img{
-                        // position: absolute;
                         display: block;
                         width: 100%;
                         height: 100%;

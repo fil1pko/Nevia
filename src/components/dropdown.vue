@@ -33,24 +33,11 @@ export default {
 </template>
 
 <style lang="scss">
-  #en{
-    width: 40px;
-    background-image: url('../assets/pictures/EN.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-  }
-
-
-
 .image-wraper{
   display: flex;
   gap: 10px;
   img{
     width: 40px;
-  }
-  div{
-    outline: 2px blue;
   }
 }
 .selected {

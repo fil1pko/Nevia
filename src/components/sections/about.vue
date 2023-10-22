@@ -23,9 +23,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('../../assets/pictures/bg3.svg');
-        background-repeat: no-repeat;
-        background-position: center;
+        background: linear-gradient(0deg, #85E1E1 -264.06%, #000 89.67%);
         .about-wraper{
             text-align: center;
             h1{

@@ -1,15 +1,7 @@
 <script setup>
   // importing parts
   import navbar from './components/navbar.vue'
-  
-  // importing sections
-  import home from './components/sections/home.vue'
-  import about from './components/sections/about.vue'
-  import certificates from './components/sections/certificates.vue'
-  import contact from './components/sections/contact.vue'
-  import portfolio from './components/sections/portfolio.vue'
-  import references from './components/sections/references.vue'
-
+  import mainn from './components/main.vue'
 </script>
 
 <template>
@@ -17,26 +9,7 @@
     <navbar/>
   </header>
 
-  <main>
-    <!-- <div class="section"> -->
-      <home />
-    <!-- </div> -->
-    <!-- <div class="section"> -->
-      <about />
-    <!-- </div> -->
-    <!-- <div class="section"> -->
-      <references />
-    <!-- </div> -->
-    <!-- <div> -->
-      <portfolio />
-    <!-- </div> -->
-    <!-- <div class="section"> -->
-      <certificates />
-    <!-- </div> -->
-    <!-- <div class="section"> -->
-      <contact />
-    <!-- </div> -->
-  </main>
+  <mainn />
 
   <footer>
   </footer>
