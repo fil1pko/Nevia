@@ -30,7 +30,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('../../assets/pictures/bg5.svg');
+        background-image: url('../../assets/pictures/bg11.svg');
         background-repeat: no-repeat;
         background-position: center;
         .contact-wraper{

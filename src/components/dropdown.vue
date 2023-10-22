@@ -41,7 +41,7 @@ export default {
   }
 }
 .selected {
-  border: 2px solid blue; 
+  filter: drop-shadow(0px 0px 9px rgba(255, 255, 255, 1));
 }
 
 </style>
