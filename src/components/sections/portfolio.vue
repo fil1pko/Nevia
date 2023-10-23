@@ -6,7 +6,7 @@
                     <h1><img src="../../assets/pictures/line.svg" alt="line">flexi</h1>
                     <h1 style="position: relative; right: 110px;">media</h1>
                 </div>
-                <p>Náš tím odborníkov s nadšením  pomáha firmám firmám, ako je tá vaša, prispôsobovať ich posolstvo a rozširovať svoju značku prostrednictvom rôznych digitálnych a tradičných médií. viac</p>
+                <p>Náš tím odborníkov s nadšením  pomáha firmám, ako je tá vaša, prispôsobovať ich posolstvo a rozširovať svoju značku prostrednictvom rôznych digitálnych a tradičných médií. viac</p>
                 <p>Fleximedia verí v účinnosť reklamy a jej schopnosť zvýšiť viditeľnosť a ziskovosť značky. Preto sa vždy snažíme ponúknuť najlepšie reklamné riešenia, ktoré zaručujú maximálny úspech pre našich klientov. Ak hľadáte spoločnosť, ktorá vám pomôže dosiahnuť vaše ciele a zvýšiť viditeľnosť vašej značky, neváhajte kontaktovať Fleximedia. Sme pripravení pomôcť vám dosiahnuť vaše ciele a úspechy v oblasti reklamy.</p>
             </article>
             <img class="hand" src="../../assets/pictures/ruka.svg" alt="Hand">

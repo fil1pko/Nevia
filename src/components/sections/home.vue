@@ -1,10 +1,10 @@
 <script> 
-    // import blob from '../blob.vue'
-    // export default{
-    //     components:{
-    //         blob
-    //     }
-    // }
+    import blob from '../blob.vue'
+    export default{
+        components:{
+            blob
+        }
+    }
 </script>
 
 <template>
@@ -12,7 +12,8 @@
        
         <div class="home-wraper">
             
-            <!-- <blob /> -->
+            
+            <blob />
         </div>
     </section>    
 </template>
@@ -23,17 +24,14 @@
 
     #home{
         min-height: 100vh;
-        background-color: $bg;
+        max-width: 100vw;
+        background-color: $bg; 
         z-index: 999;
         .home-wraper{
             min-height: 100vh;
-            position: relative;
-            .handHome{
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                width: 1215px;
-            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         // .symbol{
         //     z-index: 1;
