@@ -23,6 +23,9 @@
     @import '../../assets/style/colors.scss';
 
     #home{
+        background-image: url('../../assets/pictures/bg12.svg');
+        background-repeat: no-repeat;
+        background-position: center;
         min-height: 100vh;
         max-width: 100vw;
         background-color: $bg; 
