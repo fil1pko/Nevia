@@ -24,7 +24,7 @@ export default {
     const loader = new GLTFLoader();
     loader.load(
       // Correct the path to your model
-      '/src/components/models/Hologram.glb',
+      '/models/Hologram.glb',
       (gltf) => {
         object = gltf.scene;
         scene.add(object);
@@ -53,16 +53,17 @@ export default {
     const material = new THREE.MeshBasicMaterial({ color: 0xff0000 }); // Red
 
     // Create a camera
-    const camera = new THREE.PerspectiveCamera(75, 1000 / 1000, 0.1, 1000);
-    camera.position.z = 13;
+    const camera = new THREE.PerspectiveCamera(75, 900 / 900, 0.1, 1000);
+    camera.position.z = 12;
     scene.add(camera);
 
     // Create a renderer
     const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
-    renderer.setSize(1000, 1000);
+    renderer.setSize(900, 900);
 
     const controls = new OrbitControls(camera, canvas);
     controls.enableDamping = true;
+    controls.enableZoom = false;
 
     // Add lighting
     const light = new THREE.AmbientLight(0xffffff);
@@ -85,7 +86,9 @@ export default {
 
 <style lang="scss">
 canvas {
+  // position: absolute;
   width: 100vw;
   height: 100%;
+  z-index: 30;
 }
 </style>
