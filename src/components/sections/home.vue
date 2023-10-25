@@ -30,11 +30,9 @@
         background-image: url('../../assets/pictures/bg9.svg');
         background-repeat: no-repeat;
         background-position: center;
-        // background-size: cover;
         min-height: 100vh;
         max-width: 100vw;
         width: 100%;
-        // background-color: $bg; 
         z-index: 999;
         .home-wraper{
             min-height: 100vh;
@@ -48,13 +46,9 @@
                 max-width: 550px;
                 h1{
                     @include topics;
-                    // font-size: 80px;
-                    // text-shadow: 2px 2px 4px $bg;
                 }
                 p{
                     @include text-light;
-                    // text-align: justify;
-                    // padding-top: 30px;
                     padding-bottom: 10px;
                 }
                 button{ 
@@ -71,15 +65,5 @@
                 }
             }
         }
-        
-        // .symbol{
-        //     z-index: 1;
-        // }
-        // .handHome{
-        //     // z-index: 2;
-        //     // position: absolute;
-        //     // right: 0;
-        //     // bottom: 0;
-        // }
     }
 </style>

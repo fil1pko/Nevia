@@ -18,8 +18,11 @@
     @import '../../assets/style/colors.scss';
     
     #references{
+        background-image: url('../../assets/pictures/bg8.svg');
+        background-repeat: no-repeat;
+        background-position: center;
         max-width: 100vw;
         min-height: 100vh;
-        background: linear-gradient(181deg, #85E1E1 -264.06%, #000 89.67%);
+        // background: linear-gradient(181deg, #85E1E1 -264.06%, #000 89.67%);
     }
 </style>

@@ -119,11 +119,22 @@ $brandonBlack: 'BrandonGrotesqueBlack';
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(119, 202, 202, 0.28);
+  background: rgba(119, 202, 202, 0.38);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
   border: 1px solid rgba(119, 202, 202, 0.46);
   height: 80%;
+}
+
+
+@mixin swiper-wraper{
+  position: relative;
+  top: 40px;
+  display: flex;
+  width: 800px;
+  gap: 150px;
+  align-items: center;
+  padding-top: 20px;
 }

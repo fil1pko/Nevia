@@ -19,17 +19,18 @@
     @import '../../assets/style/colors.scss';
 
     #about{
+        background-image: url('../../assets/pictures/bg7.svg');
+        background-repeat: no-repeat;
+        background-position: center;
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(0deg, #85E1E1 -264.06%, #000 89.67%);
         .about-wraper{
             text-align: center;
             h1{
                 @include topics;
                 padding-top: 20px;
-                // margin-bottom: 20px;
             }
             img{
                 width: 80px;

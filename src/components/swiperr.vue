@@ -30,6 +30,7 @@
     :pagination="false"
     :centered-slides="true"
     :space-between="200"
+    :loop="true"
     @progress="onProgress"
     @slidechange="onSlideChange"
   >
@@ -145,29 +146,27 @@
   .swiper-slide-next,
   .swiper-slide-prev{
     @include swiper-slide;
-      h1{
-        @include topics;
-        position: relative;
-        top: 25px;
-      }
-      .swiper-wraper{
+    h1{
+      @include topics;
       position: relative;
-      top: 80px;
-      display: flex;
-      width: 800px;
-      gap: 100px;
-      align-items: center;
+      top: 25px;
+      width: 80%;
+    }
+    .swiper-wraper{
+      @include swiper-wraper;
       .swiper-icon{
         width: 40px;
         display: flex;
+        gap: 12px;
         h4{
           @include text-regular;
-          font-size: 12px;
+          font-size: 16px;
         }
       }
       p{
         @include text-light;
         font-size: 21px;
+        text-shadow: 1px 1px 1px #000;
       }
     }
   }
@@ -179,25 +178,23 @@
       @include topics;
       position: relative;
       top: 25px;
+      width: 80%;
     }
     .swiper-wraper{
-      position: relative;
-      top: 80px;
-      display: flex;
-      width: 800px;
-      gap: 100px;
-      align-items: center;
+      @include swiper-wraper;
       .swiper-icon{
         width: 40px;
         display: flex;
+        gap: 12px;
         h4{
           @include text-regular;
-          font-size: 12px;
+          font-size: 16px;
         }
       }
       p{
         @include text-light;
         font-size: 21px;
+        text-shadow: 1px 1px 1px #000;
       }
     }
   }
