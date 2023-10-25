@@ -29,7 +29,7 @@
     :slides-per-view="1.5"
     :pagination="false"
     :centered-slides="true"
-    :loop="true"
+    :space-between="200"
     @progress="onProgress"
     @slidechange="onSlideChange"
   >
@@ -137,49 +137,64 @@
   // min-height: 100vh;
   .my-swiper{
     position: relative;
-    top: 90px;
+    top: 190px;
     height: 80vh;
+    cursor: grab;
   }
 
   .swiper-slide-next,
   .swiper-slide-prev{
+    @include swiper-slide;
       h1{
         @include topics;
         position: relative;
         top: 25px;
       }
+      .swiper-wraper{
+      position: relative;
+      top: 80px;
+      display: flex;
+      width: 800px;
+      gap: 100px;
+      align-items: center;
+      .swiper-icon{
+        width: 40px;
+        display: flex;
+        h4{
+          @include text-regular;
+          font-size: 12px;
+        }
+      }
       p{
         @include text-light;
-        opacity: 0;
+        font-size: 21px;
       }
-      .swiper-wraper{
-        opacity: 0;
-      }
-  }
-  .swiper-slide-prev{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+    }
   }
 
 
   .swiper-slide-active{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include swiper-slide;
     h1{
-      color: $lightBlueHome;
-      font-family: $brandonBlack;
-      font-size: 120px;
+      @include topics;
+      position: relative;
+      top: 25px;
     }
     .swiper-wraper{
       position: relative;
       top: 80px;
       display: flex;
-      width: 1000px;
+      width: 800px;
       gap: 100px;
-      // height: 100%;
       align-items: center;
+      .swiper-icon{
+        width: 40px;
+        display: flex;
+        h4{
+          @include text-regular;
+          font-size: 12px;
+        }
+      }
       p{
         @include text-light;
         font-size: 21px;

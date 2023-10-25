@@ -48,12 +48,14 @@
                 max-width: 550px;
                 h1{
                     @include topics;
-                    font-size: 110px;
+                    // font-size: 80px;
                     // text-shadow: 2px 2px 4px $bg;
                 }
                 p{
                     @include text-light;
-                    text-align: justify;
+                    // text-align: justify;
+                    // padding-top: 30px;
+                    padding-bottom: 10px;
                 }
                 button{ 
                     all: unset;
@@ -65,6 +67,7 @@
                     text-align: center;
                     margin-top: 30px;
                     cursor: pointer;
+                    border-radius: 500px;
                 }
             }
         }
