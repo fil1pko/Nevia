@@ -86,14 +86,14 @@ $brandonBlack: 'BrandonGrotesqueBlack';
 
 @mixin text-light{
   color: $white;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: $barlowL;
   text-align: justify;
   text-align: inter-word;
 }
 @mixin text-regular{
   color: $white;
-  font-size: 21px;
+  font-size: 1.313rem;
   font-family: $barlowR;
 }
 @mixin topics {
@@ -103,13 +103,13 @@ $brandonBlack: 'BrandonGrotesqueBlack';
   text-transform: uppercase;
 }
 @mixin buttons{
-  border: 1px solid $blueBG;
+  border: 0.063rem solid $blueBG;
   background-color: transparent;
   color: $white;
 }
 @mixin h3{
   color: $white;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: $brandonB;
   text-transform: uppercase;
 }

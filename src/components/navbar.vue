@@ -83,15 +83,12 @@ export default {
             list-style: none;
             gap: 26px;
             padding: 13px 50px;
-            // border-radius: 40px;
-            // background: rgba(0,0,0,0.6);
-            // border: 2px solid $bg;
             li{
-                a{
-                    font-size: 19px;
-                    text-decoration: none;
-                    color: $lightBlueHome;
-                }
+              a{
+                  font-size: 19px;
+                  text-decoration: none;
+                  color: $lightBlueHome;
+              }
             }
         }
 

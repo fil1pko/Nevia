@@ -35,22 +35,24 @@
     @import '../../assets/style/colors.scss';
 
     #certificates{
-        min-height: 100vh;  
+        height: 100vh;  
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url('../../assets/pictures/bg10.svg');
         background-repeat: no-repeat;
         background-position: center;
+        // background-size: 100vw 100vh;
+        // background-size: cover;
         .certificates-wraper1{
             text-align: center;
             .certificates-wraper{
                 display: flex;
-                gap: 28px;
+                gap: 1.458vw; //3.499rem 4k
                 .certificate-wraper{
                     position: relative;
-                    top: 50px;
-                    max-width: 553px;
+                    top: 2.604vw; // 6.25rem 4k
+                    max-width: 28.802vw;  //69.063rem 4k
                     .overlay{
                         position: absolute;
                         width: 100%;
@@ -60,14 +62,14 @@
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
-                        gap: 34px;
+                        gap: 1.771vw;  //4.25rem 4k
                         transition: .8s;
                         h3{
                             @include h3;
-                            max-width: 416px;
+                            max-width: 21.667vw; //52.001rem 4k 
                         }
                         img{
-                            width: 180px;
+                            width: 9.375vw; //22.5rem 4k
                             height: auto;
                             color: $white;
                         }
