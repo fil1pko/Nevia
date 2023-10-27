@@ -72,6 +72,7 @@ export default {
         text-shadow: 0px 0px 5.849999904632568px #FFF, 0px 0px 8.699999809265137px #FFF, 0px 0px 20.95000076293945px #FFF, 0px 0px 61.9000015258789px#FFF, 0px 0px 100.39999389648438px #FFF, 0px 0px 200.6999969482422px #FFF;
     }
 
+
     nav{
         font-family: $barlowR;
         display: flex;
@@ -88,6 +89,10 @@ export default {
                   font-size: 19px;
                   text-decoration: none;
                   color: $lightBlueHome;
+                  transition: 0.5s;
+                  &:hover{
+                    text-shadow: 0px 0px 5.849999904632568px #FFF, 0px 0px 8.699999809265137px #FFF, 0px 0px 20.95000076293945px #FFF, 0px 0px 61.9000015258789px#FFF, 0px 0px 100.39999389648438px #FFF, 0px 0px 200.6999969482422px #FFF;
+                  }
               }
             }
         }
