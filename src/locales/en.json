@@ -1,3 +1,8 @@
 {
-    "test": "test ale anglicky"
+    "home": "Home",
+    "about": "About us",
+    "references": "References",
+    "portfolio": "Portfolio",
+    "certificates": "Certificates",
+    "contact": "Contacts"
 }
