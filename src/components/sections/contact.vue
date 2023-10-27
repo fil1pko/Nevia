@@ -11,10 +11,19 @@
 
                     <button>Kontaktujte nás !</button>
                 </div>
+
+                <ul>
+                    <li>Nevia, SE</li>
+                    <li>IČO: 52710050</li>
+                    <li>IČ DPH: SK2121131089</li>
+                    <li><img src="../../assets/pictures/linkedin.svg" alt="Linkedin icon"><a class="no-underline" href="">Nevia, SE</a></li>
+                </ul>
+
                 <ul>
                     <li><img src="../../assets/pictures/location.svg" alt="Location icon"> Mojš 139, 010 01 Mojš</li>
                     <li><img src="../../assets/pictures/phone.svg" alt="Phone icon"> <a class="no-underline" href="tel:+421 940 395 009">+421 940 395 009</a></li>
                     <li><img src="../../assets/pictures/mail.svg" alt="Email icon"> <a href="mailto:info@nevia.eu? subject=subject text">info@nevia.eu</a></li>
+                    <li><img src="../../assets/pictures/instagram.svg" alt="Instagram icon"><a class="no-underline" href="">Nevia, SE</a></li>
                 </ul>
             </div>
         </div>
@@ -35,19 +44,20 @@
         background-position: center;
         .contact-wraper{
             text-align: center;
-            max-width: 790px;
+            max-width: 990px;
             h1{
                 @include topics;
             }
             p{
                 @include text-light;
-                text-align: start;
+                text-align: center;
                 margin-top: 30px;
             }
             .form-wraper{
                 display: flex;
-                gap: 90px;
+                gap: 60px;
                 margin-top: 80px;
+                justify-content: space-around;
                 // align-items: center;
                 .left-side{
                     display: flex;
@@ -60,7 +70,7 @@
                         font-family: $barlowR;
                         font-size: 17px;
                         height: 50px;
-                        width: 300px;
+                        width: 400px;
                         padding: 10px;
                         color: $white;
                         &::placeholder{
@@ -95,12 +105,15 @@
                     text-align: start;
                     list-style: none;
                     li{
+                        height: 40px; 
                         @include text-regular;
                         display: flex;
-                        gap: 40px;
-                        margin-bottom: 45px;
+                        gap: 20px;
+                        margin-bottom: 35px;
+                        align-items: center;
                         img{
                             width: 35px;
+                            color: $icons;
                         }
                         .no-underline{
                             text-decoration: none;
