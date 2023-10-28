@@ -6,5 +6,92 @@
     "certificates": "Certifikáty",
     "contact": "Kontakt",
 
-    "test": "test"
+    "companies": "spoločnosti",
+    "companyNevia": "Spoločnosť Nevia sa zaoberá spojením sveta reklám a inteligentných riešení pre nemocnice s cieľom zlepšiť kvalitu zdravotnej starostlivosti a zvýšiť povedomie o zdraví. Tento cieľ je dosahovaný pomocou najnovších technológií a kreatívnych riešení, ktoré pomáhajú zlepšiť a zefektívniť komunikáciu medzi pacientmi, nemocnicami a lekármi.",
+    "oneOfTheKeyAspects": "Jedným z hlavných aspektov, na ktorom sa spoločnosť Nevia zameriava, je využitie reklamných kampaní na zvýšenie povedomia o dôležitosti zdravia a prevencie chorôb. Tento prístup môže pomôcť ľuďom získať lepšie informácie o zdravotných témach a uvedomiť si, ako sa môžu postarať o svoje zdravie.",
+    "inAddition": "Okrem toho spoločnosť Nevia poskytuje aj inteligentné riešenia pre nemocnice, ktoré pomáhajú zlepšiť komunikáciu a koordináciu medzi zdravotníckymi pracovníkmi, zefektívniť procesy v nemocniciach a zlepšiť kvalitu zdravotnej starostlivosti pre pacientov. Tieto riešenia môžu zahŕňať napríklad inteligentné informačné systémy pre pacientov, ktoré im umožňujú sledovať ich zdravotný stav a komunikovať s lekármi online, alebo riešenia pre zlepšenie logistiky a plánovania v nemocniciach.",
+
+
+
+    "2020H1": "Vznik",
+    "2020H2": "značky",
+    "2020T": "Vstúp do sveta neobmedzených možností s naším inovatívnym podnikaním. Pomáhame budovať úspešnú budúcnosť.",
+    
+
+    "2021H1": "Wifi4EU",
+    "2021H2": "projekty",
+    "2021T": "Spolupráca na eurofondovom projekte pre vtrvorenie free wifi pre obce a mestá",
+
+
+    "2022H1": "Agel",
+    "2022H2": "spolupráca",
+    "2022T": "Spolupráca so spoločnosťou agel vybudovanie reklamnej site (Slovensko)",
+
+    "2022H1-2": "Antik Košice ",
+    "2022H2-2": "Spolupráca",
+    "2022T-2": "Spolupráca s domom sociálnych služieb Antik košice",
+
+    "2022H1-3": "DPD",
+    "2022H2-3": "Projekt",
+    "2022T-3": "Projekt DPD Trnava",
+
+    "2022H1-4": "Dunajska",
+    "2022H2-4": "Streda",
+    "2022T-4": "Inteligentné hospodárstvo pre mesto Dunajská Streda",
+
+    "2022H1-5": "DPD",
+    "2022H2-5": "Aplikácia",
+    "2022T-5": "Rozšírenie Aplikácie pre spoločnosť DPD",
+
+
+    "2023H1": "Agel",
+    "2023H2": "spolupráca",
+    "2023T": "Rozšírenie spolupráce reklamnej site agel do Čiech", 
+
+    "2023H1-2": "SMART CITY",
+    "2023H2-2": " Holič",
+    "2023T-2": "Budovanie projektu Smart City Holič",
+    
+    "2023H1-3": "Dunajska",
+    "2023H2-3": " streda",
+    "2023T-3": "Rozšírenie aplikácie pre Inteligentné odpadové hospodárstvo pre mesto Dunajská Streda",
+
+
+
+    "portfolioHeading1": "flexi",
+    "portfolioHeading2": "media",
+
+    "portfolioText1": "Náš tím odborníkov s nadšením  pomáha firmám, ako je tá vaša, prispôsobovať ich posolstvo a rozširovať svoju značku prostrednictvom rôznych digitálnych a tradičných médií. viac",
+
+    "portfolioText2": "Fleximedia verí v účinnosť reklamy a jej schopnosť zvýšiť viditeľnosť a ziskovosť značky. Preto sa vždy snažíme ponúknuť najlepšie reklamné riešenia, ktoré zaručujú maximálny úspech pre našich klientov. Ak hľadáte spoločnosť, ktorá vám pomôže dosiahnuť vaše ciele a zvýšiť viditeľnosť vašej značky, neváhajte kontaktovať Fleximedia. Sme pripravení pomôcť vám dosiahnuť vaše ciele a úspechy v oblasti reklamy.",
+
+    "portfolioHeading1-1": "flexi",
+    "portfolioHeading2-2": "media",
+
+    "portfolioText1-1": "Naša značka prináša revolučné riešenia a služby, ktoré transformujú starostlivosťv o pacientov.",
+
+    "portfolioText2-2": "Pod našou značkou FlexiHospital sa nachádza množstvo produktov a služieb, ktoré pomáhajú nemocniciam zlepšiť komunikáciu s pacientmi, zvýšiť efektivitu a zlepšiť celkovú skúsenosť pacientov. Našou hlavnou prioritou je vytvárať riešenia, ktoré sa dokážu prispôsobiť individuálnym potrebám každej nemocnice a jej pacientov.",
+
+    "portfolioButton1": "máte podozrenie",
+    "portfolioButton2": "z korupcie?",
+
+
+
+    "certificate1Title": "CERTIFIKAČNÝ ORGÁN PRE SYSTÉMY MANAŽÉRSTVA CEMS, S.R.O.",
+
+    "certificate2Title": "CEMS, s.r.o., certifikačný orgán pre systémy manažérstva",
+
+    "certificate3Title": "Certifikačný orgán pre systémy manažérstva CEMS, S.R.O.",
+
+  
+
+
+
+    "contactTitle": "kontakt",
+    "contactText": "Máš záujem stať sa súčasťou nášho tímu? Ak áno, neváhaj nás kontaktovať! Môžeš nás kontaktovať pomocou formulára. Tešíme sa na našu spoluprácu!",
+    "contactSubjectPlaceholder": "Predmet správy",
+    "contactEmailPlaceholder": "Váš e-mail",
+    "contactMessagePlaceholder": "Text správy",
+    "contactButtonText": "Kontaktujte nás !"
+    
 }

@@ -41,9 +41,9 @@
         <div class="swiper-wraper">  
           <div class="swiper-icon">
             <img src="../assets/pictures/vznik.svg" alt="done" class="ico">
-            <h4>Vznik <br> značky</h4>
+            <h4> {{ $t('2020H1') }} <br> {{ $t('2020H2') }} </h4>
           </div>
-          <p>Vstúp do sveta neobmedzených možností s naším inovatívnym podnikaním. Pomáhame budovať úspešnú budúcnosť.</p>
+          <p> {{ $t('2020T') }} </p>
         </div>
       </swiper-slide>
     <!-- second slide -->
@@ -52,9 +52,9 @@
         <div class="swiper-wraper">
           <div class="swiper-icon">
             <img src="../assets/pictures/wifi4eu.svg" alt="people" class="ico">
-            <h4>Wifi4EU <br> projekty</h4>
+            <h4>{{ $t('2021H1') }}<br> {{ $t('2021H2') }} </h4>
           </div>
-          <p>Spolupráca na eurofondovom projekte pre vtrvorenie free wifi pre obce a mestá</p>
+          <p>{{ $t('2021T') }}</p>
         </div>  
       </swiper-slide>
     <!-- third slide -->
@@ -63,41 +63,41 @@
         <div class="swiper-wraper">
           <div class="swiper-icon">
             <img src="../assets/pictures/wifi4eu.svg" alt="people" class="ico">
-            <h4>Agel <br> spolupráca</h4>
+            <h4> {{ $t('2022H1') }} <br> {{ $t('2022H2') }} </h4>
           </div>
-          <p>Spolupráca so spoločnosťou agel vybudovanie reklamnej site (Slovensko)</p>
+          <p>{{ $t('2022T') }}</p>
         </div>
         <!--  -->
         <div class="swiper-wraper">
           <div class="swiper-icon">
             <img src="../assets/pictures/wifi4eu.svg" alt="people" class="ico">
-            <h4>Antik Košice <br> Spolupráca</h4>
+            <h4> {{ $t('2022H1-2') }} <br> {{ $t('2022H2-2') }} </h4>
           </div>
-          <p>Spolupráca s domom sociálnych služieb Antik košice</p>
+          <p>{{ $t('2022T-2') }}</p>
         </div>
         <!--  -->
         <div class="swiper-wraper">
           <div class="swiper-icon">
             <img src="../assets/pictures/dpdapp.svg" alt="pc icon" class="ico">
-            <h4>DPD <br> Projekt</h4>
+            <h4>{{ $t('2022H1-3') }}<br> {{ $t('2022H2-3') }} </h4>
           </div>
-          <p>Projekt DPD Trnava</p>
+          <p>{{ $t('2022T-3') }}</p>
         </div>
         <!--  -->
         <div class="swiper-wraper">
           <div class="swiper-icon">
             <img src="../assets/pictures/smartCity.svg" alt="eye icon" class="ico">
-            <h4>Dunajska <br> Streda</h4>
+            <h4>{{ $t('2022H1-4') }}<br>{{ $t('2022H2-4') }}</h4>
           </div>
-          <p>Inteligentné hospodárstvo pre mesto Dunajská Streda</p>
+          <p>{{ $t('2022T-4') }}</p>
         </div>
         <!--  -->
         <div class="swiper-wraper">
           <div class="swiper-icon">
             <img src="../assets/pictures/dpdapp.svg" alt="pc icon" class="ico">
-            <h4>DPD <br> Aplikácia</h4>
+            <h4> {{ $t('2022H1-5') }} <br> {{ $t('2022H2-5') }} </h4>
           </div>
-          <p>Rozšírenie Aplikácie pre spoločnosť DPD</p>
+          <p>{{ $t('2022T-5') }}</p>
         </div>
       </swiper-slide>
     <!-- fourth slide -->
@@ -106,25 +106,25 @@
         <div class="swiper-wraper">
           <div class="swiper-icon">
             <img src="../assets/pictures/dpdapp.svg" alt="pc icon" class="ico">
-            <h4>Agel <br> spolupráca</h4>
+            <h4> {{ $t('2023H1') }} <br> {{ $t('2023H2') }}</h4>
           </div>
-          <p>Rozšírenie spolupráce reklamnej site agel do Čiech</p>
+          <p>{{ $t('2023T') }}</p>
         </div>
         <!--  -->
         <div class="swiper-wraper">
           <div class="swiper-icon">
             <img src="../assets/pictures/smartCity.svg" alt="eye" class="ico">
-            <h4>SMART CITY <br> Holič</h4>
+            <h4> {{ $t('2023H1-2') }} <br> {{ $t('2023H2-2') }} </h4>
           </div>
-          <p>Budovanie projektu Smart City Holič </p>
+          <p>{{ $t('2023T-2') }}</p>
         </div>
         <!--  -->
         <div class="swiper-wraper">
           <div class="swiper-icon">
             <img src="../assets/pictures/dpdapp.svg" alt="pc icon" class="ico">
-            <h4>Dunajska <br> streda</h4>
+            <h4> {{ $t('2023H1-3') }} <br> {{ $t('2023H2-2') }} </h4>
           </div>
-          <p>Rozšírenie aplikácie pre Inteligentné odpadové hospodárstvo pre mesto Dunajská Streda</p>
+          <p>{{ $t('2023T-3') }}</p>
         </div>
       </swiper-slide>
       

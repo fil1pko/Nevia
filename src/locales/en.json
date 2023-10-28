@@ -6,5 +6,77 @@
     "certificates": "Certificates",
     "contact": "Contact",
 
-    "test": "test ale po anglicky"
+    "companies": "companies",
+    "companyNevia": "The company Nevia is dedicated to connecting the world of advertising and intelligent solutions for hospitals with the goal of improving the quality of healthcare and raising awareness about health. This goal is achieved through the latest technologies and creative solutions that help enhance and streamline communication between patients, hospitals, and doctors.",
+    "oneOfTheKeyAspects": "One of the key aspects that Nevia focuses on is using advertising campaigns to increase awareness of the importance of health and disease prevention. This approach can help people gain better information on health topics and realize how they can take care of their health.",
+    "inAddition": "In addition, Nevia provides intelligent solutions for hospitals that help improve communication and coordination among healthcare workers, streamline hospital processes, and enhance the quality of healthcare for patients. These solutions can include, for example, intelligent information systems for patients that allow them to monitor their health and communicate with doctors online or solutions for improving logistics and planning in hospitals.",
+
+
+    
+    "2020H1": "Brand",
+    "2020H2": "Creation",
+    "2020T": "Enter the world of unlimited possibilities with our innovative business. We help build a successful future.",
+
+    "2021H1": "Wifi4EU",
+    "2021H2": "Projects",
+    "2021T": "Collaboration on a Eurofunds project to create free Wi-Fi for towns and municipalities.",
+
+    "2022H1": "Agel",
+    "2022H2": "Collaboration",
+    "2022T": "Collaboration with Agel to build an advertising network (Slovakia).",
+
+    "2022H1-2": "Antik Košice",
+    "2022H2-2": "Collaboration",
+    "2022T-2": "Collaboration with the Antik Košice Social Services House.",
+
+    "2022H1-3": "DPD",
+    "2022H2-3": "Project",
+    "2022T-3": "DPD Project in Trnava.",
+
+    "2022H1-4": "Dunajska",
+    "2022H2-4": "Streda",
+    "2022T-4": "Smart economy for the city of Dunajská Streda.",
+
+    "2022H1-5": "DPD",
+    "2022H2-5": "Application",
+    "2022T-5": "Expansion of the application for the company DPD.",
+
+    "2023H1": "Agel",
+    "2023H2": "Collaboration",
+    "2023T": "Expansion of the collaboration with the Agel advertising network to the Czech Republic.",
+
+    "2023H1-2": "SMART CITY",
+    "2023H2-2": "Holič",
+    "2023T-2": "Building the Smart City Holič project.",
+
+    "2023H1-3": "Dunajska",
+    "2023H2-3": "Streda",
+    "2023T-3": "Expansion of the application for Intelligent Waste Management for the city of Dunajská Streda.",
+
+
+  "portfolioHeading1": "flexi",
+  "portfolioHeading2": "media",
+  "portfolioText1": "Our team of experts enthusiastically helps companies like yours tailor their message and expand their brand through various digital and traditional media. Learn more",
+  "portfolioText2": "Fleximedia believes in the effectiveness of advertising and its ability to increase brand visibility and profitability. Therefore, we always strive to offer the best advertising solutions that guarantee maximum success for our clients. If you are looking for a company that will help you achieve your goals and increase the visibility of your brand, do not hesitate to contact Fleximedia. We are ready to help you achieve your advertising goals and successes.",
+  "portfolioHeading1-1": "flexi",
+  "portfolioHeading2-2": "media",
+  "portfolioText1-1": "Our brand brings revolutionary solutions and services that transform patient care.",
+  "portfolioText2-2": "Under our brand FlexiHospital, there are a variety of products and services that help hospitals improve communication with patients, increase efficiency, and enhance the overall patient experience. Our top priority is to create solutions that can adapt to the individual needs of each hospital and its patients.",
+  "portfolioButton1": "Have suspicion",
+  "portfolioButton2": "of corruption?",
+
+
+  "certificate1Title": "CEMS, s.r.o., the certifying authority for management systems",
+
+  "certificate2Title": "CEMS, s.r.o., the certifying authority for management systems",
+
+  "certificate3Title": "CEMS, s.r.o., the certifying authority for management systems",
+
+
+  "contactTitle": "contact",
+  "contactText": "Are you interested in joining our team? If yes, don't hesitate to contact us! You can reach us using the form. We look forward to working with you!",
+  "contactSubjectPlaceholder": "Subject of the message",
+  "contactEmailPlaceholder": "Your email",
+  "contactMessagePlaceholder": "Message text",
+  "contactButtonText": "Contact us!"
 }

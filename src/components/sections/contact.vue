@@ -1,15 +1,15 @@
 <template>
     <section id="contact">
         <div class="contact-wraper">
-            <h1>kontakt</h1>
-            <p>Máš záujem stať sa súčasťou nášho tímu? Ak áno, neváhaj nás kontaktovať! Môžeš nás kontaktovať pomocou formulára. Tešíme sa na našu spoluprácu!</p>
+            <h1> {{ $t('contactTitle') }} </h1>
+            <p> {{ $t('contactText') }} </p>
             <div class="form-wraper">
                 <div class="left-side">
-                    <input type="text" name="Predmet" placeholder="Predmet správy" required>
-                    <input type="email" name="Email" placeholder="Váš e-mail" required>
-                    <textarea name="Text" placeholder="Text správy" required></textarea>
+                    <input type="text" name="Predmet" :placeholder="$t('contactSubjectPlaceholder')" required>
+                    <input type="email" name="Email" :placeholder="$t('contactEmailPlaceholder')" required>
+                    <textarea name="Text" :placeholder="$t('contactMessagePlaceholder')" required></textarea>
 
-                    <button>Kontaktujte nás !</button>
+                    <button>{{ $t('contactButtonText') }}</button>
                 </div>
 
                 <ul>

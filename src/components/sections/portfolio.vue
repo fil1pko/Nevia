@@ -3,11 +3,11 @@
         <div class="portfolio-wraper first">
             <article>
                 <div class="heading">
-                    <h1><img src="../../assets/pictures/line.svg" alt="line">flexi</h1>
-                    <h1 style="position: relative; right: 110px;">media</h1>
+                    <h1><img src="../../assets/pictures/line.svg" alt="line"> {{ $t('portfolioHeading1') }} </h1>
+                    <h1 style="position: relative; right: 110px;">{{ $t('portfolioHeading2') }}</h1>
                 </div>
-                <p>Náš tím odborníkov s nadšením  pomáha firmám, ako je tá vaša, prispôsobovať ich posolstvo a rozširovať svoju značku prostrednictvom rôznych digitálnych a tradičných médií. viac</p>
-                <p>Fleximedia verí v účinnosť reklamy a jej schopnosť zvýšiť viditeľnosť a ziskovosť značky. Preto sa vždy snažíme ponúknuť najlepšie reklamné riešenia, ktoré zaručujú maximálny úspech pre našich klientov. Ak hľadáte spoločnosť, ktorá vám pomôže dosiahnuť vaše ciele a zvýšiť viditeľnosť vašej značky, neváhajte kontaktovať Fleximedia. Sme pripravení pomôcť vám dosiahnuť vaše ciele a úspechy v oblasti reklamy.</p>
+                <p>{{ $t('portfolioText1') }}</p>
+                <p>{{ $t('portfolioText2') }}</p>
             </article>
             <img class="hand" src="../../assets/pictures/ruka.svg" alt="Hand">
         </div>
@@ -16,18 +16,18 @@
             <img src="../../assets/pictures/hologram.png" alt="Hologram">
             <article>
                 <div class="heading">
-                    <h1><img src="../../assets/pictures/line.svg" alt="line">flexi</h1>
-                    <h1>hospital</h1>
+                    <h1><img src="../../assets/pictures/line.svg" alt="line">{{ $t('portfolioHeading1-1') }}</h1>
+                    <h1>{{ $t('portfolioHeading2-2') }}</h1>
                 </div>
-                <p>Naša značka prináša revolučné riešenia a služby, ktoré transformujú starostlivosťv o pacientov.</p>
-                <p>Pod našou značkou FlexiHospital sa nachádza množstvo produktov a služieb, ktoré pomáhajú nemocniciam zlepšiť komunikáciu s pacientmi, zvýšiť efektivitu a zlepšiť celkovú skúsenosť pacientov. Našou hlavnou prioritou je vytvárať riešenia, ktoré sa dokážu prispôsobiť individuálnym potrebám každej nemocnice a jej pacientov.</p>
+                <p>{{ $t('portfolioText1-1') }}</p>
+                <p>{{ $t('portfolioText2-2') }}</p>
             </article>
         </div>
 
         <div class="button-wraper">
             <a href="">
-                <h2>máte podozrenie</h2>
-                <h2> z korupcie?</h2>
+                <h2>{{ $t('portfolioButton1') }}</h2>
+                <h2>{{ $t('portfolioButton2') }}</h2>
             </a>
         </div>
     </section>

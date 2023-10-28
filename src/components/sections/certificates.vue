@@ -5,22 +5,21 @@
             <div class="certificates-wraper">
                 <div class="certificate-wraper">
                     <div class="overlay">
-                        <h3>CERTIFIKAČNÝ ORGÁN PRE SYSTÉMY <br>
-                        MANAŽÉRSTVA CEMS, S.R.O.</h3>
+                        <h3> {{ $t('certificate1Title') }} </h3>
                         <img src="../../assets/pictures/managmentIcon.svg" alt="managment icon">
                     </div>
                     <img src="../../assets/pictures/certificate1.png" alt="certificate">
                 </div>
                 <div class="certificate-wraper">
                     <div class="overlay">
-                        <h3>cems, s.r.o., the certifying authority for managment system</h3>
+                        <h3>{{ $t('certificate2Title') }}</h3>
                         <img src="../../assets/pictures/analytics.svg" alt="analytics">
                     </div>
                     <img src="../../assets/pictures/certificate2.png" alt="certificate">
                 </div>
                 <div class="certificate-wraper">
                     <div class="overlay">
-                        <h3>certifikačný orgán pre systémy manažérstva cems, s.r.o.</h3>
+                        <h3>{{ $t('certificate3Title') }}</h3>
                         <img src="../../assets/pictures/sites.svg" alt="sites">
                     </div>
                     <img src="../../assets/pictures/certificate3.png" alt="certificate">
