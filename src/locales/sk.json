@@ -1,3 +1,10 @@
 {
+    "home": "Domov",
+    "about": "O nás",
+    "references": "Referencie",
+    "portfolio": "Portfólio",
+    "certificates": "Certifikáty",
+    "contact": "Kontakt",
+
     "test": "test"
 }

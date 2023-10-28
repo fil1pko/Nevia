@@ -8,12 +8,12 @@ export default {
   data() {
     return {
       sections: [
-        { id: 'home', label: 'Domov' },
-        { id: 'about', label: 'O nás' },
-        { id: 'references', label: 'Referencie' },
-        { id: 'portfolio', label: 'Portfólio' },
-        { id: 'certificates', label: 'Certifikáty' },
-        { id: 'contact', label: 'Kontakt' }
+        { id: 'home', label: 'home' },
+        { id: 'about', label: 'about' },
+        { id: 'references', label: 'references' },
+        { id: 'portfolio', label: 'portfolio' },
+        { id: 'certificates', label: 'certificates' },
+        { id: 'contact', label: 'contact' }
       ],
       activeSection: 'home'
     };
@@ -54,7 +54,9 @@ export default {
                   @click.prevent="scrollToSection(section.id)"
                   :class="{ 'active': activeSection === section.id }"
                 >
-                  {{ section.label }}
+                  <!-- {{ section.label }} -->
+
+                  {{ $t(section.label) }}
                 </a>
             </li>
         </ul> 
