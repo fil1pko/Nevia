@@ -2,16 +2,17 @@
 import { ref } from 'vue'
 
 export default {
-  setup() {
-    const docState = ref('sk')
-    const switchLanguage = (locale) => {
-      docState.value = locale;
-    }
+  data() {
     return {
-      docState,
-      switchLanguage,
-    }
+      selectedLanguage: 'sk', // Initially select 'sk'
+    };
   },
+  methods: {
+        switchLanguage(locale) {
+        this.$i18n.locale = locale;
+        this.selectedLanguage = locale;
+      }
+    }
 }
 </script>
 
@@ -20,12 +21,12 @@ export default {
     <div class="image-wraper">
       <img
         @click="switchLanguage('sk')" 
-        :class="{ selected: docState === 'sk' }"
+        :class="{ selected: selectedLanguage === 'sk' }"
         src="../assets/pictures/SK.svg" alt="Slovak">
         
       <img
         @click="switchLanguage('en')" 
-        :class="{ selected: docState === 'en' }"
+        :class="{ selected: selectedLanguage === 'en' }"
         src="../assets/pictures/EN.svg" alt="English">
     
     </div>
