@@ -42,6 +42,7 @@
         background-image: url('../../assets/pictures/bg11.svg');
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 100vw;
         .contact-wraper{
             text-align: center;
             max-width: 990px;

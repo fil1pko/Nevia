@@ -36,9 +36,9 @@ export default {
 <style lang="scss">
 .image-wraper{
   display: flex;
-  gap: 10px;
+  gap: 0.521vw;  //1.375rem 4k
   img{
-    width: 40px;
+    width: 2.083vw; //4.9375rem 4k
   }
 }
 .selected {

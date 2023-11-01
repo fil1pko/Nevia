@@ -27,9 +27,11 @@
     @import '../../assets/style/colors.scss';
 
     #home{
-        background-image: url('../../assets/pictures/bg9.svg');
+        background-image: url('../../assets/pictures/bg92.svg');
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 100vw;
+
         min-height: 100vh;
         max-width: 100vw;
         width: 100%;

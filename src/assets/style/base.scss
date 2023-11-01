@@ -86,7 +86,7 @@ $brandonBlack: 'BrandonGrotesqueBlack';
 
 @mixin text-light{
   color: $white;
-  font-size: 0.938vw;
+  font-size: clamp(0.75rem ,0.938vw, 2rem);
   font-family: $barlowL;
   text-align: justify;
   text-align: inter-word;

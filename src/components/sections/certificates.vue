@@ -34,15 +34,15 @@
     @import '../../assets/style/colors.scss';
 
     #certificates{
-        height: 100vh;  
+        min-height: 100vh;
+        // width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url('../../assets/pictures/bg10.svg');
         background-repeat: no-repeat;
         background-position: center;
-        // background-size: 100vw 100vh;
-        // background-size: cover;
+        background-size: 100vw;
         .certificates-wraper1{
             text-align: center;
             .certificates-wraper{

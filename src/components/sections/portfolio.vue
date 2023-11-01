@@ -41,7 +41,8 @@
         background-image: url('../../assets/pictures/bg.svg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100vw 3067px;
+        // background-size: 100vw 3067px;
+        background-size: 100vw;
         background-color: $bg;
         padding-bottom: 340px;
         min-height: 220vh; 

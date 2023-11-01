@@ -6,11 +6,9 @@
             <p>
                 {{ $t('companyNevia') }}
             </p>
-
             <p>
                 {{ $t('oneOfTheKeyAspects') }}
             </p>
-
             <p>
                 {{ $t('inAddition') }}
             </p>
@@ -23,10 +21,12 @@
     @import '../../assets/style/colors.scss';
 
     #about{
-        background-image: url('../../assets/pictures/bg7.svg');
+        background-image: url('../../assets/pictures/bg72.svg');
         background-repeat: no-repeat;
         background-position: center;
+        background-size: 100vw;
         min-height: 100vh;
+        max-width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,15 +34,16 @@
             text-align: center;
             h1{
                 @include topics;
-                padding-top: 20px;
+                padding-top: clamp(0.625rem,1.042vw,4.125rem); //4.125rem 4k
             }
             img{
-                width: 80px;
+                width: clamp(3rem,4.167vw,10rem); //10rem 4k
             }
             p{
                 @include text-light;
-                max-width: 700px;
-                padding-top: 25px;
+                max-width: clamp(10rem ,36.458vw, 87.5rem); //87.5rem
+                padding-top: clamp(1rem, 1.302vw, 4.375rem); //4.375rem 4k
+                margin: 0 auto;
             }
         }
     }
