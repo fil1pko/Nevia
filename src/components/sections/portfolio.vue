@@ -4,7 +4,7 @@
             <article>
                 <div class="heading">
                     <h1><img src="../../assets/pictures/line.svg" alt="line"> {{ $t('portfolioHeading1') }} </h1>
-                    <h1 style="position: relative; right: 110px;">{{ $t('portfolioHeading2') }}</h1>
+                    <h1>{{ $t('portfolioHeading2') }}</h1>
                 </div>
                 <p>{{ $t('portfolioText1') }}</p>
                 <p>{{ $t('portfolioText2') }}</p>
@@ -16,7 +16,7 @@
             <img src="../../assets/pictures/hologram.png" alt="Hologram">
             <article>
                 <div class="heading">
-                    <h1><img src="../../assets/pictures/line.svg" alt="line">{{ $t('portfolioHeading1-1') }}</h1>
+                    <h1><img src="../../assets/pictures/line.svg" alt="line"> {{ $t('portfolioHeading1-1') }}</h1>
                     <h1>{{ $t('portfolioHeading2-2') }}</h1>
                 </div>
                 <p>{{ $t('portfolioText1-1') }}</p>
@@ -66,10 +66,10 @@
                         position: relative; 
                         right: 20px;
                     }
-                    :nth-child(1){
-                        position: relative;
-                        right: 27px;
-                    }
+                    // :nth-child(1){
+                    //     position: relative;
+                    //     // right: 27px;
+                    // }
                 }
                 p{
                     @include text-light;

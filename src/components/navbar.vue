@@ -78,17 +78,17 @@ export default {
     nav{
         font-family: $barlowR;
         display: flex;
-        gap: 415px;
+        gap: 21.615vw; //51rem 4k
         align-items: center;
         padding-top: 20px;
         ul{
             display: flex;
             list-style: none;
-            gap: 26px;
+            gap: 1.354vw; //3.5rem 4k
             padding: 13px 50px;
             li{
               a{
-                  font-size: 19px;
+                  font-size: 0.99vw; //2.4rem 4k
                   text-decoration: none;
                   color: $lightBlueHome;
                   transition: 0.5s;
@@ -100,8 +100,8 @@ export default {
         }
 
         img{
-            width: 50px;
-            height: auto;
+          width: 2.604vw; //6.1875rem 4k
+          height: auto;
         }
     }
 </style>
