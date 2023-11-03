@@ -24,6 +24,9 @@
                     </div>
                     <img src="../../assets/pictures/certificates/certificate3.webp" alt="certificate">
                 </div>
+
+
+                                
             </div>
         </div>
     </section>
@@ -48,6 +51,7 @@
             .certificates-wraper{
                 display: flex;
                 gap: 1.458vw; //3.499rem 4k
+                // max-width: 99%;
                 .certificate-wraper{
                     position: relative;
                     top: 2.604vw; // 6.25rem 4k
