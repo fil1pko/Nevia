@@ -6,23 +6,23 @@
                 <div class="certificate-wraper">
                     <div class="overlay">
                         <h3> {{ $t('certificate1Title') }} </h3>
-                        <img src="../../assets/pictures/managmentIcon.svg" alt="managment icon">
+                        <img src="../../assets/pictures/certificates/managmentIcon.svg" alt="managment icon">
                     </div>
-                    <img src="../../assets/pictures/certificate1.webp" alt="certificate">
+                    <img src="../../assets/pictures/certificates/certificate1.webp" alt="certificate">
                 </div>
                 <div class="certificate-wraper">
                     <div class="overlay">
                         <h3>{{ $t('certificate2Title') }}</h3>
-                        <img src="../../assets/pictures/analytics.svg" alt="analytics">
+                        <img src="../../assets/pictures/certificates/analytics.svg" alt="analytics">
                     </div>
-                    <img src="../../assets/pictures/certificate2.webp" alt="certificate">
+                    <img src="../../assets/pictures/certificates/certificate2.webp" alt="certificate">
                 </div>
                 <div class="certificate-wraper">
                     <div class="overlay">
                         <h3>{{ $t('certificate3Title') }}</h3>
-                        <img src="../../assets/pictures/sites.svg" alt="sites">
+                        <img src="../../assets/pictures/certificates/sites.svg" alt="sites">
                     </div>
-                    <img src="../../assets/pictures/certificate3.webp" alt="certificate">
+                    <img src="../../assets/pictures/certificates/certificate3.webp" alt="certificate">
                 </div>
             </div>
         </div>

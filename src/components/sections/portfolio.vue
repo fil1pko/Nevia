@@ -13,7 +13,8 @@
         </div>
 
         <div class="portfolio-wraper second">
-            <img src="../../assets/pictures/hologram.png" alt="Hologram">
+            <!-- <img src="../../assets/pictures/hologram.png" alt="Hologram"> -->
+            <img src="../../assets/pictures/three.svg" alt="">
             <article>
                 <div class="heading">
                     <h1><img src="../../assets/pictures/line.svg" alt="line"> {{ $t('portfolioHeading1-1') }}</h1>
