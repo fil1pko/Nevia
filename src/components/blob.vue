@@ -62,7 +62,7 @@ export default {
     renderer.setSize(900, 900);
 
     const controls = new OrbitControls(camera, canvas);
-    controls.enableDamping = true;
+    controls.enableDamping = false;
     controls.enableZoom = false;
 
     // Add lighting
