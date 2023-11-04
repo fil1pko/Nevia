@@ -1,54 +1,15 @@
+<script>
+    import swiper from '../swiperCertificate.vue'
+    export default{
+        components:{
+            swiper
+        },
+    };
+</script>
+
 <template>
     <section id="certificates">
-        <div class="certificates-wraper1">
-            <!-- <h1>certifikáty</h1> -->
-            <div class="certificates-wraper">
-                <div class="certificate-wraper">
-                    <div class="overlay">
-                        <h3> {{ $t('certificate1Title') }} </h3>
-                        <img src="../../assets/pictures/certificates/managmentIcon.svg" alt="managment icon">
-                    </div>
-                    <img src="../../assets/pictures/certificates/certificate1.webp" alt="certificate">
-                </div>
-                <div class="certificate-wraper">
-                    <div class="overlay">
-                        <h3>{{ $t('certificate2Title') }}</h3>
-                        <img src="../../assets/pictures/certificates/analytics.svg" alt="analytics">
-                    </div>
-                    <img src="../../assets/pictures/certificates/certificate2.webp" alt="certificate">
-                </div>
-                <div class="certificate-wraper">
-                    <div class="overlay">
-                        <h3>{{ $t('certificate3Title') }}</h3>
-                        <img src="../../assets/pictures/certificates/sites.svg" alt="sites">
-                    </div>
-                    <img src="../../assets/pictures/certificates/certificate3.webp" alt="certificate">
-                </div>
-
-
-                <div class="certificate-wraper">
-                    <div class="overlay">
-                        <h3>{{ $t('certificate3Title') }}</h3>
-                        <img src="../../assets/pictures/certificates/uploadDownload.svg" alt="package icon">
-                    </div>
-                    <img src="../../assets/pictures/certificates/certificate4.webp" alt="certificate">
-                </div>                                
-                <div class="certificate-wraper">
-                    <div class="overlay">
-                        <h3>{{ $t('certificate3Title') }}</h3>
-                        <img src="../../assets/pictures/certificates/websiteHistory.svg" alt="installation icon">
-                    </div>
-                    <img src="../../assets/pictures/certificates/certificate5.webp" alt="certificate">
-                </div>                                
-                <div class="certificate-wraper">
-                    <div class="overlay">
-                        <h3>{{ $t('certificate3Title') }}</h3>
-                        <img src="../../assets/pictures/certificates/SEO.svg" alt="settings icon">
-                    </div>
-                    <img src="../../assets/pictures/certificates/certificate6.webp" alt="certificate">
-                </div>                                
-            </div>
-        </div>
+        <swiper />
     </section>
 </template>
 
@@ -73,40 +34,6 @@
                 gap: 1.458vw; //3.499rem 4k
                 // max-width: 99%;
                 overflow: scroll;
-                .certificate-wraper{
-                    position: relative;
-                    top: 2.604vw; // 6.25rem 4k
-                    width: 28.802vw;  //69.063rem 4k
-                    .overlay{
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        background-image: $overlay;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
-                        gap: 1.771vw;  //4.25rem 4k
-                        transition: .8s;
-                        h3{
-                            @include h3;
-                            max-width: 21.667vw; //52.001rem 4k 
-                        }
-                        img{
-                            width: 9.375vw; //22.5rem 4k
-                            height: auto;
-                            color: $white;
-                        }
-                        &:hover{
-                            opacity: 0;
-                        }
-                    } 
-                    img{
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
             }
         }
     }

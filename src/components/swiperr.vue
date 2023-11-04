@@ -141,38 +141,34 @@
     top: 190px;
     height: 80vh;
     cursor: grab;
-  }
-
-  .swiper-slide-next,
-  .swiper-slide-prev{
-    @include swiper-slide;
-    h1{
-      @include topics;
-      position: relative;
-      top: 25px;
-      width: 80%;
-    }
-    .swiper-wraper{
-      @include swiper-wraper;
-      .swiper-icon{
-        width: 40px;
-        display: flex;
-        gap: 12px;
-        h4{
-          @include text-regular;
-          font-size: 16px;
+    .swiper-slide-next,
+    .swiper-slide-prev{
+      @include swiper-slide;
+      h1{
+        @include topics;
+        position: relative;
+        top: 25px;
+        width: 80%;
+      }
+      .swiper-wraper{
+        @include swiper-wraper;
+        .swiper-icon{
+          width: 40px;
+          display: flex;
+          gap: 12px;
+          h4{
+            @include text-regular;
+            font-size: 16px;
+          }
+        }
+        p{
+          @include text-light;
+          font-size: 21px;
+          text-shadow: 1px 1px 1px #000;
         }
       }
-      p{
-        @include text-light;
-        font-size: 21px;
-        text-shadow: 1px 1px 1px #000;
-      }
     }
-  }
-
-
-  .swiper-slide-active{
+    .swiper-slide-active{
     @include swiper-slide;
     h1{
       @include topics;
@@ -210,6 +206,12 @@
     height: 40px;
     background-color: #000;
   }
+}
+
+
+
+
+
 
 </style>
 
