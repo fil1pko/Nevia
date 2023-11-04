@@ -26,7 +26,27 @@
                 </div>
 
 
-                                
+                <div class="certificate-wraper">
+                    <div class="overlay">
+                        <h3>{{ $t('certificate3Title') }}</h3>
+                        <img src="../../assets/pictures/certificates/uploadDownload.svg" alt="package icon">
+                    </div>
+                    <img src="../../assets/pictures/certificates/certificate4.webp" alt="certificate">
+                </div>                                
+                <div class="certificate-wraper">
+                    <div class="overlay">
+                        <h3>{{ $t('certificate3Title') }}</h3>
+                        <img src="../../assets/pictures/certificates/websiteHistory.svg" alt="installation icon">
+                    </div>
+                    <img src="../../assets/pictures/certificates/certificate5.webp" alt="certificate">
+                </div>                                
+                <div class="certificate-wraper">
+                    <div class="overlay">
+                        <h3>{{ $t('certificate3Title') }}</h3>
+                        <img src="../../assets/pictures/certificates/SEO.svg" alt="settings icon">
+                    </div>
+                    <img src="../../assets/pictures/certificates/certificate6.webp" alt="certificate">
+                </div>                                
             </div>
         </div>
     </section>
@@ -52,10 +72,11 @@
                 display: flex;
                 gap: 1.458vw; //3.499rem 4k
                 // max-width: 99%;
+                overflow: scroll;
                 .certificate-wraper{
                     position: relative;
                     top: 2.604vw; // 6.25rem 4k
-                    max-width: 28.802vw;  //69.063rem 4k
+                    width: 28.802vw;  //69.063rem 4k
                     .overlay{
                         position: absolute;
                         width: 100%;
