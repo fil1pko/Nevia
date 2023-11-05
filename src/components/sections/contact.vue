@@ -1,16 +1,33 @@
+<script>
+    import emailjs from '@emailjs/browser';
+
+    export default {
+        methods: {
+            sendEmail() {
+            emailjs.sendForm('service_8qgs90w', 'template_wjfoyod', this.$refs.form, '6pCZ6PPCkCUoDt45Q')
+                .then((result) => {
+                    console.log('SUCCESS!', result.text);
+                }, (error) => {
+                    console.log('FAILED...', error.text);
+                });
+            }
+        }
+    }
+</script>
+
 <template>
     <section id="contact">
         <div class="contact-wraper">
             <h1> {{ $t('contactTitle') }} </h1>
             <p> {{ $t('contactText') }} </p>
             <div class="form-wraper">
-                <div class="left-side">
-                    <input type="text" name="Predmet" :placeholder="$t('contactSubjectPlaceholder')" required>
-                    <input type="email" name="Email" :placeholder="$t('contactEmailPlaceholder')" required>
-                    <textarea name="Text" :placeholder="$t('contactMessagePlaceholder')" required></textarea>
+                <form ref="form" @submit.prevent="sendEmail">
+                    <input type="text" name="subject" :placeholder="$t('contactSubjectPlaceholder')" required>
+                    <input type="email" name="user_email" :placeholder="$t('contactEmailPlaceholder')" required>
+                    <textarea name="message" :placeholder="$t('contactMessagePlaceholder')" required></textarea>
 
-                    <button>{{ $t('contactButtonText') }}</button>
-                </div>
+                    <input type="submit" value="Send">{{ $t('contactButtonText') }}
+                </form>
 
                 <ul>
                     <li>Nevia, SE</li>
@@ -60,7 +77,7 @@
                 margin-top: 80px;
                 justify-content: space-around;
                 // align-items: center;
-                .left-side{
+                form{
                     display: flex;
                     flex-direction: column;
                     gap: 10px;

@@ -24,6 +24,7 @@
         background-image: url('../../assets/pictures/bg72.svg');
         background-repeat: no-repeat;
         background-position: center;
+        // background-size: cover;
         background-size: 100vw;
         min-height: 100vh;
         max-width: 100vw;
@@ -41,7 +42,7 @@
             }
             p{
                 @include text-light;
-                max-width: clamp(10rem ,36.458vw, 87.5rem); //87.5rem
+                width: clamp(10rem ,36.458vw, 87.5rem); //87.5rem
                 padding-top: clamp(1rem, 1.302vw, 4.375rem); //4.375rem 4k
                 margin: 0 auto;
             }
