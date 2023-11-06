@@ -25,7 +25,7 @@
 </script>
 
 <template>
-  <swiper-container class="my-swiper"
+  <swiper-container class="my-swiper swiper-container"
     :slides-per-view="1.5"
     :pagination="false"
     :centered-slides="true"

@@ -24,6 +24,9 @@
         justify-content: center;
         align-items: center;
         background-image: url('../../assets/pictures/bg10.svg');
+        @media only screen and (max-width: 1024px){
+            background-image: url('../../assets/pictures/bg10mobile.svg');
+        }
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100vw;
