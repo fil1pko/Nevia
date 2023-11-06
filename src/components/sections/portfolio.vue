@@ -122,4 +122,10 @@
         }
         }
     }
+
+    @media only screen and (max-width: 1024px){
+        #portfolio{
+            padding-bottom: 0;
+        }
+    }
 </style>

@@ -57,13 +57,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('../../assets/pictures/bg11.svg');
-        @media only screen and (max-width: 1024px){
-            background-image: url('../../assets/pictures/bg11mobile.svg');
-        }
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100vw;
+        background-image: url('../../assets/pictures/bg11.svg');
+        @media only screen and (max-width: 1024px){
+            background-image: url('../../assets/pictures/bg11mobile.svg');
+            background-size: cover;
+        }
         .contact-wraper{
             text-align: center;
             max-width: 990px;

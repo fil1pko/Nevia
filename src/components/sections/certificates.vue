@@ -1,14 +1,16 @@
 <script>
-import Swiper from '../swiperCertificate.vue    '; // Import your Swiper component
+import Swiper from '../swiperCertificate.vue'; // Import your Swiper component
+import swiperMobile from '../swiperCertificatesMobile.vue';
 
 export default {
   components: {
     Swiper,
-    SwiperMobile: () => import('../swiperCertificatesMobile.vue'), // Import your mobile version of Swiper
+    swiperMobile, // Import your mobile version of Swiper
   },
   data() {
     return {
       isScreenLarge: window.innerWidth > 1024, // Check if the screen is larger than 1024px
+      isScreenSmall: window.innerWidth < 1025
     };
   },
   created() {
@@ -21,6 +23,7 @@ export default {
   methods: {
     checkScreenSize() {
       this.isScreenLarge = window.innerWidth > 1024;
+      this.isScreenSmall = window.innerWidth < 1025;
     },
   },
 };
@@ -29,7 +32,7 @@ export default {
 <template>
     <section id="certificates">
         <swiper v-if="isScreenLarge" />
-        <swiperMobile />
+        <swiperMobile v-if="isScreenSmall" />
     </section>
 </template>
 
@@ -39,17 +42,17 @@ export default {
 
     #certificates{
         min-height: 100vh;
-        // width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url('../../assets/pictures/bg10.svg');
-        @media only screen and (max-width: 1024px){
-            background-image: url('../../assets/pictures/bg10mobile.svg');
-        }
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100vw;
+        @media only screen and (max-width: 1024px){
+            background-image: url('../../assets/pictures/bg10mobile.svg');
+            background-size: cover;
+        }
         .certificates-wraper1{
             text-align: center;
             .certificates-wraper{

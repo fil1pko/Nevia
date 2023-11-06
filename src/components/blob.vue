@@ -16,23 +16,20 @@ export default {
   mounted() {
     const canvas = document.querySelector('.webgl');
     const scene = new THREE.Scene();
-    const self = this; // Capture 'this' reference
+    const self = this; 
 
     let object;
 
     // Instantiate a loader
     const loader = new GLTFLoader();
     loader.load(
-      // Correct the path to your model
       '/models/Hologram.glb',
       (gltf) => {
         object = gltf.scene;
         scene.add(object);
 
-        // Create an AnimationMixer for your loaded model
         self.mixer = new THREE.AnimationMixer(gltf.scene);
 
-        // Get all the animations from the loaded model
         gltf.animations.forEach((clip) => {
           self.mixer.clipAction(clip).play();
         });
