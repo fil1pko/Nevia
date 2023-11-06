@@ -20,7 +20,7 @@
         onProgress,
         onSlideChange,
       };
-    }
+    },
   }
 </script>
 

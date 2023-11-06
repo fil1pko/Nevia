@@ -1,15 +1,35 @@
 <script>
-    import swiper from '../swiperCertificate.vue'
-    export default{
-        components:{
-            swiper
-        },
+import Swiper from '../swiperCertificate.vue    '; // Import your Swiper component
+
+export default {
+  components: {
+    Swiper,
+    SwiperMobile: () => import('../swiperCertificatesMobile.vue'), // Import your mobile version of Swiper
+  },
+  data() {
+    return {
+      isScreenLarge: window.innerWidth > 1024, // Check if the screen is larger than 1024px
     };
+  },
+  created() {
+    window.addEventListener('resize', this.checkScreenSize);
+    this.checkScreenSize(); // Initial call
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.checkScreenSize);
+  },
+  methods: {
+    checkScreenSize() {
+      this.isScreenLarge = window.innerWidth > 1024;
+    },
+  },
+};
 </script>
 
 <template>
     <section id="certificates">
-        <swiper />
+        <swiper v-if="isScreenLarge" />
+        <swiperMobile />
     </section>
 </template>
 
