@@ -31,6 +31,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 999;
         .about-wraper{
             text-align: center;
             h1{

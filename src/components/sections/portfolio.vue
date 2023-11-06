@@ -14,7 +14,7 @@
 
         <div class="portfolio-wraper second">
             <!-- <img src="../../assets/pictures/hologram.png" alt="Hologram"> -->
-            <img src="../../assets/pictures/hologram2.svg" alt="">
+            <img src="../../assets/pictures/hologram4.svg" alt="">
             <article>
                 <div class="heading">
                     <h1><img src="../../assets/pictures/line.svg" alt="line"> {{ $t('portfolioHeading1-1') }}</h1>
@@ -81,7 +81,7 @@
                 }
             }
             img{
-                max-width: 400px;
+                max-width: 550px;
             }
             .hand{
                 max-width: 1200px;

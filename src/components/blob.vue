@@ -87,6 +87,7 @@ export default {
 <style lang="scss">
 canvas {
   // position: absolute;
+  display: none;
   width: 100vw;
   height: 100%;
   z-index: 30;

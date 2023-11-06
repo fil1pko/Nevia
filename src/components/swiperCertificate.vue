@@ -166,8 +166,11 @@
             }
         }
         &:hover{
-                opacity: 0;
-            }
+            opacity: 0;
+        }
+        &:active{
+            opacity: 0;
+        }
     } 
     img{
         display: block;

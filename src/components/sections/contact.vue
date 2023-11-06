@@ -4,12 +4,13 @@
     export default {
         methods: {
             sendEmail() {
-            emailjs.sendForm('service_8qgs90w', 'template_wjfoyod', this.$refs.form, '6pCZ6PPCkCUoDt45Q')
-                .then((result) => {
-                    console.log('SUCCESS!', result.text);
-                }, (error) => {
-                    console.log('FAILED...', error.text);
-                });
+                emailjs.sendForm('service_8qgs90w', 'template_wjfoyod', this.$refs.form, '6pCZ6PPCkCUoDt45Q')
+                    .then((result) => {
+                        console.log('SUCCESS!', result.text);
+                    }, (error) => {
+                        console.log('FAILED...', error.text);
+                    }
+                );
             }
         }
     }
@@ -26,7 +27,7 @@
                     <input type="email" name="user_email" :placeholder="$t('contactEmailPlaceholder')" required>
                     <textarea name="message" :placeholder="$t('contactMessagePlaceholder')" required></textarea>
 
-                    <input type="submit" value="Send">{{ $t('contactButtonText') }}
+                    <button class="button" type="submit"> {{ $t('contactButtonText') }} </button>
                 </form>
 
                 <ul>
