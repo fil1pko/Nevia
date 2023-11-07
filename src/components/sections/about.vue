@@ -24,7 +24,6 @@
         background-image: url('../../assets/pictures/bg72.svg');
         background-repeat: no-repeat;
         background-position: center;
-        // background-size: cover;
         background-size: 100vw;
         min-height: 100vh;
         max-width: 100vw;
@@ -32,6 +31,14 @@
         justify-content: center;
         align-items: center;
         z-index: 999;
+        @media only screen and (max-width: 1024px){
+            .about-wraper{
+                p{
+                    width: 50% !important;
+                    padding-top: 3% !important;
+                }
+            }
+        }
         .about-wraper{
             text-align: center;
             h1{
@@ -39,7 +46,7 @@
                 padding-top: clamp(0.625rem,1.042vw,4.125rem); //4.125rem 4k
             }
             img{
-                width: clamp(3rem,4.167vw,10rem); //10rem 4k
+                width: clamp(2.5rem,4.167vw,10rem); //10rem 4k
             }
             p{
                 @include text-light;

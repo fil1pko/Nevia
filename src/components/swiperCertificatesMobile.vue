@@ -35,7 +35,7 @@
 
         <!-- first slide -->
         <swiper-slide> 
-            <div class="certificate-wraper">
+            <div class="certificate-wraper-mobile">
                 <div class="overlay">
                     <div class="overlay-wraper">
                         <h3> {{ $t('certificate1Title') }} </h3>
@@ -48,7 +48,7 @@
 
         <!-- second slide -->
         <swiper-slide>
-            <div class="certificate-wraper">
+            <div class="certificate-wraper-mobile">
                 <div class="overlay">
                     <div class="overlay-wraper">
                         <h3>{{ $t('certificate2Title') }}</h3>
@@ -61,7 +61,7 @@
 
         <!-- third slide -->
         <swiper-slide>
-            <div class="certificate-wraper">
+            <div class="certificate-wraper-mobile">
                 <div class="overlay">
                     <div class="overlay-wraper">
                         <h3>{{ $t('certificate3Title') }}</h3>
@@ -74,7 +74,7 @@
         
         <!-- fourth slide -->
         <swiper-slide> 
-            <div class="certificate-wraper">
+            <div class="certificate-wraper-mobile">
                 <div class="overlay">
                     <div class="overlay-wraper">
                         <h3>{{ $t('certificate3Title') }}</h3>
@@ -87,7 +87,7 @@
       
         <!-- fifth slide -->
         <swiper-slide> 
-            <div class="certificate-wraper">
+            <div class="certificate-wraper-mobile">
                 <div class="overlay">
                     <div class="overlay-wraper">
                         <h3>{{ $t('certificate3Title') }}</h3>
@@ -100,7 +100,7 @@
 
         <!-- sixth slide -->
         <swiper-slide> 
-            <div class="certificate-wraper">
+            <div class="certificate-wraper-mobile">
                 <div class="overlay">
                     <div class="overlay-wraper">
                         <h3>{{ $t('certificate3Title') }}</h3>
@@ -115,8 +115,8 @@
 </template>
 
 <style lang="scss">
-      @import '../assets/style/base.scss';
-  @import '../assets/style/colors.scss';
+    @import '../assets/style/base.scss';
+    @import '../assets/style/colors.scss';
 
 
 .my-swiper3 {
@@ -135,7 +135,7 @@
     }
 }
 
-.certificate-wraper{
+.certificate-wraper-mobile{
     cursor: grab;
     position: relative;
     top: 30%; //2.604vw 6.25rem 4k

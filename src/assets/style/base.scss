@@ -49,6 +49,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $bg;
+  // max-width: 3842px;
+  // margin: 0 auto;
 }
 
 
@@ -117,13 +119,13 @@ $brandonBlack: 'BrandonGrotesqueBlack';
 }
 @mixin text-regular{
   color: $white;
-  font-size: 1.094vw;
+  font-size: clmap(0.9rem,1.094vw,2.2rem);
   font-family: $barlowR;
 }
 @mixin topics {
   color: $white;
   font-family: $brandonB;
-  font-size: 5.208vw;
+  font-size: clamp(2rem,5.208vw,18.75rem);
   text-transform: uppercase;
 }
 @mixin buttons{
@@ -158,6 +160,9 @@ $brandonBlack: 'BrandonGrotesqueBlack';
   -webkit-backdrop-filter: blur(8.5px);
   border: 1px solid rgba(119, 202, 202, 0.46);
   height: 80%;
+  @media only screen and (max-width: 1024px){
+    height: 65%;
+  }
 }
 
 
@@ -167,8 +172,8 @@ $brandonBlack: 'BrandonGrotesqueBlack';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 800px;
-  gap: 150px;
+  width: 41.667vw;
+  gap: 9.813vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

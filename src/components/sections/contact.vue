@@ -30,7 +30,8 @@
                     <button class="button" type="submit"> {{ $t('contactButtonText') }} </button>
                 </form>
 
-                <ul>
+                <div>
+                    <ul>
                     <li>Nevia, SE</li>
                     <li>IČO: 52710050</li>
                     <li>IČ DPH: SK2121131089</li>
@@ -43,6 +44,7 @@
                     <li><img src="../../assets/pictures/mail.svg" alt="Email icon"> <a href="mailto:info@nevia.eu? subject=subject text">info@nevia.eu</a></li>
                     <li><img src="../../assets/pictures/instagram.svg" alt="Instagram icon"><a class="no-underline" href="">Nevia, SE</a></li>
                 </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -61,9 +63,32 @@
         background-position: center;
         background-size: 100vw;
         background-image: url('../../assets/pictures/bg11.svg');
+        // portrait 
         @media only screen and (max-width: 1024px){
             background-image: url('../../assets/pictures/bg11mobile.svg');
             background-size: cover;
+            .contact-wraper{
+                max-width: 70% !important;
+                .form-wraper{
+                    flex-direction: column;
+                    form{
+                        input{
+                            width: 100% !important;
+                        }
+                        textarea{
+                            width: 100%;
+                        }
+                    }
+                    div{
+                        display: flex;
+                        gap: 30% !important;
+                        // justify-content: space-between;
+                    }
+                    li{
+                        margin-bottom: 10% !important;
+                    }
+                }
+            }
         }
         .contact-wraper{
             text-align: center;
@@ -82,6 +107,10 @@
                 margin-top: 80px;
                 justify-content: space-around;
                 // align-items: center;
+                div{
+                    gap: 60px;
+                    display: flex;
+                }
                 form{
                     display: flex;
                     flex-direction: column;
@@ -135,7 +164,7 @@
                         margin-bottom: 35px;
                         align-items: center;
                         img{
-                            width: 35px;
+                            width: 1.823vw; //35px
                             color: $icons;
                         }
                         .no-underline{

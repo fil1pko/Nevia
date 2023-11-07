@@ -29,7 +29,7 @@
     :slides-per-view="1.5"
     :pagination="false"
     :centered-slides="true"
-    :space-between="200"
+    :space-between="100"
     :loop="true"
     @progress="onProgress"
     @slidechange="onSlideChange"
@@ -152,18 +152,21 @@
       }
       .swiper-wraper{
         @include swiper-wraper;
+        @media only screen and (max-width: 1024px){
+
+        }
         .swiper-icon{
           width: 40px;
           display: flex;
           gap: 12px;
           h4{
             @include text-regular;
-            font-size: 16px;
+            font-size: 0.833vw;
           }
         }
         p{
           @include text-light;
-          font-size: 21px;
+          font-size: 1.094vw;
           text-shadow: 1px 1px 1px #000;
         }
       }
@@ -181,15 +184,15 @@
       .swiper-icon{
         width: 40px;
         display: flex;
-        gap: 12px;
+        gap: 0.625vw;
         h4{
           @include text-regular;
-          font-size: 16px;
+          font-size: 0.833vw;
         }
       }
       p{
         @include text-light;
-        font-size: 21px;
+        font-size: 1.094vw;
         text-shadow: 1px 1px 1px #000;
       }
     }
