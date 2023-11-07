@@ -5,17 +5,17 @@ import swiperMobile from '../swiperCertificatesMobile.vue';
 export default {
   components: {
     Swiper,
-    swiperMobile, // Import your mobile version of Swiper
+    swiperMobile, 
   },
   data() {
     return {
-      isScreenLarge: window.innerWidth > 1024, // Check if the screen is larger than 1024px
+      isScreenLarge: window.innerWidth > 1024,
       isScreenSmall: window.innerWidth < 1025
     };
   },
   created() {
     window.addEventListener('resize', this.checkScreenSize);
-    this.checkScreenSize(); // Initial call
+    this.checkScreenSize(); 
   },
   beforeDestroy() {
     window.removeEventListener('resize', this.checkScreenSize);
@@ -58,7 +58,6 @@ export default {
             .certificates-wraper{
                 display: flex;
                 gap: 1.458vw; //3.499rem 4k
-                // max-width: 99%;
                 overflow: scroll;
             }
         }

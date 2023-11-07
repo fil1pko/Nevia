@@ -138,8 +138,8 @@
 .certificate-wraper{
     cursor: grab;
     position: relative;
-    top: 2.604vw; // 6.25rem 4k
-    width: 28.802vw;  //69.063rem 4k
+    top: 30%; //2.604vw 6.25rem 4k
+    width: 70%;  //69.063rem 4k
     text-align: center;
     .overlay{
         position: absolute;
@@ -153,13 +153,14 @@
             flex-direction: column;
             align-items: center;
             gap: 1.771vw;  //4.25rem 4k
-            padding-top: 11vw;
+            padding-top: 19vh;
             h3{
                 @include h3;
-                max-width: 21.667vw; //52.001rem 4k 
+                font-size: 19px;
+                max-width: 70%; //52.001rem 4k 21.667vw 
             }
             img{
-                width: 9.375vw; //22.5rem 4k
+                width: 18%; //22.5rem 4k 9.375vw
                 height: auto;
                 color: $white;
             }

@@ -12,10 +12,16 @@
 
 html{
   scroll-behavior: smooth 5s;
-  scroll-snap-type: y mandatory;  
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;  
   scroll-behavior: smooth;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   section{
     scroll-snap-align: center;
     min-height: 100vh;
@@ -25,12 +31,13 @@ html{
 
 @media only screen and (max-width: 1024px) {
   html{
-    scroll-snap-type: none;  
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;  
     section{
       min-height: auto;  
     }
   }
-}
+} 
 
 body {
   min-height: 100vh;
@@ -93,6 +100,13 @@ $brandonBlack: 'BrandonGrotesqueBlack';
 
 // ALL MIXINS
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 @mixin text-light{
   color: $white;
@@ -126,12 +140,20 @@ $brandonBlack: 'BrandonGrotesqueBlack';
 
 
 @mixin swiper-slide{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(119, 202, 202, 0.38);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
   border: 1px solid rgba(119, 202, 202, 0.46);
@@ -142,9 +164,13 @@ $brandonBlack: 'BrandonGrotesqueBlack';
 @mixin swiper-wraper{
   position: relative;
   top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 800px;
   gap: 150px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 20px;
 }
