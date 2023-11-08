@@ -27,9 +27,15 @@
         background-size: 100vw;
         min-height: 100vh;
         max-width: 100vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         z-index: 999;
         @media only screen and (max-width: 1024px){
             .about-wraper{

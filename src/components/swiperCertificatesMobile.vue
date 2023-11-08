@@ -159,7 +159,7 @@
             // padding-top: 19vh;
             h3{
                 @include h3;
-                font-size: 19px;
+                font-size: 3vw;
                 max-width: 70%; //52.001rem 4k 21.667vw 
             }
             img{

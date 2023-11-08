@@ -125,18 +125,31 @@
     height: 100%;
     .swiper-slide-next,
     .swiper-slide-prev{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }   
     .swiper-slide-active{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center
     }
 }
 
 .certificate-wraper{
+    cursor: -webkit-grab;
     cursor: grab;
     position: relative;
     top: 2.604vw; // 6.25rem 4k
@@ -147,12 +160,24 @@
         width: 100%;
         height: 100%;
         background-image: $overlay;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-transition: .8s;
+        -o-transition: .8s;
         transition: .8s;
         .overlay-wraper{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             gap: 1.771vw;  //4.25rem 4k
             padding-top: 11vw;
             h3{

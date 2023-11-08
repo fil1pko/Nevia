@@ -42,9 +42,15 @@ export default {
 
     #certificates{
         min-height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         background-image: url('../../assets/pictures/bg10.svg');
         background-repeat: no-repeat;
         background-position: center;
@@ -56,6 +62,8 @@ export default {
         .certificates-wraper1{
             text-align: center;
             .certificates-wraper{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
                 gap: 1.458vw; //3.499rem 4k
                 overflow: scroll;
