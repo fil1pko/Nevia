@@ -49,8 +49,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $bg;
-  // max-width: 3842px;
-  // margin: 0 auto;
 }
 
 
@@ -119,7 +117,7 @@ $brandonBlack: 'BrandonGrotesqueBlack';
 }
 @mixin text-regular{
   color: $white;
-  font-size: clmap(0.9rem,1.094vw,2.2rem);
+  font-size: clamp(0.9rem,1.094vw,2.2rem);
   font-family: $barlowR;
 }
 @mixin topics {
@@ -127,6 +125,7 @@ $brandonBlack: 'BrandonGrotesqueBlack';
   font-family: $brandonB;
   font-size: clamp(2rem,5.208vw,18.75rem);
   text-transform: uppercase;
+  // font-weight: bold;
 }
 @mixin buttons{
   border: 0.052vw solid $blueBG;
