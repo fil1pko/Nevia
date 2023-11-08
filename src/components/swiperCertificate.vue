@@ -78,7 +78,7 @@
             <div class="certificate-wraper">
                 <div class="overlay">
                     <div class="overlay-wraper">
-                        <h3>{{ $t('certificate3Title') }}</h3>
+                        <h3> {{ $t('certificate4Title') }} </h3>
                         <img src="../assets/pictures/certificates/uploadDownload.svg" alt="package icon">
                     </div>
                 </div>
@@ -91,7 +91,7 @@
             <div class="certificate-wraper">
                 <div class="overlay">
                     <div class="overlay-wraper">
-                        <h3>{{ $t('certificate3Title') }}</h3>
+                        <h3> {{ $t('certificate5Title') }} </h3>
                         <img src="../assets/pictures/certificates/websiteHistory.svg" alt="installation icon">
                     </div>
                 </div>
@@ -104,7 +104,7 @@
             <div class="certificate-wraper">
                 <div class="overlay">
                     <div class="overlay-wraper">
-                        <h3>{{ $t('certificate3Title') }}</h3>
+                        <h3> {{ $t('certificate6Title') }} </h3>
                         <img src="../assets/pictures/certificates/SEO.svg" alt="settings icon">
                     </div>
                 </div>

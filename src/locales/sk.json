@@ -77,11 +77,17 @@
 
 
 
-    "certificate1Title": "CERTIFIKAČNÝ ORGÁN PRE SYSTÉMY MANAŽÉRSTVA CEMS, S.R.O.",
+    "certificate1Title": "ISO 14001:2015",
 
-    "certificate2Title": "CEMS, s.r.o., certifikačný orgán pre systémy manažérstva",
+    "certificate2Title": "ISO 37001:2016",
 
-    "certificate3Title": "Certifikačný orgán pre systémy manažérstva CEMS, S.R.O.",
+    "certificate3Title": "ISO 9001:2014",
+
+    "certificate4Title": "ISO 45001:2018",
+
+    "certificate5Title": "ISO/IEC 27001:2013",
+
+    "certificate6Title": "ISO/IEC 20000-1:2018",
 
   
 

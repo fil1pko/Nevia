@@ -66,13 +66,21 @@
   "portfolioButton2": "of corruption?",
 
 
-  "certificate1Title": "CEMS, s.r.o., the certifying authority for management systems",
 
-  "certificate2Title": "CEMS, s.r.o., the certifying authority for management systems",
+  "certificate1Title": "ISO 14001:2015",
 
-  "certificate3Title": "CEMS, s.r.o., the certifying authority for management systems",
+  "certificate2Title": "ISO 37001:2016",
+
+  "certificate3Title": "ISO 9001:2014",
+
+  "certificate4Title": "ISO 45001:2018",
+
+  "certificate5Title": "ISO/IEC 27001:2013",
+
+  "certificate6Title": "ISO/IEC 20000-1:2018",
 
 
+  
   "contactTitle": "contact",
   "contactText": "Are you interested in joining our team? If yes, don't hesitate to contact us! You can reach us using the form. We look forward to working with you!",
   "contactSubjectPlaceholder": "Subject of the message",
