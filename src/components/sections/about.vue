@@ -39,8 +39,11 @@
         z-index: 999;
         @media only screen and (max-width: 1024px){
             .about-wraper{
+                h1{
+                    margin: 0 auto;
+                }
                 p{
-                    width: 50% !important;
+                    width: 60% !important;
                     padding-top: 3% !important;
                 }
             }

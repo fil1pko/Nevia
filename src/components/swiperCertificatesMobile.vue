@@ -119,51 +119,81 @@
     @import '../assets/style/colors.scss';
 
 
-.my-swiper3 {
+    .my-swiper3 {
     width: 100%;
     height: 100%;
     .swiper-slide-next,
     .swiper-slide-prev{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }   
     .swiper-slide-active{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 
 .certificate-wraper-mobile{
+    cursor: -webkit-grab;
     cursor: grab;
     position: relative;
-    top: 30%; //2.604vw 6.25rem 4k
-    width: 70%;  //69.063rem 4k
+    top: 30%;
+    width: 90%;
     text-align: center;
     .overlay{
         position: absolute;
         width: 100%;
         height: 100%;
         background-image: $overlay;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-transition: .8s;
+        -o-transition: .8s;
         transition: .8s;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         .overlay-wraper{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.771vw;  //4.25rem 4k
-            // padding-top: 19vh;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            gap: 1.771vw;  
             h3{
                 @include h3;
                 font-size: 3vw;
-                max-width: 70%; //52.001rem 4k 21.667vw 
+                max-width: 70%;
             }
             img{
-                width: 18%; //22.5rem 4k 9.375vw
+                width: 18%; 
                 height: auto;
                 color: $white;
             }
