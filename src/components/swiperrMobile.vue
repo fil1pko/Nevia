@@ -144,17 +144,18 @@
     cursor: grab;
     .swiper-slide-next,
     .swiper-slide-prev{
-    //   @include swiper-slide;
+      @include swiper-slide;
       h1{
         @include topics;
         position: relative;
-        top: 25px;
+        top: 2.998vw;
         width: 80%;
       }
       .swiper-wraper{
-        // @include swiper-wraper;
+        padding-top: 4.796vw;
+        @include swiper-wraper;
         .swiper-icon{
-          width: 40px;
+          width: 4.796vw;
           display: flex;
           gap: 12px;
           h4{
@@ -172,17 +173,19 @@
 
 
     .swiper-slide-active{
-    // @include swiper-slide;
+    @include swiper-slide;
     h1{
       @include topics;
       position: relative;
-      top: 25px;
+      top: 2.998vw;
       width: 80%;
     }
     .swiper-wraper{
         width: 80%;
         margin: 0 auto;
+        display: flex;
         gap: 11vw;
+        padding-top: 4.796vw;
       .swiper-icon{
         width: 40px;
         display: flex;

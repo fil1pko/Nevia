@@ -122,6 +122,7 @@
     .my-swiper3 {
     width: 100%;
     height: 100%;
+    padding-top: 40px;
     .swiper-slide-next,
     .swiper-slide-prev{
         display: -webkit-box;

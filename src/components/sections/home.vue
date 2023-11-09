@@ -13,8 +13,10 @@
         <div class="home-wraper">
             <article>
                 <h1>nevia</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quasi vero soluta voluptate hic? Iste laboriosam provident, temporibus repudiandae dolores dignissimos veritatis pariatur eius, consectetur doloremque</p>
-                <button>Zistiť viac</button>
+                <p>Vítajte v svete spoločnosti Nevia, ktorá spojuje reklamu a inovatívne riešenia pre zdravotnícke zariadenia s cieľom zlepšiť kvalitu zdravotnej starostlivosti a zvýšiť povedomie o zdraví.</p>
+                <div>
+                    <a href="#about">Zistiť viac</a>
+                </div>
             </article>
             
             <blob />
@@ -31,39 +33,44 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100vw;
-
         min-height: 100vh;
         max-width: 100vw;
         width: 100%;
         z-index: 999;
+        @media only screen and (max-width: 1024px){
+            background-image: url('../../assets/pictures/bg92portrait.svg');
+        }
         .home-wraper{
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 230px;
+            gap: 11.979vw;
             article{
                 position: relative;
-                left: 200px;
-                max-width: 550px;
+                left: 10.417vw;
+                max-width: 28.646vw;
                 h1{
                     @include topics;
                 }
                 p{
                     @include text-light;
-                    padding-bottom: 10px;
+                    padding-bottom: 0.521vw;
                 }
-                button{ 
-                    all: unset;
-                    @include text-light;
-                    padding: 6px 40px 6px 40px;
-                    width: 80px;
-                    height: 27px;
-                    border: 1px solid $white;
-                    text-align: center;
-                    margin-top: 30px;
+                div{
                     cursor: pointer;
-                    border-radius: 500px;
+                    width: 7.813vw;
+                    height: 2.083vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 0.052vw solid $white;
+                    border-radius: 26.042vw;
+                    margin-top: 1.042vw;
+                    a{ 
+                        @include text-light;
+                        text-decoration: none;
+                    }
                 }
             }
         }

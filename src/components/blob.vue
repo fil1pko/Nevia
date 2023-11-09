@@ -42,11 +42,6 @@ export default {
       }
     );
 
-    const sizes = {
-      width: window.innerWidth,
-      height: window.innerHeight,
-    };
-
     const material = new THREE.MeshBasicMaterial({ color: 0xff0000 }); // Red
 
     // Create a camera
@@ -61,6 +56,7 @@ export default {
     const controls = new OrbitControls(camera, canvas);
     controls.enableDamping = false;
     controls.enableZoom = false;
+    controls.enableRotate = false;
 
     // Add lighting
     const light = new THREE.AmbientLight(0xffffff);
@@ -83,10 +79,8 @@ export default {
 
 <style lang="scss">
 canvas {
-  // position: absolute;
-  display: none;
-  width: 100vw;
-  height: 100%;
+  width: 46.875vw !important;
+  height: 46.875vw !important;
   z-index: 30;
 }
 </style>
