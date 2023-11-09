@@ -46,7 +46,7 @@ export default {
 
 <template>
     <nav class="navigation">
-        <a><img src="../assets/pictures/logo2.png" alt="logo"></a>
+        <a href="#"><img src="../assets/pictures/logo2.png" alt="logo"></a>
         <ul>
             <li v-for="section in sections" :key="section.id">
                 <a 
