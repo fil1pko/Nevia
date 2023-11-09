@@ -75,6 +75,7 @@
             background-size: cover;
             .contact-wraper{
                 max-width: 70% !important;
+                width: 71.563vw !important;
                 .form-wraper{
                     -webkit-box-orient: vertical;
                     -webkit-box-direction: normal;
@@ -82,10 +83,19 @@
                             flex-direction: column;
                     form{
                         input{
+                            font-size: 1.6vw !important;
                             width: 100% !important;
+                            height: 25% !important;
                         }
                         textarea{
+                            font-size: 1.6vw !important;
                             width: 100%;
+                            height: 10vw !important;
+                        }
+                        button{
+                            width: 10rem !important;
+                            height: 2rem !important;
+                            font-size: 1.6vw !important;
                         }
                     }
                     div{
@@ -116,7 +126,7 @@
                             font-size: 3vw !important;
                         }
                         button{
-                            font-size: 2vw !important;
+                            font-size: 2.5vw !important;
                         }
                     }
                     div{

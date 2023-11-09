@@ -39,6 +39,12 @@
         z-index: 999;
         @media only screen and (max-width: 1024px){
             background-image: url('../../assets/pictures/bg92portrait.svg');
+            .home-wraper{
+                flex-direction: column;
+                article{
+                    position: static !important;
+                }
+            }
         }
         .home-wraper{
             min-height: 100vh;
