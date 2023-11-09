@@ -25,38 +25,17 @@
 </script>
 
 <template>
-  <swiper-container class="my-swiper swiper-container"
-    :slides-per-view="1.5"
+  <swiper-container class="my-swiper4 swiper-container"
+    :slides-per-view="1.1"
     :pagination="false"
     :centered-slides="true"
-    :space-between="200"
+    :space-between="180"
     :loop="true"
     @progress="onProgress"
     @slidechange="onSlideChange"
   >
 
-    <!-- first slide -->
-      <swiper-slide> 
-        <h1 class="heading">2020</h1>
-        <div class="swiper-wraper">  
-          <div class="swiper-icon">
-            <img src="../assets/pictures/vznik.svg" alt="done" class="ico">
-            <h4> {{ $t('2020H1') }} <br> {{ $t('2020H2') }} </h4>
-          </div>
-          <p> {{ $t('2020T') }} </p>
-        </div>
-      </swiper-slide>
-    <!-- second slide -->
-      <swiper-slide> 
-        <h1>2021</h1>
-        <div class="swiper-wraper">
-          <div class="swiper-icon">
-            <img src="../assets/pictures/wifi4eu.svg" alt="people" class="ico">
-            <h4>{{ $t('2021H1') }}<br> {{ $t('2021H2') }} </h4>
-          </div>
-          <p>{{ $t('2021T') }}</p>
-        </div>  
-      </swiper-slide>
+
     <!-- third slide -->
       <swiper-slide>
         <h1>2022</h1>  
@@ -100,6 +79,28 @@
           <p>{{ $t('2022T-5') }}</p>
         </div>
       </swiper-slide>
+    <!-- first slide -->
+      <swiper-slide> 
+        <h1 class="heading">2020</h1>
+        <div class="swiper-wraper">  
+          <div class="swiper-icon">
+            <img src="../assets/pictures/vznik.svg" alt="done" class="ico">
+            <h4> {{ $t('2020H1') }} <br> {{ $t('2020H2') }} </h4>
+          </div>
+          <p> {{ $t('2020T') }} </p>
+        </div>
+      </swiper-slide>
+    <!-- second slide -->
+      <swiper-slide> 
+        <h1>2021</h1>
+        <div class="swiper-wraper">
+          <div class="swiper-icon">
+            <img src="../assets/pictures/wifi4eu.svg" alt="people" class="ico">
+            <h4>{{ $t('2021H1') }}<br> {{ $t('2021H2') }} </h4>
+          </div>
+          <p>{{ $t('2021T') }}</p>
+        </div>  
+      </swiper-slide>
     <!-- fourth slide -->
       <swiper-slide> 
         <h1>2023</h1>  
@@ -136,14 +137,14 @@
   @import '../assets/style/colors.scss';
 
   // min-height: 100vh;
-  .my-swiper{
+  .my-swiper4{
     position: relative;
     top: 190px;
     height: 80vh;
     cursor: grab;
     .swiper-slide-next,
     .swiper-slide-prev{
-      @include swiper-slide;
+    //   @include swiper-slide;
       h1{
         @include topics;
         position: relative;
@@ -151,7 +152,7 @@
         width: 80%;
       }
       .swiper-wraper{
-        @include swiper-wraper;
+        // @include swiper-wraper;
         .swiper-icon{
           width: 40px;
           display: flex;
@@ -168,8 +169,10 @@
         }
       }
     }
+
+
     .swiper-slide-active{
-    @include swiper-slide;
+    // @include swiper-slide;
     h1{
       @include topics;
       position: relative;
@@ -177,19 +180,21 @@
       width: 80%;
     }
     .swiper-wraper{
-      @include swiper-wraper;
+        width: 80%;
+        margin: 0 auto;
+        gap: 11vw;
       .swiper-icon{
         width: 40px;
         display: flex;
         gap: 0.625vw;
         h4{
           @include text-regular;
-          font-size: 0.833vw;
+          font-size: 1.9vw;
         }
       }
       p{
         @include text-light;
-        font-size: 1.094vw;
+        font-size: 2vw;
         text-shadow: 1px 1px 1px #000;
       }
     }
@@ -199,7 +204,7 @@
     top: 50px;
   }
   .ico{
-    max-width: 2.083vw;
+    max-width: 4.083vw;
   }
 }
 
