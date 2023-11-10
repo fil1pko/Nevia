@@ -81,6 +81,16 @@ export default {
 canvas {
   width: 46.875vw !important;
   height: 46.875vw !important;
+  max-width: 112.5rem;
+  height: 112.5rem;
   z-index: 30;
+  @media only screen and (max-width: 1024px){
+    width: 60.875vw !important;
+    height: 60.875vw !important;
+  }
+  @media only screen and (max-width: 700px){
+    width: 80.875vw !important;
+    height: 80.875vw !important;
+  }
 }
 </style>

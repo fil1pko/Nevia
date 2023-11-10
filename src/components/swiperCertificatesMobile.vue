@@ -153,7 +153,7 @@
     cursor: grab;
     position: relative;
     top: 30%;
-    width: 90%;
+    width: 80%;
     text-align: center;
     .overlay{
         position: absolute;

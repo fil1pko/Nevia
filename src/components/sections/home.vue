@@ -39,23 +39,70 @@
         z-index: 999;
         @media only screen and (max-width: 1024px){
             background-image: url('../../assets/pictures/bg92portrait.svg');
+            background-size: cover;
             .home-wraper{
-                flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
                 article{
                     position: static !important;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    max-width: 40vw !important;
+                    p{
+                        text-align: center !important;
+                    }
+                    div{
+                        width: 12vw !important;
+                        height: 3vw !important;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 700px){
+            .home-wraper{
+                gap: 5vw !important;
+                article{
+                    max-width: 65vw !important;
+                    div{
+                        margin-top: 3vw !important;
+                        width: 22vw !important;
+                        height: 6vw !important;
+                    }
                 }
             }
         }
         .home-wraper{
             min-height: 100vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             gap: 11.979vw;
+            max-width: 240rem;
+            margin: 0 auto;
             article{
                 position: relative;
                 left: 10.417vw;
-                max-width: 28.646vw;
+                width: 28.646vw;
+                max-width: 68.75rem;
                 h1{
                     @include topics;
                 }
@@ -67,9 +114,15 @@
                     cursor: pointer;
                     width: 7.813vw;
                     height: 2.083vw;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
                     border: 0.052vw solid $white;
                     border-radius: 26.042vw;
                     margin-top: 1.042vw;
