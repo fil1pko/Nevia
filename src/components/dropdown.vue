@@ -39,6 +39,7 @@ export default {
   gap: 0.521vw;  //1.375rem 4k
   img{
     width: 2.083vw; //4.9375rem 4k
+    max-width: 4.9375rem;
   }
 }
 .selected {

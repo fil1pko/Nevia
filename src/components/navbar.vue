@@ -74,13 +74,12 @@ export default {
         text-shadow: 0px 0px 5.849999904632568px #FFF, 0px 0px 8.699999809265137px #FFF, 0px 0px 20.95000076293945px #FFF, 0px 0px 61.9000015258789px#FFF, 0px 0px 100.39999389648438px #FFF, 0px 0px 200.6999969482422px #FFF;
     }
 
-
     nav{
         font-family: $barlowR;
         display: flex;
         gap: 21.615vw; //51rem 4k
         align-items: center;
-        padding-top: 20px;
+        padding-top: 1.042vw;
         ul{
             display: flex;
             list-style: none;
@@ -101,6 +100,7 @@ export default {
 
         img{
           width: 2.604vw; //6.1875rem 4k
+          max-width: 6.1875rem;
           height: auto;
         }
     }

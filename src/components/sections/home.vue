@@ -75,7 +75,7 @@
             .home-wraper{
                 gap: 5vw !important;
                 article{
-                    max-width: 65vw !important;
+                    width: 65vw !important;
                     div{
                         margin-top: 3vw !important;
                         width: 22vw !important;

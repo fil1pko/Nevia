@@ -42,49 +42,44 @@
         background-image: url('../../assets/pictures/bg.svg');
         background-repeat: no-repeat;
         background-position: center;
-        // background-size: 100vw 3067px;
         background-size: 100vw;
         background-color: $bg;
-        padding-bottom: 340px;
+        padding-bottom: 17.708vw;
         min-height: 220vh; 
         scroll-snap-align: start; 
         .portfolio-wraper{
             display: flex;
             align-items: center;
-            padding-top: 80px;
+            padding-top: 4.167vw;
             article{
                 .heading{
                     h1{
                         @include topics;
                         color: $white;
-                        line-height: 90px;
+                        line-height: 4.688vw;
                         img{
-                            height: 70px;
-                            width: 17px;
+                            height: 3.646vw;
+                            width: 0.885vw;
                         }
                     }
                     :nth-child(even){
                         text-align: end;
                         position: relative; 
-                        right: 20px;
+                        right: 1.042vw;
                     }
-                    // :nth-child(1){
-                    //     position: relative;
-                    //     // right: 27px;
-                    // }
                 }
                 p{
                     @include text-light;
                     color: $white;
-                    max-width: 600px;
-                    padding-top: 20px;
+                    width: 31.25vw;
+                    padding-top: 1.042vw;
                 }
             }
             img{
-                max-width: 550px;
+                max-width: 28.646vw;
             }
             .hand{
-                max-width: 1200px;
+                max-width: 62.5vw;
                 position: relative;
                 z-index: 10;
             }
@@ -98,17 +93,17 @@
         .second{
             width: 100%;
             justify-content: center;
-            gap: 150px;
-            padding-top: 100px;
+            gap: 7.813vw;
+            padding-top: 5.208vw;
         }
         .button-wraper{
-            width: 450px;
-            height: 130px;
-            border: 3px solid $white;
+            width: 23.438vw;
+            height: 6.771vw;
+            border: 0.156vw solid $white;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 170px auto 0 auto;
+            margin: 8.854vw auto 0 auto;
             a{
             color: $white;
             text-decoration: none;
@@ -117,7 +112,7 @@
                 text-transform: uppercase;
                 font-family: $brandonB;
                 text-align: center;
-                font-size: 35px;
+                font-size: 1.823vw;
             }
         }
         }
@@ -126,6 +121,27 @@
     @media only screen and (max-width: 1024px){
         #portfolio{
             padding-bottom: 0;
+            min-height: auto !important;
+        }
+    }
+    @media only screen and (max-width: 700px){
+        #portfolio{
+            .portfolio-wraper{
+                flex-direction: column;
+                article{
+                    p{
+                        width: 75vw !important;
+                    }
+                    .heading{
+                        :nth-child(even){
+                            text-align: center;
+                        }
+                    }
+                }
+                .second{
+                    flex-direction: column-reverse;
+                }
+            }
         }
     }
 </style>
