@@ -35,15 +35,30 @@ export default {
 
 <style lang="scss">
 .image-wraper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  gap: 0.521vw;  //1.375rem 4k
+  gap: 0.521vw;
   img{
-    width: 2.083vw; //4.9375rem 4k
+    width: 2.083vw;
     max-width: 4.9375rem;
+  }
+  @media only screen and (max-width: 1024px){
+    gap: 1vw;
+    img{
+      width: 3vw;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    gap: 2vw;
+    img{
+      width: 7vw;
+    }
   }
 }
 .selected {
-  filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 1));
+  -webkit-filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 1));
+          filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 1));
 }
 
 </style>

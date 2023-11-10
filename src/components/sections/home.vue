@@ -76,6 +76,7 @@
                 gap: 5vw !important;
                 article{
                     width: 65vw !important;
+                    max-width: none !important;
                     div{
                         margin-top: 3vw !important;
                         width: 22vw !important;

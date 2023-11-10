@@ -152,16 +152,15 @@ $brandonBlack: 'BrandonGrotesqueBlack';
       -ms-flex-align: center;
           align-items: center;
   background: rgba(119, 202, 202, 0.38);
-  border-radius: 16px;
+  border-radius: 0.833vw;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
-  border: 1px solid rgba(119, 202, 202, 0.46);
+  border: 0.052vw solid rgba(119, 202, 202, 0.46);
   height: 80%;
   @media only screen and (max-width: 1024px){
     height: 65%;
-    // width: 90% !important;
     border-radius: unset;
     border: none;
   }

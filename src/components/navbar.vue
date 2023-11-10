@@ -54,7 +54,6 @@ export default {
                   @click.prevent="scrollToSection(section.id)"
                   :class="{ 'active': activeSection === section.id }"
                 >
-                  <!-- {{ section.label }} -->
 
                   {{ $t(section.label) }}
                 </a>
@@ -76,20 +75,28 @@ export default {
 
     nav{
         font-family: $barlowR;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        gap: 21.615vw; //51rem 4k
-        align-items: center;
+        gap: 21.615vw; 
+        -webkit-box-align: center; 
+            -ms-flex-align: center; 
+                align-items: center;
         padding-top: 1.042vw;
         ul{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             list-style: none;
-            gap: 1.354vw; //3.5rem 4k
+            gap: 1.354vw; 
             padding: 13px 50px;
             li{
               a{
-                  font-size: 0.99vw; //2.4rem 4k
+                  font-size: 0.99vw; 
                   text-decoration: none;
                   color: $lightBlueHome;
+                  -webkit-transition: 0.5s;
+                  -o-transition: 0.5s;
                   transition: 0.5s;
                   &:hover{
                     text-shadow: $glowing;
@@ -99,9 +106,40 @@ export default {
         }
 
         img{
-          width: 2.604vw; //6.1875rem 4k
+          width: 2.604vw; 
           max-width: 6.1875rem;
           height: auto;
         }
     }
+
+    @media only screen and (max-width: 1024px){
+          nav{
+            padding-top: 7%;
+            gap: 11vw !important;
+            padding-top: 4vw;
+            ul{
+              li{
+                a{
+                  font-size: 1.5vw !important;
+                }
+              }
+            }
+            img{
+              width: 3.6vw;
+            }
+          }
+        }
+      @media only screen and (max-width: 700px){
+        nav{
+          gap: 60vw !important;
+          ul{
+            display: none;
+          }
+            img{
+              width: 8vw;
+            }
+          }
+        }
+      
+
 </style>

@@ -137,7 +137,7 @@
                                 flex-direction: column;
                     }
                     li{
-                        padding-bottom: 2vw;
+                        padding-bottom: 0.3rem !important;
                     }
                 }
             }
