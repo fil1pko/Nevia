@@ -12,7 +12,7 @@
       };
 
       const onSlideChange = (e) => {
-        console.log('slide changed')
+        // console.log('slide changed')
       }
 
       return {
