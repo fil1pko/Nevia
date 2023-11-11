@@ -138,7 +138,7 @@
   // min-height: 100vh;
   .my-swiper{
     position: relative;
-    top: 190px;
+    top: 9.896vw;
     height: 80vh;
     cursor: grab;
     .swiper-slide-next,

@@ -15,8 +15,6 @@
 
   <mainn />
 
-  <footer>
-  </footer>
 </template>
 
 <style lang="scss">

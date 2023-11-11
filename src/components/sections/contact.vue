@@ -1,7 +1,11 @@
 <script>
     import emailjs from '@emailjs/browser';
+    import markk from './mark.vue';
 
     export default {
+        components:{
+            markk
+        },
         methods: {
             sendEmail() {
                 emailjs.sendForm('service_8qgs90w', 'template_wjfoyod', this.$refs.form, '6pCZ6PPCkCUoDt45Q')
@@ -47,6 +51,10 @@
                 </div>
             </div>
         </div>
+
+        <footer>
+            <markk />   
+        </footer>
     </section>
 </template>
 
@@ -55,10 +63,11 @@
     @import '../../assets/style/colors.scss';
 
     #contact{
-        min-height: 100vh;  
+        height: 100vh;  
         display: -webkit-box;  
         display: -ms-flexbox;  
         display: flex;
+        flex-direction: column;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
                 justify-content: center;
@@ -69,6 +78,7 @@
         background-position: center;
         background-size: 100vw;
         background-image: url('../../assets/pictures/bg11.svg');
+
         // portrait 
         @media only screen and (max-width: 1024px){
             background-image: url('../../assets/pictures/bg11mobile.svg');
@@ -137,7 +147,7 @@
                                 flex-direction: column;
                     }
                     li{
-                        padding-bottom: 0.3rem !important;
+                        margin-bottom: 2rem !important;
                     }
                 }
             }
