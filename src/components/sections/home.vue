@@ -13,9 +13,9 @@
         <div class="home-wraper">
             <article>
                 <h1>nevia</h1>
-                <p>Vítajte v svete spoločnosti Nevia, ktorá spojuje reklamu a inovatívne riešenia pre zdravotnícke zariadenia s cieľom zlepšiť kvalitu zdravotnej starostlivosti a zvýšiť povedomie o zdraví.</p>
+                <p>{{ $t('homeText') }}</p>
                 <div>
-                    <a href="#about">Zistiť viac</a>
+                    <a href="#about">{{ $t('homeButton') }}</a>
                 </div>
             </article>
             

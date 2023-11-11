@@ -26,7 +26,7 @@
         </div>
 
         <div class="button-wraper">
-            <a href="">
+            <a href="#">
                 <h2>{{ $t('portfolioButton1') }}</h2>
                 <h2>{{ $t('portfolioButton2') }}</h2>
             </a>
