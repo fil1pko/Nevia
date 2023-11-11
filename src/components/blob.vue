@@ -35,10 +35,10 @@ export default {
         });
       },
       (xhr) => {
-        console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+        // console.log((xhr.loaded / xhr.total * 100) + '% loaded');
       },
       (error) => {
-        console.error(error);
+        // console.error(error);
       }
     );
 

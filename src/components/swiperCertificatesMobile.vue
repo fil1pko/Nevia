@@ -8,11 +8,11 @@
         const spaceBetween = 10;
         const onProgress = (e) => {
             const [swiper, progress] = e.detail;
-            console.log(progress)
+            // console.log(progress)
         };
 
         const onSlideChange = (e) => {
-        console.log('slide changed')
+        // console.log('slide changed')
         }
 
         return {
