@@ -78,12 +78,16 @@ export default {
 </script>
 
 <style lang="scss">
-canvas {
+// canvas{
+//   position: absolute;
+// }
+canvas{
   width: 46.875vw !important;
   height: 46.875vw !important;
   max-width: 112.5rem;
   height: 112.5rem;
   z-index: 30;
+  touch-action: manipulation !important;
   @media only screen and (max-width: 1024px){
     width: 60.875vw !important;
     height: 60.875vw !important;

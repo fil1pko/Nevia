@@ -1,5 +1,5 @@
 <script>
-import Swiper from '../swiperCertificate.vue'; // Import your Swiper component
+import Swiper from '../swiperCertificate.vue'; 
 import swiperMobile from '../swiperCertificatesMobile.vue';
 
 export default {

@@ -20,6 +20,7 @@
             </article>
             
             <blob />
+            
         </div>
     </section>    
 </template>
@@ -99,6 +100,13 @@
             gap: 11.979vw;
             max-width: 240rem;
             margin: 0 auto;
+            .home-overlay{
+                position: relative;
+                .overlay-layer{
+                    // position: absolute;
+                    z-index: 31;
+                }
+            }
             article{
                 position: relative;
                 left: 10.417vw;
