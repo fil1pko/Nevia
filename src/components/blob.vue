@@ -56,7 +56,7 @@ export default {
     const controls = new OrbitControls(camera, canvas);
     controls.enableDamping = false;
     controls.enableZoom = false;
-    controls.enableRotate = false;
+    controls.enableRotate = true;
 
     // Add lighting
     const light = new THREE.AmbientLight(0xffffff);
