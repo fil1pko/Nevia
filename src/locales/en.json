@@ -5,6 +5,7 @@
     "portfolio": "Portfolio",
     "certificates": "Certificates",
     "contact": "Contact",
+    "servis": "Service",
 
     "homeText": "Welcome to the world of Nevia, which combines advertising and innovative solutions for healthcare facilities to improve the quality of healthcare and raise health awareness.",
     "homeButton": "Find out more",
@@ -90,5 +91,10 @@
   "contactSubjectPlaceholder": "Subject of the message",
   "contactEmailPlaceholder": "Your email",
   "contactMessagePlaceholder": "Message text",
-  "contactButtonText": "Contact us!"
+  "contactButtonText": "Contact us!",
+
+
+  "servisName": "Your name",
+  "servisLocation": "Your adress"
+
 }

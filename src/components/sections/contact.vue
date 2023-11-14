@@ -9,14 +9,13 @@
         methods: {
             sendEmail() {
                 emailjs.sendForm('service_8qgs90w', 'template_wjfoyod', this.$refs.form, '6pCZ6PPCkCUoDt45Q')
-                emailjs.sendForm('')
-                    .then((result) => {
+                //     .then((result) => {
                         
-                        console.log('SUCCESS!', result.text);
-                    }, (error) => {
-                        // console.log('FAILED...', error.text);
-                    }
-                );
+                //         // console.log('SUCCESS!', result.text);
+                //     }, (error) => {
+                //         // console.log('FAILED...', error.text);
+                //     }
+                // );
             }
         }
     }
@@ -250,6 +249,10 @@
                         font-size: 0.885vw;
                         margin: 0.521vw auto;
                         cursor: pointer;
+                        transition: 1s;
+                        &:hover{
+                            opacity: 0.5;
+                        }
                     }
                 }
                 ul{

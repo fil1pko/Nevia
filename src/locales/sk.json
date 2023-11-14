@@ -5,6 +5,7 @@
     "portfolio": "Portfólio",
     "certificates": "Certifikáty",
     "contact": "Kontakt",
+    "servis": "Servis",
 
     "homeText": "Vítajte v svete spoločnosti Nevia, ktorá spojuje reklamu a inovatívne riešenia pre zdravotnícke zariadenia s cieľom zlepšiť kvalitu zdravotnej starostlivosti a zvýšiť povedomie o zdraví.",
     "homeButton": "Zistiť viac",
@@ -103,6 +104,10 @@
     "contactSubjectPlaceholder": "Predmet správy",
     "contactEmailPlaceholder": "Váš e-mail",
     "contactMessagePlaceholder": "Text správy",
-    "contactButtonText": "Kontaktujte nás !"
+    "contactButtonText": "Kontaktujte nás !",
+
+
+    "servisName": "Vaše meno",
+    "servisLocation": "Vaša adresa"
     
 }

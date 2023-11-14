@@ -56,7 +56,7 @@ export default {
         background-position: center;
         background-size: 100vw;
         @media only screen and (max-width: 1024px){
-            background-image: url('../../assets/pictures/bg10mobile.svg');
+            background-image: url('../../assets/pictures/bg11mobile.svg');
             background-size: cover;
         }
         .certificates-wraper1{

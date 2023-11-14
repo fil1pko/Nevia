@@ -13,7 +13,7 @@ export default {
         { id: 'references', label: 'references' },
         { id: 'portfolio', label: 'portfolio' },
         { id: 'certificates', label: 'certificates' },
-        { id: 'servis', label: 'Servis'},
+        { id: 'servis', label: 'servis'},
         { id: 'contact', label: 'contact' }
       ],
       activeSection: 'home'

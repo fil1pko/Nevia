@@ -19,7 +19,7 @@
                     <h1><img src="../../assets/pictures/line.svg" alt="line"> {{ $t('portfolioHeading1-1') }}</h1>
                     <h1>{{ $t('portfolioHeading2-2') }}</h1>
                 </div>
-                <p>{{ $t('portfolioText1-1') }} <a href="https://flexihospital.eu/">{{ $t('portfolioLink') }}</a></p>
+                <p>{{ $t('portfolioText1-1') }} <a href="https://flexihospital.eu/" target="_blank">{{ $t('portfolioLink') }}</a></p>
                 <p class="delete">{{ $t('portfolioText2-2') }}</p>
             </article>
         </div>
@@ -76,6 +76,9 @@
                     color: $white;
                     width: 31.25vw;
                     padding-top: 1.042vw;
+                    a{
+                        color: $white;
+                    }
                 }
             }
             img{
@@ -133,13 +136,15 @@
 
     @media only screen and (max-width: 1024px){
         #portfolio{
+            padding-top: 20%;
             min-height: auto !important;
-            
+            // background-image: none;
+            background-image: url('../../assets/pictures/bg10mobile.svg');
+            background-size: cover;
         }
     }
     @media only screen and (max-width: 700px){
         #portfolio{
-            background-image: none;
             .delete{
                 display: none;
             }
