@@ -9,8 +9,10 @@
         methods: {
             sendEmail() {
                 emailjs.sendForm('service_8qgs90w', 'template_wjfoyod', this.$refs.form, '6pCZ6PPCkCUoDt45Q')
+                emailjs.sendForm('')
                     .then((result) => {
-                        // console.log('SUCCESS!', result.text);
+                        
+                        console.log('SUCCESS!', result.text);
                     }, (error) => {
                         // console.log('FAILED...', error.text);
                     }

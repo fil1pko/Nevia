@@ -5,10 +5,11 @@
     import contact from './sections/contact.vue'
     import portfolio from './sections/portfolio.vue'
     import references from './sections/references.vue'
+    import servis from './sections/servis.vue'
 
     export default{
         components:{
-            home, about, references, portfolio, certificates, contact
+            home, about, references, portfolio, certificates, contact, servis
         },
     };
 </script>
@@ -20,6 +21,7 @@
         <references />
         <portfolio />
         <certificates />
+        <servis />
         <contact />
     </main>
 </template>

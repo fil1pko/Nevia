@@ -6,21 +6,20 @@
                     <h1><img src="../../assets/pictures/line.svg" alt="line"> {{ $t('portfolioHeading1') }} </h1>
                     <h1>{{ $t('portfolioHeading2') }}</h1>
                 </div>
-                <p>{{ $t('portfolioText1') }}</p>
+                <p>{{ $t('portfolioText1') }} </p>
                 <p class="delete">{{ $t('portfolioText2') }}</p>
             </article>
             <img class="hand" src="../../assets/pictures/ruka.svg" alt="Hand">
         </div>
 
         <div class="portfolio-wraper second">
-            <!-- <img src="../../assets/pictures/hologram.png" alt="Hologram"> -->
             <img class="hologram" src="../../assets/pictures/hologram4.svg" alt="">
             <article>
                 <div class="heading">
                     <h1><img src="../../assets/pictures/line.svg" alt="line"> {{ $t('portfolioHeading1-1') }}</h1>
                     <h1>{{ $t('portfolioHeading2-2') }}</h1>
                 </div>
-                <p>{{ $t('portfolioText1-1') }}</p>
+                <p>{{ $t('portfolioText1-1') }} <a href="https://flexihospital.eu/">{{ $t('portfolioLink') }}</a></p>
                 <p class="delete">{{ $t('portfolioText2-2') }}</p>
             </article>
         </div>

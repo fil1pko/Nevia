@@ -51,7 +51,7 @@ export default {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        background-image: url('../../assets/pictures/bg10.svg');
+        background-image: url('../../assets/pictures/bg11.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100vw;
