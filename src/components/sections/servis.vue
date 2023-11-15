@@ -67,7 +67,7 @@
                 width: 71.563vw !important;
                 p{
                     @include text-light;
-                    padding-top: clamp(1rem, 1.302vw, 4.375rem); //4.375rem 4k
+                    padding-top: clamp(1rem, 1.302vw, 4.375rem); 
                     padding-bottom: 3%;
                     margin: 0 auto;
                 }
@@ -121,9 +121,16 @@
                 }
             }
             form{
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 gap: 0.521vw;
                 margin: 0 auto;
                 padding-top: 3vw;
@@ -189,6 +196,8 @@
                     font-size: 0.885vw;
                     margin: 0.521vw auto;
                     cursor: pointer;
+                    -webkit-transition: 1s;
+                    -o-transition: 1s;
                     transition: 1s;
                     &:hover{
                         opacity: 0.5;
@@ -196,5 +205,6 @@
                 }
             }
         }
+    
     }
 </style>
