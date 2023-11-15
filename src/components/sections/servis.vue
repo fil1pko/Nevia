@@ -57,9 +57,55 @@
         background-position: center;
         background-size: 100vw;
         background-image: url('../../assets/pictures/bg10.svg');
+
+
         @media only screen and (max-width: 1024px){
             background-image: url('../../assets/pictures/bg10mobile.svg');
             background-size: cover;
+            .servis-wraper{
+                max-width: 70% !important;
+                width: 71.563vw !important;
+                p{
+                    @include text-light;
+                    padding-top: clamp(1rem, 1.302vw, 4.375rem); //4.375rem 4k
+                    padding-bottom: 3%;
+                    margin: 0 auto;
+                }
+                form{
+                    input{
+                        font-size: 1.6vw !important;
+                        width: 100% !important;
+                        height: 25% !important;
+                    }
+                    textarea{
+                        font-size: 1.6vw !important;
+                        width: 100% !important;
+                        height: 10vw !important;
+                    }
+                    button{
+                        width: 10rem !important;
+                        height: 2rem !important;
+                        font-size: 1.6vw !important;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 700px){
+            .servis-wraper{
+                form{
+                    input{
+                        height: 8vw !important;
+                        font-size: 3vw !important;
+                    }
+                    textarea{
+                        height: 15vw !important;
+                        font-size: 3vw !important;
+                    }
+                    button{
+                        font-size: 2.5vw !important;
+                    }
+                }
+            }
         }
         .servis-wraper{
             width: 51.563vw;

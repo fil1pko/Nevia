@@ -138,7 +138,6 @@
         #portfolio{
             padding-top: 20%;
             min-height: auto !important;
-            // background-image: none;
             background-image: url('../../assets/pictures/bg10mobile.svg');
             background-size: cover;
         }
