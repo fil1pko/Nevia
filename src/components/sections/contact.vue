@@ -9,13 +9,10 @@
         methods: {
             sendEmail() {
                 emailjs.sendForm('service_8qgs90w', 'template_wjfoyod', this.$refs.form, '6pCZ6PPCkCUoDt45Q')
-                //     .then((result) => {
-                        
-                //         // console.log('SUCCESS!', result.text);
-                //     }, (error) => {
-                //         // console.log('FAILED...', error.text);
-                //     }
-                // );
+                .then((result) => {
+                        document.getElementById("form").reset();
+                    }
+                );
             }
         }
     }
@@ -27,7 +24,7 @@
             <h1> {{ $t('contactTitle') }} </h1>
             <p> {{ $t('contactText') }} </p>
             <div class="form-wraper">
-                <form ref="form" @submit.prevent="sendEmail">
+                <form id="form" ref="form" @submit.prevent="sendEmail">
                     <input type="text" name="subject" :placeholder="$t('contactSubjectPlaceholder')" required>
                     <input type="email" name="user_email" :placeholder="$t('contactEmailPlaceholder')" required>
                     <textarea name="message" :placeholder="$t('contactMessagePlaceholder')" required></textarea>

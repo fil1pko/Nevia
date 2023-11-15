@@ -5,12 +5,10 @@
         methods: {
             sendEmail() {
                 emailjs.sendForm('service_8qgs90w', 'template_2d151yr', this.$refs.form2, '6pCZ6PPCkCUoDt45Q')
-                //     .then((result) => {
-                //         // console.log('SUCCESS!', result.text);
-                //     }, (error) => {
-                //         // console.log('FAILED...', error.text);
-                //     }
-                // );
+                    .then((result) => {
+                        document.getElementById("form2").reset();
+                    }
+                );
             }
         }
     }
@@ -25,7 +23,7 @@
             </article>
 
             <!-- left side -->
-            <form ref="form2" @submit.prevent="sendEmail">
+            <form id="form2" ref="form2" @submit.prevent="sendEmail">
                 <input type="text" name="name" :placeholder="$t('servisName')" required>
                 <input type="text" name="location" :placeholder="$t('servisLocation')" required>
                 <input type="email" name="user_mail2" :placeholder="$t('contactEmailPlaceholder')" required>
