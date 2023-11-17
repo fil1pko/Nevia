@@ -24,12 +24,14 @@
             <h1> {{ $t('contactTitle') }} </h1>
             <p> {{ $t('contactText') }} </p>
             <div class="form-wraper">
-                <form id="form" ref="form" @submit.prevent="sendEmail">
+                <form id="form" action="?" method="POST" ref="form" @submit.prevent="sendEmail">
                     <input type="text" name="subject" :placeholder="$t('contactSubjectPlaceholder')" required>
                     <input type="email" name="user_email" :placeholder="$t('contactEmailPlaceholder')" required>
                     <textarea name="message" :placeholder="$t('contactMessagePlaceholder')" required></textarea>
 
-                    <button class="button" type="submit"> {{ $t('contactButtonText') }} </button>
+                    <button class="button" type="submit" value="Submit"> {{ $t('contactButtonText') }} </button>
+
+                    <div class="g-recaptcha" data-sitekey="6Le59RApAAAAAHvImTSYTGQuvXyvZRuhtZFm2YiL"></div>
                 </form>
 
                 <div>
