@@ -27,8 +27,8 @@
         <div class="portfolio-wraper second security">
             <article>
                 <div class="heading">
-                    <h1><img src="../../assets/pictures/line.svg" alt="line"> {{ $t('portfolioHeading1-2') }} </h1>
-                    <h1>{{ $t('portfolioHeading2-3') }}</h1>
+                    <h1><img src="../../assets/pictures/line.svg" alt="line"> cyber </h1>
+                    <h1>security</h1>
                 </div>
                 <p>{{ $t('portfolioText1') }} </p>
                 <p class="delete">{{ $t('portfolioText2') }}</p>

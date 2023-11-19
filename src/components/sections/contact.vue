@@ -6,52 +6,58 @@
         components: {
             markk
         },
-  data() {
-    return {
-      num1: Math.floor(Math.random() * 10),
-      num2: Math.floor(Math.random() * 10),
-      userAnswer: '',
-      resultMessage: '',
+
+        data() {
+            return {
+            num1: Math.floor(Math.random() * 10),
+            num2: Math.floor(Math.random() * 10),
+            userAnswer: '',
+            resultMessage: '',
+            };
+        },
+            
+        methods: {
+            checkAnswerAndSendEmail() {
+                const correctAnswer = this.num1 + this.num2;
+                if (parseInt(this.userAnswer, 10) === correctAnswer) {
+                    this.resultMessage = 'correct';
+                    this.sendEmail();
+                } else {
+                    this.resultMessage = 'failed';
+                }
+            },
+
+            sendEmail() {
+                emailjs.sendForm('service_8qgs90w', 'template_wjfoyod', this.$refs.form, '6pCZ6PPCkCUoDt45Q')
+                .then((result) => {
+                    document.getElementById('form').reset();
+                })
+                .catch((error) => {
+                    // console.error('Error sending email:', error);
+                });
+            },
+        },
     };
-  },
-  methods: {
-    checkAnswerAndSendEmail() {
-      const correctAnswer = this.num1 + this.num2;
-      if (parseInt(this.userAnswer, 10) === correctAnswer) {
-        this.resultMessage = 'Correct! You are not a robot.';
-        this.sendEmail();
-      } else {
-        this.resultMessage = 'Incorrect. Please try again.';
-      }
-    },
-
-    sendEmail() {
-
-        emailjs.sendForm('service_8qgs90w', 'template_wjfoyod', this.$refs.form, '6pCZ6PPCkCUoDt45Q')
-          .then((result) => {
-            document.getElementById('form').reset();
-          })
-          .catch((error) => {
-            console.error('Error sending email:', error);
-          });
-    },
-  },
-};
 </script>
 
 <template>
     <section id="contact">
         <div class="contact-wraper">
             <h1> {{ $t('contactTitle') }} </h1>
-            <p> {{ $t('contactText') }} </p>
+            <p class="head-text"> {{ $t('contactText') }} </p>
             <div class="form-wraper">
                 <form id="form" ref="form" @submit.prevent="checkAnswerAndSendEmail">
                     <input type="text" name="subject" :placeholder="$t('contactSubjectPlaceholder')" required>
                     <input type="email" name="user_email" :placeholder="$t('contactEmailPlaceholder')" required>
                     <textarea name="message" :placeholder="$t('contactMessagePlaceholder')" required></textarea>
 
-                    <p>{{ num1 }} + {{ num2 }} = <input v-model="userAnswer" type="text" /></p>
-                    <p v-if="resultMessage">{{ resultMessage }}</p>
+                    <p class="auth">
+                        {{ $t('auth') }}
+                        <input :placeholder="`${num1} + ${num2} `" v-model="userAnswer" type="text" />
+                    </p>
+
+
+                    <small v-if="resultMessage">{{ $t(resultMessage) }}</small>
 
                     <button class="button">
                         {{ $t('contactButtonText') }}
@@ -142,12 +148,25 @@
                         margin-bottom: 20% !important;
                     }
                 }
+                .auth{
+                        @include text-light; 
+                        scale: 1 !important;
+                        width: 50vw !important;
+                        text-align: center;
+                        input{
+                            background: rgba(51, 51, 51, 0.2);
+                        }
+                    }
             }
         }
+
         @media only screen and (max-width: 700px){
             .contact-wraper{
                 p{
                     display: none;
+                }
+                .auth{
+                    display: block;
                 }
                 .form-wraper{
                     form{
@@ -174,6 +193,9 @@
                         margin-bottom: 2rem !important;
                     }
                 }
+                .auth{
+                    scale: 0.8 !important;
+                }
             }
         }
         .contact-wraper{
@@ -183,10 +205,9 @@
             h1{
                 @include topics;
             }
-            p{
+            .head-text{
                 @include text-light;
                 text-align: center;
-                margin-top: 1.563vw;
             }
             .form-wraper{
                 display: -webkit-box;
@@ -276,6 +297,23 @@
                         &:hover{
                             opacity: 0.5;
                         }
+                    }
+                    .auth{
+                        @include text-light; 
+                        scale: 0.8;
+                        width: 20.833vw;
+                        text-align: center;
+                        input{
+                            background: rgba(51, 51, 51, 0.2);
+                            width: 6.771vw !important;
+                            height: 3vw !important;
+                        }
+                    }
+                    small{
+                        color: $white;
+                        font-family: $barlowL;
+                        text-transform: capitalize;
+                        text-align: center;
                     }
                 }
                 ul{

@@ -92,8 +92,9 @@
   "contactEmailPlaceholder": "Your email",
   "contactMessagePlaceholder": "Message text",
   "contactButtonText": "Contact us!",
-
-
+  "auth": "To make sure you're not a robot, let's solve the following example:",
+  "correct": "Correct! You are not a robot.",
+  "failed": "Incorrect. Please try again.",
   "servisName": "Your name",
   "servisLocation": "Your adress"
 

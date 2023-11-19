@@ -78,10 +78,6 @@
 
     "portfolioText2-2": "Pod našou značkou FlexiHospital sa nachádza množstvo produktov a služieb, ktoré pomáhajú nemocniciam zlepšiť komunikáciu s pacientmi, zvýšiť efektivitu a zlepšiť celkovú skúsenosť pacientov. Našou hlavnou prioritou je vytvárať riešenia, ktoré sa dokážu prispôsobiť individuálnym potrebám každej nemocnice a jej pacientov.",
 
-
-    "portfolioHeading1-2": "cyber",
-    "portfolioHeading2-3": "security",
-
     "portfolioText1-2": "Naša značka prináša revolučné riešenia a služby, ktoré transformujú starostlivosťv o pacientov.",
 
     "portfolioText2-3": "Pod našou značkou FlexiHospital sa nachádza množstvo produktov a služieb, ktoré pomáhajú nemocniciam zlepšiť komunikáciu s pacientmi, zvýšiť efektivitu a zlepšiť celkovú skúsenosť pacientov. Našou hlavnou prioritou je vytvárať riešenia, ktoré sa dokážu prispôsobiť individuálnym potrebám každej nemocnice a jej pacientov.",
@@ -114,6 +110,9 @@
     "contactEmailPlaceholder": "Váš e-mail",
     "contactMessagePlaceholder": "Text správy",
     "contactButtonText": "Kontaktujte nás !",
+    "auth": "Aby sme sa uistili, že nie ste robot, vyriešte nasledujúci príklad:",
+    "correct": "Správne! Nie ste robot.",
+    "failed": "Nesprávne. Skúste to znova.",
 
 
     "servisName": "Vaše meno",

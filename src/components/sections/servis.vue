@@ -2,13 +2,34 @@
     import emailjs from '@emailjs/browser';
 
     export default {
+        data() {
+            return {
+            num1: Math.floor(Math.random() * 10),
+            num2: Math.floor(Math.random() * 10),
+            userAnswer: '',
+            resultMessage: '',
+            };
+        },
+
         methods: {
+            checkAnswerAndSendEmail() {
+                const correctAnswer = this.num1 + this.num2;
+                if (parseInt(this.userAnswer, 10) === correctAnswer) {
+                    this.resultMessage = 'correct';
+                    this.sendEmail();
+                } else {
+                    this.resultMessage = 'failed';
+                }
+            },
+
             sendEmail() {
                 emailjs.sendForm('service_8qgs90w', 'template_2d151yr', this.$refs.form2, '6pCZ6PPCkCUoDt45Q')
-                    .then((result) => {
-                        document.getElementById("form2").reset();
-                    }
-                );
+                .then((result) => {
+                    document.getElementById('form2').reset();
+                })
+                .catch((error) => {
+                    // console.error('Error sending email:', error);
+                });
             }
         }
     }
@@ -23,11 +44,20 @@
             </article>
 
             <!-- left side -->
-            <form id="form2" ref="form2" @submit.prevent="sendEmail">
+            <form id="form2" ref="form2" @submit.prevent="checkAnswerAndSendEmail">
                 <input type="text" name="name" :placeholder="$t('servisName')" required>
                 <input type="text" name="location" :placeholder="$t('servisLocation')" required>
                 <input type="email" name="user_mail2" :placeholder="$t('contactEmailPlaceholder')" required>
                 <textarea name="message2" :placeholder="$t('contactMessagePlaceholder')" required></textarea>
+
+                <p class="auth">
+                    {{ $t('auth') }}
+                    <input :placeholder="`${num1} + ${num2} `" v-model="userAnswer" type="text" />
+                </p>
+
+
+                <small v-if="resultMessage">{{ $t(resultMessage) }}</small>
+
 
                 <button class="button" type="submit" value="Send">Odoslať</button>
             </form>
@@ -84,9 +114,18 @@
                         width: 10rem !important;
                         height: 2rem !important;
                         font-size: 1.6vw !important;
-                    }
                 }
             }
+        }
+                    .auth{
+                        @include text-light; 
+                        scale: 1 !important;
+                        width: 50vw !important;
+                        text-align: center;
+                        input{
+                            background: rgba(51, 51, 51, 0.2);
+                        }
+                    }
         }
         @media only screen and (max-width: 700px){
             .servis-wraper{
@@ -200,6 +239,23 @@
                     &:hover{
                         opacity: 0.5;
                     }
+                }
+                .auth{
+                    @include text-light; 
+                    scale: 0.8;
+                    width: 20.833vw;
+                    text-align: center;
+                    input{
+                        background: rgba(51, 51, 51, 0.2);
+                        width: 6.771vw !important;
+                        height: 3vw !important;
+                    }
+                }
+                small{
+                    color: $white;
+                    font-family: $barlowL;
+                    text-transform: capitalize;
+                    text-align: center;
                 }
             }
         }

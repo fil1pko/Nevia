@@ -9,7 +9,7 @@
     @import '../../assets/style/colors.scss';
     .mark-wraper{
         position: relative;
-        top: 6.25vw;
+        top: 5.25vw;
         height: auto;
         small{
             font-family: $barlowL;
@@ -22,7 +22,7 @@
             }
         }
         @media only screen and (max-width: 1024px){
-            top: 29vw;
+            top: 28vw;
             small{
                 font-size: 1.3vw !important;
             }
