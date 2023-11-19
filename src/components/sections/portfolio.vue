@@ -24,6 +24,18 @@
             </article>
         </div>
 
+        <div class="portfolio-wraper second security">
+            <article>
+                <div class="heading">
+                    <h1><img src="../../assets/pictures/line.svg" alt="line"> {{ $t('portfolioHeading1-2') }} </h1>
+                    <h1>{{ $t('portfolioHeading2-3') }}</h1>
+                </div>
+                <p>{{ $t('portfolioText1') }} </p>
+                <p class="delete">{{ $t('portfolioText2') }}</p>
+            </article>
+            <img class="lock" src="../../assets/pictures/lock.svg" alt="Hand">
+        </div>
+
         <div class="button-wraper">
             <a href="#">
                 <h2>{{ $t('portfolioButton1') }}</h2>
@@ -89,6 +101,10 @@
                 position: relative;
                 z-index: 10;
             }
+            .lock{
+                // width: 22.5vw;
+                max-height: 50.104vw;
+            }
         }
         .first{
             width: 100%;
@@ -105,6 +121,9 @@
                     justify-content: center;
             gap: 7.813vw;
             padding-top: 5.208vw;
+        }
+        .security{
+            height: 50.104vw !important;
         }
         .button-wraper{
             width: 23.438vw;

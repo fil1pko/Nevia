@@ -3,17 +3,39 @@
     import markk from './mark.vue';
 
     export default {
-        components:{
-            markk
+        data() {
+        return {
+            num1: Math.floor(Math.random() * 10),
+            num2: Math.floor(Math.random() * 10),
+            userAnswer: '',
+            showResult: false,
+            resultMessage: '',
+        };
+        },
+        components: {
+        markk,
         },
         methods: {
-            sendEmail() {
-                emailjs.sendForm('service_8qgs90w', 'template_wjfoyod', this.$refs.form, '6pCZ6PPCkCUoDt45Q')
-                .then((result) => {
-                        document.getElementById("form").reset();
-                    }
-                );
+        checkAnswerAndSendEmail() {
+            const correctAnswer = this.num1 + this.num2;
+            if (parseInt(this.userAnswer, 10) === correctAnswer) {
+            this.resultMessage = 'Correct! You are not a robot.';
+            this.sendEmail();
+            } else {
+            this.resultMessage = 'Incorrect. Please try again.';
+            this.showResult = true;
             }
+        },
+
+        sendEmail() {
+            emailjs.sendForm('service_8qgs90w', 'template_wjfoyod', this.$refs.form, '6pCZ6PPCkCUoDt45Q')
+                .then((result) => {
+                    document.getElementById("form").reset();
+                })
+                .catch((error) => {
+                    console.error('Error sending email:', error);
+                });
+            },
         }
     }
 </script>
@@ -24,14 +46,15 @@
             <h1> {{ $t('contactTitle') }} </h1>
             <p> {{ $t('contactText') }} </p>
             <div class="form-wraper">
-                <form id="form" action="?" method="POST" ref="form" @submit.prevent="sendEmail">
+                <form id="form" ref="form" @submit.prevent="sendEmail">
                     <input type="text" name="subject" :placeholder="$t('contactSubjectPlaceholder')" required>
                     <input type="email" name="user_email" :placeholder="$t('contactEmailPlaceholder')" required>
                     <textarea name="message" :placeholder="$t('contactMessagePlaceholder')" required></textarea>
 
-                    <button class="button" type="submit" value="Submit"> {{ $t('contactButtonText') }} </button>
+                    <p>{{ num1 }} + {{ num2 }} = <input v-model="userAnswer" type="text" /></p>
+                    <p v-if="showResult">{{ resultMessage }}</p>
 
-                    <div class="g-recaptcha" data-sitekey="6Le59RApAAAAAHvImTSYTGQuvXyvZRuhtZFm2YiL"></div>
+                    <button class="button" type="submit"> {{ $t('contactButtonText') }} </button>
                 </form>
 
                 <div>
