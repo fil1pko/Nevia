@@ -204,6 +204,9 @@
                 -ms-flex-direction: column;
                     flex-direction: column;
         }
+        .security{
+            flex-direction: column;
+        }
         .hologram{
             width: 52.5vw !important;
             margin-bottom: 7vw;
