@@ -33,7 +33,7 @@
                 <p>{{ $t('portfolioText1') }} </p>
                 <p class="delete">{{ $t('portfolioText2') }}</p>
             </article>
-            <img class="lock" src="../../assets/pictures/lock.svg" alt="Hand">
+            <img class="lock" src="../../assets/pictures/security.svg" alt="Hand">
         </div>
 
         <div class="button-wraper">
@@ -102,8 +102,9 @@
                 z-index: 10;
             }
             .lock{
-                // width: 22.5vw;
-                max-height: 50.104vw;
+                // width: 33.5vw;
+                max-width: 50.104vw;
+                // width: 100%;
             }
         }
         .first{
@@ -188,6 +189,9 @@
                 .hand{
                     position: relative;
                     left: 12%;
+                    width: 75vw !important;
+                }
+                .lock{
                     width: 75vw !important;
                 }
             }
