@@ -88,7 +88,7 @@
 
 
         @media only screen and (max-width: 1024px){
-            background-image: url('../../assets/pictures/bg10mobile.svg');
+            background-image: url('../../assets/pictures/bgServisMobile.svg');
             background-size: cover;
             .servis-wraper{
                 max-width: 70% !important;

@@ -30,10 +30,10 @@
                     <h1><img src="../../assets/pictures/line.svg" alt="line"> cyber </h1>
                     <h1>security</h1>
                 </div>
-                <p>{{ $t('portfolioText1') }} </p>
-                <p class="delete">{{ $t('portfolioText2') }}</p>
+                <p>{{ $t('portfolioText4') }} </p>
+                <p class="delete">{{ $t('portfolioText4-2') }}</p>
             </article>
-            <img class="lock" src="../../assets/pictures/security.svg" alt="Hand">
+            <img class="lock" src="../../assets/pictures/security.svg" alt="Shield">
         </div>
 
         <div class="button-wraper">
@@ -158,7 +158,7 @@
         #portfolio{
             padding-top: 20%;
             min-height: auto !important;
-            background-image: url('../../assets/pictures/bg10mobile.svg');
+            background-image: url('../../assets/pictures/bgPortfolioMobile.svg');
             background-size: cover;
         }
     }

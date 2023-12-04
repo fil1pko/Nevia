@@ -111,7 +111,7 @@
 
         // portrait 
         @media only screen and (max-width: 1024px){
-            background-image: url('../../assets/pictures/bg11mobile.svg');
+            background-image: url('../../assets/pictures/bgFooterMobile.svg');
             background-size: cover;
             .contact-wraper{
                 max-width: 70% !important;
