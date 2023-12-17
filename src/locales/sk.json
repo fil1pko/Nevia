@@ -121,6 +121,9 @@
 
 
     "servisName": "Vaše meno",
-    "servisLocation": "Vaša adresa"
+    "servisLocation": "Vaša adresa",
+
+    "servistext": "Ak sa vyskytne nejaký problém alebo máte otázky, kontaktujte nás pomocou e-mailu. Radi vám pomôžeme a snažíme sa čo najlepšie riešiť všetky vaše požiadavky a otázky. Ďakujeme vám za spoluprácu a tešíme sa na to, že vám môžeme poskytnúť potrebnú pomoc.",
+    "servisHeading":"Servis"
     
 }

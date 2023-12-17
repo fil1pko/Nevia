@@ -98,6 +98,9 @@
   "correct": "Correct! You are not a robot.",
   "failed": "Incorrect. Please try again.",
   "servisName": "Your name",
-  "servisLocation": "Your adress"
+  "servisLocation": "Your adress",
 
+
+  "servistext": "If there is any problem or you have questions, please contact us via email. We will be happy to help you and try our best to solve all your requirements and questions. Thank you for your cooperation and we look forward to providing you with the help you need.",
+  "servisHeading":"Service"
 }

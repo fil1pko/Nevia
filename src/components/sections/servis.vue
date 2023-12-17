@@ -39,8 +39,8 @@
         <div class="servis-wraper">
             <!-- right side -->
             <article>
-                <h1>Servis</h1>
-                <p>Ak sa vyskytne nejaký problém alebo máte otázky, kontaktujte nás pomocou e-mailu. Radi vám pomôžeme a snažíme sa čo najlepšie riešiť všetky vaše požiadavky a otázky. Ďakujeme vám za spoluprácu a tešíme sa na to, že vám môžeme poskytnúť potrebnú pomoc.</p>
+                <h1>{{ $t('servisHeading') }}</h1>
+                <p>{{ $t('servistext') }}</p>
             </article>
 
             <!-- left side -->
@@ -59,7 +59,7 @@
                 <small v-if="resultMessage">{{ $t(resultMessage) }}</small>
 
 
-                <button class="button" type="submit" value="Send">Odoslať</button>
+                <button class="button" type="submit" value="Send">{{ $t('contactButtonText') }}</button>
             </form>
         </div>
     </section>
