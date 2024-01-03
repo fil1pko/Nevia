@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <!-- Tlačidlá pre prepínanie jazykov -->
+    <button onclick="loadDashboardContent(1)">Slovakia</button>
+    <button onclick="loadDashboardContent(2)">English</button>
+
+    <div id="dashboardContent">Načítavam obsah...</div>
+
+    <script>
+        function loadDashboardContent(langId) {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                window.location.href = '/';
+                return;
+            }
+
+            const url = `/dashboardcontent?lang=${langId}`; // Dynamické nastavenie query parametra
+            fetch(url, {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                },
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Nie je možné načítať dashboard');
+                }
+                return response.text();
+                
+            })
+            .then(data => {
+                console.log(data);
+                document.getElementById('dashboardContent').innerHTML = data;
+                
+            })
+            .catch(error => {
+                console.error('Chyba pri načítaní dashboardu:', error);
+                document.getElementById('dashboardContent').innerHTML = 'Chyba pri načítaní obsahu.';
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => loadDashboardContent(1)); // Načítať obsah pre Jazyk 1 pri načítaní stránky
+    </script>
+</body>
+</html>
