@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<style>
+    td, th {
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">home</a></li>
+            <li><a href="/mail">mail</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>Email</h1>
+    <div id="dashboardContent">Načítavam obsah...</div>
+    
+    
+    <script>
+        function loadEmailContent(langId) {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                window.location.href = '/';
+                return;
+            }
+
+            const url = `/emailcontent`; // dynamic parametrs
+            fetch(url, {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                },
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Nie je možné načítať dashboard');
+                }
+                return response.text();
+                
+            })
+            .then(data => {
+                console.log(data);
+                document.getElementById('dashboardContent').innerHTML = data;
+                
+            })
+            .catch(error => {
+                console.error('Chyba pri načítaní dashboardu:', error);
+                document.getElementById('dashboardContent').innerHTML = 'Chyba pri načítaní obsahu.';
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => loadEmailContent());
+    </script>
+</body>
+</html>

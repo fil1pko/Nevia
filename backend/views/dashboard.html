@@ -6,14 +6,22 @@
     <title>Dashboard</title>
 </head>
 <style>
-    
+
 </style>
 <body>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">home</a></li>
+            <li><a href="/mail">mail</a></li>
+        </ul>
+    </nav>
     <!-- Tlačidlá pre prepínanie jazykov -->
     <button onclick="loadDashboardContent(1)">Slovakia</button>
     <button onclick="loadDashboardContent(2)">English</button>
-
+    
     <div id="dashboardContent">Načítavam obsah...</div>
+    
+    <button onclick="saveInDatabase()">Uložiť</button>
 
     <script>
         function loadDashboardContent(langId) {
@@ -23,7 +31,7 @@
                 return;
             }
 
-            const url = `/dashboardcontent?lang=${langId}`; // Dynamické nastavenie query parametra
+            const url = `/dashboardcontent?lang=${langId}`; // dynamic parametrs
             fetch(url, {
                 headers: {
                     'Authorization': `Bearer ${token}`
@@ -46,6 +54,44 @@
                 document.getElementById('dashboardContent').innerHTML = 'Chyba pri načítaní obsahu.';
             });
         }
+
+        function saveInDatabase() {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                window.location.href = '/';
+                return;
+            }
+
+            const inputs = document.querySelectorAll('#dashboardContent input');
+            const data = {};
+
+            inputs.forEach(input => {
+                data[input.id] = input.value;
+            });
+
+            fetch('/savecontent', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify({content: data})
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Chyba pri ukladaní obsahu');
+                }
+                return response.text(); // alebo response.json() podľa toho, ako server odpovedá
+            })
+            .then(result => {
+                console.log('Obsah bol úspešne uložený');
+            })
+            .catch(error => {
+                console.error('Chyba:', error);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => loadDashboardContent(1));
 
         document.addEventListener('DOMContentLoaded', () => loadDashboardContent(1)); // Načítať obsah pre Jazyk 1 pri načítaní stránky
     </script>
